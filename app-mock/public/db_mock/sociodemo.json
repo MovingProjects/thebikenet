@@ -1,0 +1,1033 @@
+{
+    "questionnaire_id": "cyclist_attitudes_and_perceptions",
+    "name": "Cyclists Safety Perception-before",
+    "width": 0.5,
+    "sections": [
+        {
+            "section_id": "profile.1-demographic info",
+            "title": "profile.1-demographic info",
+            "backgroundColor": "#d3d3d3",
+            "condition": "undefined",
+            "questions": [
+                {
+                    "question_id": "id_1",
+                    "text": "Gender",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Female"
+                        },
+                        {
+                            "text": "Male"
+                        },
+                        {
+                            "text": "Prefer not to say"
+                        }
+                    ]
+                },
+                {
+                    "text": "Age",
+                    "question_id": "id_2",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "under 18"
+                        },
+                        {
+                            "text": "18-24"
+                        },
+                        {
+                            "text": "25-34"
+                        },
+                        {
+                            "text": "35-49"
+                        },
+                        {
+                            "text": "50-59"
+                        },
+                        {
+                            "text": "60 and over"
+                        }
+                    ]
+                },
+                {
+                    "text": "Please indicate your level of education",
+                    "question_id": "id_3",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "High school or less"
+                        },
+                        {
+                            "text": "Some college"
+                        },
+                        {
+                            "text": "Undergraduate"
+                        },
+                        {
+                            "text": "Postgraduate"
+                        },
+                        {
+                            "text": "Other"
+                        },
+                        {
+                            "text": "None of the above"
+                        }
+                    ]
+                },
+                {
+                    "text": "Occupation ",
+                    "question_id": "id_4",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Student"
+                        },
+                        {
+                            "text": "Employed"
+                        },
+                        {
+                            "text": "Self-employed"
+                        },
+                        {
+                            "text": "Unemployed"
+                        },
+                        {
+                            "text": "Homemaker"
+                        },
+                        {
+                            "text": "Retired"
+                        },
+                        {
+                            "text": "Other"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Profile.2-travel habits-experiences",
+            "section_id": "Profile.2-travel habits-experiences",
+            "backgroundColor": "#ccabe2",
+            "condition": "undefined",
+            "questions": [
+                {
+                    "text": "Purpose of using a bicycle or an e-scooter",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Commute to work"
+                        },
+                        {
+                            "text": "Commute to school/university/educational institutes"
+                        },
+                        {
+                            "text": "Daily shopping (Grocery shopping)"
+                        },
+                        {
+                            "text": "General shopping (e.g., clothes)"
+                        },
+                        {
+                            "text": "Recreation"
+                        },
+                        {
+                            "text": "Exercise and Fitness"
+                        },
+                        {
+                            "text": "Health and Well-being"
+                        },
+                        {
+                            "text": "Socializing and Events"
+                        },
+                        {
+                            "text": "Exploration and Sightseeing"
+                        },
+                        {
+                            "text": "Other"
+                        }
+                    ]
+                },
+                {
+                    "text": "How often do you ride a bicycle or e-scooter?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Once a month or less"
+                        },
+                        {
+                            "text": "2-3 times a month"
+                        },
+                        {
+                            "text": "1-2 times a week"
+                        },
+                        {
+                            "text": "3-5 times a week"
+                        },
+                        {
+                            "text": "Daily"
+                        },
+                        {
+                            "text": "Only at weekends"
+                        }
+                    ]
+                },
+                {
+                    "text": "How often do you currently use public transport for your daily commute or other transportation needs?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Never"
+                        },
+                        {
+                            "text": "Once a month or less"
+                        },
+                        {
+                            "text": "2-3 times a month"
+                        },
+                        {
+                            "text": "1-2 times a week"
+                        },
+                        {
+                            "text": "3-5 times a week"
+                        },
+                        {
+                            "text": "Daily"
+                        },
+                        {
+                            "text": "Only at weekends"
+                        }
+                    ]
+                },
+                {
+                    "text": "What factors would influence your decision to use public transport?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "If it offered shorter travel times, better connections, or more frequent services."
+                        },
+                        {
+                            "text": "If there were the discounted tickets"
+                        },
+                        {
+                            "text": "If I had physical limitations that made cycling difficult"
+                        },
+                        {
+                            "text": "If it offered options like bike racks on buses or trains (for longer journeys)"
+                        },
+                        {
+                            "text": "When I'm running late or need to reach my destination quickly"
+                        },
+                        {
+                            "text": "If I felt unsafe cycling due to busy traffic, unsafe road conditions, or concerns about theft."
+                        },
+                        {
+                            "text": "Bad weather conditions"
+                        }
+                    ]
+                },
+                {
+                    "text": "How many years of cycling experience do you have?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "less than one year"
+                        },
+                        {
+                            "text": "1-2 years"
+                        },
+                        {
+                            "text": "more than 2 years"
+                        }
+                    ]
+                },
+                {
+                    "text": "How many months of cycling experience abroad do you have?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "less than one month"
+                        },
+                        {
+                            "text": "up to 12 months"
+                        },
+                        {
+                            "text": "more than 12 months"
+                        }
+                    ]
+                },
+                {
+                    "text": "If you use the shared e-bikes/e-scooters, do you have a monthly or annual subscription?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes, I have it."
+                        },
+                        {
+                            "text": "I had it already."
+                        },
+                        {
+                            "text": "I haven't had it at all."
+                        }
+                    ]
+                },
+                {
+                    "text": "At what time of day do you mostly ride a bicycle or e-scooter?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "before 10:00 and/or 16:00-18:00"
+                        },
+                        {
+                            "text": "10:00-16:00"
+                        },
+                        {
+                            "text": "18:00-20:00"
+                        },
+                        {
+                            "text": "after 20:00"
+                        }
+                    ]
+                },
+                {
+                    "text": "Do you have any experience of an accident when using a bicycle or an e-scooter?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        },
+                        {
+                            "text": "I don't remember"
+                        }
+                    ]
+                },
+                {
+                    "text": "When you have a minor accident or lose control of your bicycle or E-scooter, what is the cause? (multiple choice)",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Other road users"
+                        },
+                        {
+                            "text": "Poor visibility"
+                        },
+                        {
+                            "text": "Wet or slippery conditions"
+                        },
+                        {
+                            "text": "Sudden obstacle"
+                        },
+                        {
+                            "text": "Inappropriate road surface"
+                        },
+                        {
+                            "text": "Speeding"
+                        },
+                        {
+                            "text": "Distracted riding (e.g., using mobile phone)"
+                        },
+                        {
+                            "text": "Inexperience"
+                        },
+                        {
+                            "text": "Bad weather conditions"
+                        }
+                    ]
+                },
+                {
+                    "text": "How familiar are you with bicycle/e-scooter traffic rules?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Not at all familiar"
+                        },
+                        {
+                            "text": "Slightly familiar"
+                        },
+                        {
+                            "text": "Somewhat familiar"
+                        },
+                        {
+                            "text": "Moderately familiar"
+                        },
+                        {
+                            "text": "Very familiar"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Profile.3-ownership-parking",
+            "section_id": "Profile.3-ownership-parking",
+            "backgroundColor": "#b479b2",
+            "condition": "undefined",
+            "questions": [
+                {
+                    "text": "Are any of the following vehicles available for you at home?",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Private car"
+                        },
+                        {
+                            "text": "Motorcycle"
+                        },
+                        {
+                            "text": "Electronic motorcycle"
+                        },
+                        {
+                            "text": "Normal bicycle"
+                        },
+                        {
+                            "text": "Electronic bicycle"
+                        },
+                        {
+                            "text": "E-scooter (monopattino)"
+                        },
+                        {
+                            "text": "None of them"
+                        }
+                    ]
+                },
+                {
+                    "text": "Is there a parking lot available to you (car/motorcycle)?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "text": "Is there a parking lot available to you (bicycle/E-scooter)?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Profile.4-Willingness to ST",
+            "section_id": "Profile.4-Willingness to ST",
+            "backgroundColor": "#58ca75",
+            "condition": "undefined",
+            "questions": [
+                {
+                    "text": "If you were given free bus tickets, would you ride a bike?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        },
+                        {
+                            "text": "Maybe"
+                        }
+                    ]
+                },
+                {
+                    "text": "If you were given free access to a shared bicycle or e-scooter, would you use it?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        },
+                        {
+                            "text": "Maybe"
+                        }
+                    ]
+                },
+                {
+                    "text": "Please indicate the expensiveness of riding a bicycle or an e-scooter",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Very Expensive"
+                        },
+                        {
+                            "text": "Expensive"
+                        },
+                        {
+                            "text": "Neutral"
+                        },
+                        {
+                            "text": "Affordable"
+                        },
+                        {
+                            "text": "Very Affordable"
+                        }
+                    ]
+                },
+                {
+                    "text": "Would you be willing to pay a higher fare for public transport if it meant improved service quality, such as more frequent buses or trains?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        },
+                        {
+                            "text": "Maybe"
+                        }
+                    ]
+                },
+                {
+                    "text": "Would you be willing to pay a higher fare for public transport to experience less traffic congestion?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        },
+                        {
+                            "text": "Maybe"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Profile.5-Extra questions",
+            "section_id": "Profile.5-Extra questions",
+            "backgroundColor": "#c4ef4d",
+            "condition": "undefined",
+            "questions": [
+                {
+                    "text": "What is your perception of the safety of bicycling and riding e-scooters?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Very unsafe"
+                        },
+                        {
+                            "text": "Unsafe"
+                        },
+                        {
+                            "text": "Neutral"
+                        },
+                        {
+                            "text": "Safe"
+                        },
+                        {
+                            "text": "Very safe"
+                        }
+                    ]
+                },
+                {
+                    "text": "Have you ever experienced a dangerous situation while riding a bicycle?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        },
+                        {
+                            "text": "I don't remember"
+                        }
+                    ]
+                },
+                {
+                    "text": "Did you wear a helmet?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "text": "Does anyone else in your family ride a bicycle or e-scooter?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "text": "Do any of your close friends ride bicycles or e-scooters?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Before trip-after trip",
+            "backgroundColor": "#e8d13b",
+            "section_id": "Before trip-after trip",
+            "condition": "undefined",
+            "questions": [
+                {
+                    "text": "How do you feel today?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Happy "
+                        },
+                        {
+                            "text": "Optimistic "
+                        },
+                        {
+                            "text": "Tired "
+                        },
+                        {
+                            "text": "Bored "
+                        },
+                        {
+                            "text": "Sad "
+                        },
+                        {
+                            "text": "Stressed"
+                        },
+                        {
+                            "text": "Other"
+                        },
+                        {
+                            "text": "I don’t know"
+                        }
+                    ]
+                },
+                {
+                    "text": "I am confident in my ability to control my bicycle in various traffic conditions.",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Strongly disagree"
+                        },
+                        {
+                            "text": "Disagree"
+                        },
+                        {
+                            "text": "Undecided  "
+                        },
+                        {
+                            "text": "Agree"
+                        },
+                        {
+                            "text": "Strongly agree"
+                        }
+                    ]
+                },
+                {
+                    "text": "I am confident in my ability to handle my bicycle/e-scooter at high speeds or on steep descents",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Strongly disagree"
+                        },
+                        {
+                            "text": "Disagree"
+                        },
+                        {
+                            "text": "Undecided  "
+                        },
+                        {
+                            "text": "Agree"
+                        },
+                        {
+                            "text": "Strongly agree"
+                        }
+                    ]
+                },
+                {
+                    "text": "I feel comfortable riding in urban environments with heavy traffic.",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Strongly disagree"
+                        },
+                        {
+                            "text": "Disagree"
+                        },
+                        {
+                            "text": "Undecided  "
+                        },
+                        {
+                            "text": "Agree"
+                        },
+                        {
+                            "text": "Strongly agree"
+                        }
+                    ]
+                },
+                {
+                    "text": "What's your opinion about the benefits of riding bicycles or e-scooters? (multiple choice)",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Lower travel cost"
+                        },
+                        {
+                            "text": "Healthy mode of transportation"
+                        },
+                        {
+                            "text": "Appropriate for the short distances"
+                        },
+                        {
+                            "text": "Integration with public transportation networks for longer journeys"
+                        },
+                        {
+                            "text": "Contribution to reducing air pollution"
+                        },
+                        {
+                            "text": "No need to have a driving license"
+                        },
+                        {
+                            "text": "Convenience in congested areas with traffic jams"
+                        },
+                        {
+                            "text": "No need for ownership (utilizing shared e-bikes and e-scooters)"
+                        },
+                        {
+                            "text": "Easy parking"
+                        },
+                        {
+                            "text": "Flexibility to navigate through narrow streets and alleys"
+                        },
+                        {
+                            "text": "Enjoyment of outdoor scenery"
+                        },
+                        {
+                            "text": "enjoying the open-air environment"
+                        },
+                        {
+                            "text": "others"
+                        }
+                    ]
+                },
+                {
+                    "text": "Are there any cultural or social barriers that may prevent certain groups from engaging in cycling?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        },
+                        {
+                            "text": "Maybe"
+                        },
+                        {
+                            "text": "I don't know"
+                        }
+                    ]
+                },
+                {
+                    "text": "If you answered \"Yes\" to previous question, please indicate the related groups. (multiple choice)",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Affluent people"
+                        },
+                        {
+                            "text": "elderly"
+                        },
+                        {
+                            "text": "People with special job positions"
+                        },
+                        {
+                            "text": "Women"
+                        },
+                        {
+                            "text": "Other"
+                        }
+                    ]
+                },
+                {
+                    "text": "Could you specify any concerns you may have regarding the use of bikes/e-scooters? (multiple choice)",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Bicycle theft"
+                        },
+                        {
+                            "text": "Getting lost"
+                        },
+                        {
+                            "text": "Encountering mechanical problems"
+                        },
+                        {
+                            "text": "Unpredictable weather conditions (e.g., rain)"
+                        },
+                        {
+                            "text": "none of them"
+                        }
+                    ]
+                },
+                {
+                    "text": "What challenges are you dealing with when using a bicycle and public transport? (multiple choice)",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Poor facilities (bike racks, parking, etc.)"
+                        },
+                        {
+                            "text": "limited space on metro/train/bus"
+                        },
+                        {
+                            "text": "Rules and regulations to carry bicycle inside metro/train/bus"
+                        },
+                        {
+                            "text": "Accessibility (elevators, escalators, etc., )"
+                        },
+                        {
+                            "text": "The feeling of disturbing other passengers"
+                        },
+                        {
+                            "text": "other"
+                        }
+                    ]
+                },
+                {
+                    "text": "How do you feel after your trip? ",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Happy "
+                        },
+                        {
+                            "text": "Optimistic "
+                        },
+                        {
+                            "text": "Tired "
+                        },
+                        {
+                            "text": "Bored "
+                        },
+                        {
+                            "text": "Sad "
+                        },
+                        {
+                            "text": "Stressed"
+                        },
+                        {
+                            "text": "Other"
+                        },
+                        {
+                            "text": "I don’t know"
+                        }
+                    ]
+                },
+                {
+                    "text": "How do you perceive riding a bicycle/e-scooter?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Very Uncomfortable"
+                        },
+                        {
+                            "text": "Uncomfortable"
+                        },
+                        {
+                            "text": "Neutral"
+                        },
+                        {
+                            "text": "Comfortable"
+                        },
+                        {
+                            "text": "Very Comfortable"
+                        }
+                    ]
+                },
+                {
+                    "text": "Which factors most negatively affect your confidence when cycling on the road?",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Traffic congestion"
+                        },
+                        {
+                            "text": "Poor road conditions"
+                        },
+                        {
+                            "text": "Lack of bike lanes"
+                        },
+                        {
+                            "text": "Unsafe intersections"
+                        },
+                        {
+                            "text": "Poor visibility"
+                        },
+                        {
+                            "text": "Distracted drivers"
+                        },
+                        {
+                            "text": "Aggressive drivers"
+                        },
+                        {
+                            "text": "Fear of accidents"
+                        },
+                        {
+                            "text": "Not having enough experience"
+                        },
+                        {
+                            "text": "Pedestrians"
+                        },
+                        {
+                            "text": "Bad weather conditions"
+                        }
+                    ]
+                },
+                {
+                    "text": "Which road user groups are most likely to negatively affect your ability on the road when cycling? ",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Car drivers"
+                        },
+                        {
+                            "text": "Motorcyclists"
+                        },
+                        {
+                            "text": "Bus drivers"
+                        },
+                        {
+                            "text": "Truck drivers"
+                        },
+                        {
+                            "text": "Other cyclists/e-scooter users"
+                        },
+                        {
+                            "text": "pedestrians"
+                        }
+                    ]
+                },
+                {
+                    "text": "How would you rate the quality of cycling infrastructure in your area?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Very Poor"
+                        },
+                        {
+                            "text": "Poor"
+                        },
+                        {
+                            "text": "Neutral"
+                        },
+                        {
+                            "text": "Good"
+                        },
+                        {
+                            "text": "Very good"
+                        }
+                    ]
+                },
+                {
+                    "text": "Were you concerned about hitting or being hit by others?",
+                    "question_type": "single_option",
+                    "options": [
+                        {
+                            "text": "Yes"
+                        },
+                        {
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "text": "How do you perceive the behaviour of motorized vehicle drivers towards cyclists?",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Extremely Hostile"
+                        },
+                        {
+                            "text": "Hostile"
+                        },
+                        {
+                            "text": "Neutral"
+                        },
+                        {
+                            "text": "Friendly"
+                        },
+                        {
+                            "text": "Very friendly"
+                        }
+                    ]
+                },
+                {
+                    "text": "What kind of dangerous situations have you experienced while riding? (multiple choice)",
+                    "question_type": "multiple_options",
+                    "options": [
+                        {
+                            "text": "Car drivers/motorcyclists' dangerous behaviour "
+                        },
+                        {
+                            "text": "Cyclists/e-scooter users' dangerous behaviour "
+                        },
+                        {
+                            "text": "Pedestrians' dangerous behaviour"
+                        },
+                        {
+                            "text": "Other dangerous behaviour "
+                        },
+                        {
+                            "text": "Steep inclines"
+                        },
+                        {
+                            "text": "Poor Lighting"
+                        },
+                        {
+                            "text": "Poor road condition"
+                        },
+                        {
+                            "text": "Poor cycling lanes"
+                        },
+                        {
+                            "text": "Obstacles on the cycle lane "
+                        },
+                        {
+                            "text": "Other"
+                        },
+                        {
+                            "text": "No dangerous situation "
+                        }
+                    ]
+                },
+                {
+                    "text": "write some words that best describe your trip",
+                    "question_type": "text",
+                    "options": []
+                }
+            ]
+        }
+    ]
+}

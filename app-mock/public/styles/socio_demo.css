@@ -1,0 +1,146 @@
+/* ===============================
+   SOCIODEMOGRAPHIC SCREEN STYLE
+   =============================== */
+
+   .sociodemo-screen {
+    display: none;
+    padding: 16px;
+    background-color: #ffffff;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 20px;
+  }
+  
+  /* Section container */
+  .questionnaire-section {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+  }
+  
+  /* Section title */
+  .questionnaire-section h3 {
+    text-align: center;
+    color: #1E4E4E;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Each question block */
+  .question-block {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels */
+  .question-block label {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #1E4E4E;
+  }
+  
+  /* Inputs and selects */
+  .question-block input[type="text"],
+  .question-block select {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox group */
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+    font-size: 13px;
+  }
+  
+  /* Navigation buttons (Next/Back) */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    gap: 10px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #9ED9C0;
+    color: #1E4E4E;
+  }
+  
+  .btn-primary:hover {
+    background-color: #85cbb1;
+  }
+  
+  .btn-secondary {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ccc;
+  }
+  
+  /* Final form buttons */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  #submit-sociodemo,
+  #cancel-sociodemo {
+    flex: 1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 13px;
+  }
+  
+  #submit-sociodemo {
+    background-color: #F5C25C;
+    color: #1E4E4E;
+  }
+  
+  #submit-sociodemo:hover {
+    background-color: #eab949;
+  }
+  
+  #cancel-sociodemo {
+    background-color: #eee;
+    color: #1E4E4E;
+  }
+  
+  #cancel-sociodemo:hover {
+    background-color: #ddd;
+  }
+  

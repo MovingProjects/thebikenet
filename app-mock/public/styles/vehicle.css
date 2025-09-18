@@ -1,0 +1,84 @@
+/* ===============================
+   VEHICLE SCREEN STYLE
+   =============================== */
+
+   .vehicle-screen {
+    display: none;
+    padding: 20px;
+    background-color: #F5F5F5; /* #Bianco */
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 20px;
+  }
+  
+  .vehicle-screen h3 {
+    text-align: center;
+    color: #1E4E4E; /* #Blu petrolio */
+    margin-bottom: 20px;
+  }
+  
+  /* Form fields */
+  .form-row {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row label {
+    font-weight: bold;
+    color: #1E4E4E;
+    margin-bottom: 6px;
+  }
+  
+  .form-row input,
+  .form-row select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #E6F5F0; /* #Grigio chiaro */
+  }
+  
+  /* Checkboxes */
+  .form-row input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  /* Action buttons */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 12px;
+  }
+  
+  .btn-primary {
+    flex: 1;
+    background-color: #9ED9C0; /* #Verde acqua */
+    color: #1E4E4E;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #85cbb1;
+  }
+  
+  .btn-secondary {
+    flex: 1;
+    background-color: #eee;
+    color: #1E4E4E;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ddd;
+  }
+  

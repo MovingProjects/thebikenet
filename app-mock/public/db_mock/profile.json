@@ -1,0 +1,19 @@
+{
+    "email": "luisa.bianchi@bikenet.org",
+    "vehicles": [
+        {
+            "id": "bike_01",
+            "name": "Bella",
+            "type": "city_bike",
+            "isDefault": true,
+            "color": "#1E4E4E"
+        },
+        {
+            "id": "bike_02",
+            "name": "Speedy",
+            "type": "sport_bike",
+            "isDefault": false,
+            "color": "#F5C25C"
+        }
+    ]
+}
