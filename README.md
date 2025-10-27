@@ -110,7 +110,7 @@ All materials in this repository are released under the
 This means you are free to **share** and **adapt** the material  
 under the following terms:
 
-- **Attribution (📘 BY):** Credit must be given to *Moving Projects*, *WEMOLab*, and *Sapienza University of Rome (DICEA)*.  
+- **Attribution (📘 BY):** Credit must be given to *Moving Projects*.  
 - **NonCommercial (💼 NC):** The material may not be used for commercial purposes.  
 
 Any other use requires **explicit written permission** from *Moving Projects*.
