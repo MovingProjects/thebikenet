@@ -22,13 +22,26 @@
     document.addEventListener("DOMContentLoaded", () => {
       const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
       const show = lang.startsWith('it') ? 'it' : 'en';
+
+      // mostra solo la lingua rilevata
       document.querySelectorAll(`[data-lang='${show}']`).forEach(el => el.style.display = 'block');
+
+      // aggiorna titolo pagina e H1
+      const titles = {
+        en: "Privacy Explained Simply – theBIKEnet",
+        it: "Privacy spiegata in modo semplice – theBIKEnet"
+      };
+      document.title = titles[show];
+
+      const h1 = document.querySelector("h1[data-dynamic-title]");
+      if (h1) h1.textContent = titles[show];
     });
   </script>
 </head>
 
 <body>
-  <h1>🔐 Privacy Explained Simply – theBIKEnet</h1>
+  <!-- titolo dinamico -->
+  <h1 data-dynamic-title>Privacy Explained Simply – theBIKEnet</h1>
 
   <!-- English version -->
   <div data-lang="en">
