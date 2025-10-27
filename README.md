@@ -3,7 +3,7 @@
 <table border="0" cellpadding="0" cellspacing="0" style="border:1px solid transparent;">
   <tr style="border:1px solid transparent;">
     <td style="border:1px solid transparent; vertical-align: middle; padding-right: 16px;">
-      <img src="[https://github.com/moving-projects.png](https://github.com/MovingProjects/thebikenet/blob/main/assets/theBIKEnet_logo.png)" width="80" alt="theBIKEnet logo">
+      <img src="https://github.com/MovingProjects/thebikenet/blob/main/docs/assets/theBIKEnet_logo.png" width="120" alt="theBIKEnet logo">
     </td>
     <td style="border:1px solid transparent; vertical-align: middle;">
       <h1 style="margin: 0; padding: 0;">theBIKEnet – Urban Cycling and Micromobility Research Framework</h1>
@@ -72,9 +72,8 @@ Each module is designed and maintained within the
 
 ## 💶 Funding Acknowledgement
 
-Project coordinated by **Moving Projects Srl**,  
-in collaboration with **Sapienza University of Rome – Department of Civil, Construction and Environmental Engineering (DICEA)**,  
-and developed technically by **WEMOLab** using the **PlanEasy WebGIS Framework**.
+Project coordinated by **Moving Projects Srl**
+and developed technically using the **PlanEasy WebGIS Framework**.
 
 Funded under the **National Recovery and Resilience Plan (PNRR)** –  
 Mission 4 “Education and Research”, Component 2 “From Research to Enterprise”, Investment 1.4  
@@ -111,7 +110,7 @@ All materials in this repository are released under the
 This means you are free to **share** and **adapt** the material  
 under the following terms:
 
-- **Attribution (📘 BY):** Credit must be given to *Moving Projects*, *WEMOLab*, and *Sapienza University of Rome (DICEA)*.  
+- **Attribution (📘 BY):** Credit must be given to *Moving Projects*.  
 - **NonCommercial (💼 NC):** The material may not be used for commercial purposes.  
 
 Any other use requires **explicit written permission** from *Moving Projects*.
