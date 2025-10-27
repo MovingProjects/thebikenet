@@ -13,15 +13,16 @@
 
 </div>
 
-[![Website](https://img.shields.io/badge/Dashboard-Live-brightgreen)](https://thebikenet.eu)
+[![Website](https://img.shields.io/badge/Dashboard-Live-brightgreen)](https://thebikenet-roma.web.app/)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC--BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Status](https://img.shields.io/badge/Status-Active-success)](#)
 
 ---
 
-**theBIKEnet** is a public research project developed within the **PlanEasy WebGIS Framework**  
-to explore, visualize, and understand **urban cycling and micromobility behaviour**.  
-It integrates survey data, GPS traces, and spatial indicators into an open scientific environment  
+**theBIKEnet** is a public research project developed within the **PlanEasy WebGIS Framework**,  
+an open scientific infrastructure for land-use and transport planning.  
+It explores, visualizes, and analyses **urban cycling and micromobility behaviour**,  
+integrating survey data, GPS traces, and spatial indicators into a unified environment  
 for studying safety, accessibility, and cycling culture in cities.
 
 ---
@@ -46,7 +47,7 @@ helping researchers and decision-makers design safer and more inclusive mobility
 |------------|--------------|
 | **thebikenet-dashboard** | Main public dashboard for aggregated visualization (web app). |
 | **thebikenet-datasets** | Curated, anonymized datasets and indicators derived from collected data. |
-| **thebikenet-questionnaires** | Repository hosted by [WEMO Lab](https://github.com/wemolab/thebikenet-questionnaires), containing all survey modules. |
+| **thebikenet-questionnaires** | Repository hosted by [WEMO Lab](https://github.com/wemolab/questionnaires/tree/main/theBIKEnet), containing all survey modules. |
 | **thebikenet-privacy** | Transparency and data protection documentation (this repository). |
 
 ---
@@ -65,15 +66,15 @@ helping researchers and decision-makers design safer and more inclusive mobility
 | **Trip Diary (pre/post)** | Actual mobility experiences and changes over time. |
 
 Each module is designed and maintained within the  
-[**thebikenet-questionnaires** repository →](https://github.com/wemolab/thebikenet-questionnaires).
+[**thebikenet-questionnaires** repository →](https://github.com/wemolab/questionnaires/tree/main/theBIKEnet).
 
 ---
 
 ## 💶 Funding Acknowledgement
 
-Project coordinated by **Moving Projects Srl**  
-in collaboration with **Sapienza University of Rome – Department of Civil, Construction and Environmental Engineering (DICEA)**  
-and developed technically by **WEMO Lab**.
+Project coordinated by **Moving Projects Srl**,  
+in collaboration with **Sapienza University of Rome – Department of Civil, Construction and Environmental Engineering (DICEA)**,  
+and developed technically by **WEMOLab** using the **PlanEasy WebGIS Framework**.
 
 Funded under the **National Recovery and Resilience Plan (PNRR)** –  
 Mission 4 “Education and Research”, Component 2 “From Research to Enterprise”, Investment 1.4  
@@ -97,7 +98,7 @@ Information on methodology, pseudonymization, and ethical data management is pub
 ## 📬 Contact
 
 For collaborations, data requests, or privacy inquiries:  
-📧 **Lory Michelle Bresciani Miristice** — [lory.bresciani@movprojects.com](mailto:lory.bresciani@movprojects.com)  
+📧 **Dr. Lory Michelle Bresciani Miristice** — [lory.bresciani@movprojects.com](mailto:lory.bresciani@movprojects.com)  
 🌐 **Website:** [https://movprojects.com/thebikenet](https://movprojects.com/thebikenet)
 
 ---
@@ -110,7 +111,7 @@ All materials in this repository are released under the
 This means you are free to **share** and **adapt** the material  
 under the following terms:
 
-- **Attribution (📘 BY):** Credit must be given to *Moving Projects*.  
+- **Attribution (📘 BY):** Credit must be given to *Moving Projects*, *WEMOLab*, and *Sapienza University of Rome (DICEA)*.  
 - **NonCommercial (💼 NC):** The material may not be used for commercial purposes.  
 
 Any other use requires **explicit written permission** from *Moving Projects*.
@@ -118,4 +119,10 @@ Any other use requires **explicit written permission** from *Moving Projects*.
 📄 Full license text: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
 
 © 2025 **Moving Projects Srl** · All rights reserved.  
-Developed within the **PlanEasy WebGIS Framework** and supported by *PNRR CN4 – Sustainable Mobility*.
+Developed with the **PlanEasy WebGIS Framework**.
+
+If you use this repository or its data in scientific or institutional work, please cite:
+
+> Gentile, G., & Bresciani Miristice, L. M. (2025).  
+> **PlanEasy: A WebGIS Platform for Land-use and Transport Planning.**  
+> https://github.com/planeasy-webgis
