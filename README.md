@@ -72,9 +72,8 @@ Each module is designed and maintained within the
 
 ## 💶 Funding Acknowledgement
 
-Project coordinated by **Moving Projects Srl**,  
-in collaboration with **Sapienza University of Rome – Department of Civil, Construction and Environmental Engineering (DICEA)**,  
-and developed technically by **WEMOLab** using the **PlanEasy WebGIS Framework**.
+Project coordinated by **Moving Projects Srl**
+and developed technically using the **PlanEasy WebGIS Framework**.
 
 Funded under the **National Recovery and Resilience Plan (PNRR)** –  
 Mission 4 “Education and Research”, Component 2 “From Research to Enterprise”, Investment 1.4  
