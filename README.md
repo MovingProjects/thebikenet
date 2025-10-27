@@ -89,8 +89,8 @@ All data collected through *theBIKEnet* follow GDPR and scientific research prin
 Information on methodology, pseudonymization, and ethical data management is public:
 
 - [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/guidelines/docs/transparency.html)  
-- [Privacy Policy – theBIKEnet (Full)](https://moving-projects.github.io/thebikenet/docs/privacy.html)  
-- [Privacy Explained Simply](https://moving-projects.github.io/thebikenet/docs/privacy-simple.html)
+- [Privacy Policy – theBIKEnet (Full)](https://movingprojects.github.io/thebikenet/docs/privacy.html)  
+- [Privacy Explained Simply](https://movingprojects.github.io/thebikenet/docs/privacy-simple.html)
 
 ---
 
