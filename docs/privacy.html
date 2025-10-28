@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Explained Simply – theBIKEnet</title>
+  <title>Privacy Policy – theBIKEnet</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
-      max-width: 900px;
+      max-width: 950px;
       margin: 3rem auto;
       padding: 1.5rem;
       line-height: 1.6;
       color: #222;
     }
-    h1, h2 { color: #004a8f; }
+    h1, h2, h3 { color: #004a8f; }
     section { margin-top: 2rem; }
     [data-lang] { display: none; }
   </style>
@@ -22,93 +22,202 @@
     document.addEventListener("DOMContentLoaded", () => {
       const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
       const show = lang.startsWith('it') ? 'it' : 'en';
+
       document.querySelectorAll(`[data-lang='${show}']`).forEach(el => el.style.display = 'block');
+
+      const titles = {
+        en: "Privacy Policy – theBIKEnet",
+        it: "Informativa sulla Privacy – theBIKEnet"
+      };
+      document.title = titles[show];
+      const h1 = document.querySelector("h1[data-dynamic-title]");
+      if (h1) h1.textContent = titles[show];
     });
   </script>
 </head>
 
 <body>
-  <h1>🔐 Privacy Explained Simply – theBIKEnet</h1>
+  <h1 data-dynamic-title>Privacy Policy – theBIKEnet</h1>
 
-  <!-- English version -->
+  <!-- ENGLISH VERSION -->
   <div data-lang="en">
     <section>
-      <h2>🧭 How we use your data</h2>
-      <p><strong>theBIKEnet</strong> is a public research project that studies how people cycle in cities.  
-      Participation is voluntary and anonymous. Your data help us design safer, more inclusive mobility.</p>
+      <h2>1️⃣ Data Controller</h2>
+      <p>
+        The data controller is <strong>Moving Projects Srl</strong>,  
+        Via Labicana 50, 00184, Rome, Italy – <a href="mailto:info@movprojects.com">info@movprojects.com</a>.
+      </p>      
     </section>
 
     <section>
-      <h2>1️⃣ What we collect</h2>
+      <h2>2️⃣ Categories of Data Collected</h2>
       <ul>
-        <li>📧 Email and access code (only for login and history)</li>
-        <li>🚲 Recorded trips (GPS, date, time)</li>
-        <li>📋 Questionnaire answers (profile, perceptions, habits)</li>
-        <li>⚠️ Reports about issues (e.g., potholes or dangerous spots)</li>
+        <li><strong>Access data:</strong> email and password (for authentication only)</li>
+        <li><strong>Mobility data:</strong> GPS traces (time, duration, route)</li>
+        <li><strong>Survey data:</strong> responses about profile, habits, perceptions, and experiences</li>
+        <li><strong>Reports:</strong> geolocated notes on safety or infrastructure issues</li>
+        <li><strong>Technical metadata:</strong> device type, session identifiers, timestamps</li>
+      </ul>
+      <p>Participation is always voluntary and anonymous.</p>
+    </section>
+
+    <section>
+      <h2>3️⃣ Purpose of Processing</h2>
+      <p>
+        Data are collected for <strong>scientific research</strong> on urban cycling and micromobility,  
+        to support the design of safer and more sustainable mobility systems.
+      </p>
+      <ul>
+        <li>Analyse cycling behaviours and perceptions</li>
+        <li>Evaluate infrastructure and accessibility</li>
+        <li>Develop safety indicators and planning tools</li>
+        <li>Publish anonymized datasets for research and open data initiatives</li>
+      </ul>
+      <p><strong>No data are used for commercial or marketing purposes.</strong></p>
+    </section>
+
+    <section>
+      <h2>4️⃣ Legal Basis and Research Framework</h2>
+      <p>
+        Processing is based on <strong>GDPR Article 89</strong> (processing for scientific research purposes),  
+        within the <strong>PlanEasy WebGIS Framework</strong> infrastructure.  
+        Data are pseudonymized and used exclusively for research and public-interest activities.
+      </p>
+    </section>
+
+    <section>
+      <h2>5️⃣ Data Storage and Access Levels</h2>
+      <ul>
+        <li><strong>Access data (email, password):</strong> stored separately and encrypted; accessible only to system administrators.</li>
+        <li><strong>Mobility and survey data:</strong> pseudonymized and stored in encrypted databases accessible only to the research team.</li>
+        <li><strong>Aggregated data:</strong> anonymized and published on public dashboards.</li>
+        <li><strong>Scientific datasets:</strong> shared only under license for research purposes (FAIR principles).</li>
       </ul>
     </section>
 
     <section>
-      <h2>2️⃣ Why we collect data</h2>
-      <p>To study mobility behaviour, improve urban cycling networks, and publish  
-      anonymized scientific datasets that support better transport planning.</p>
-      <p><strong>Never for commercial purposes.</strong></p>
+      <h2>6️⃣ Retention Period</h2>
+      <p>
+        Data are kept for up to <strong>5 years</strong> after the project’s conclusion  
+        to allow for longitudinal analysis and scientific publication.
+      </p>
     </section>
 
     <section>
-      <h2>3️⃣ How your data are protected</h2>
+      <h2>7️⃣ Rights of Participants</h2>
+      <p>You may request:</p>
       <ul>
-        <li>Personal data (registration email) stored in a separate, encrypted database.</li>
-        <li>Trip and survey data linked only through an internal anonymous ID.</li>
-        <li>Public dashboards show only aggregated, anonymized information.</li>
+        <li>Access to your data</li>
+        <li>Correction or deletion</li>
+        <li>Information on processing methods</li>
       </ul>
+      <p>Contact: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
     </section>
 
     <section>
-      <h2>📣 Your rights</h2>
-      <p>You can access, delete, or request clarification about your data at any time.  
-      Contact: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
+      <h2>8️⃣ Project Funding</h2>
+      <p>
+        theBIKEnet is coordinated by <strong>Moving Projects Srl</strong>,  
+        in collaboration with <strong>Sapienza University of Rome – DICEA</strong>.
+      </p>
+      <p>
+        Funded under the <strong>National Recovery and Resilience Plan (PNRR)</strong> –  
+        Mission 4 “Education and Research”, Component 2 “From Research to Enterprise”, Investment 1.4,  
+        <em>National Centre CN4 – Sustainable Mobility</em>,  
+        Spoke 9 – Urban Mobility Project DICEA24SPOKE9UNI  
+        <strong>CUP B83C22002900007</strong>
+      </p>
     </section>
   </div>
 
-  <!-- Italian version -->
+  <!-- ITALIAN VERSION -->
   <div data-lang="it">
     <section>
-      <h2>🧭 Come usiamo i tuoi dati</h2>
-      <p><strong>theBIKEnet</strong> è un progetto di ricerca pubblica che studia come si pedala in città.  
-      La partecipazione è volontaria e anonima. I tuoi dati aiutano a progettare una mobilità più sicura e inclusiva.</p>
+      <h2>1️⃣ Titolare del Trattamento</h2>
+      <p>
+        Il titolare del trattamento è <strong>Moving Projects Srl</strong>,  
+        Via Labicana 50, 00184, Roma, Italy – <a href="mailto:info@movprojects.com">info@movprojects.com</a>.
+      </p>     
     </section>
 
     <section>
-      <h2>1️⃣ Cosa raccogliamo</h2>
+      <h2>2️⃣ Tipologie di Dati Raccolti</h2>
       <ul>
-        <li>📧 Email e codice di accesso (solo per login e cronologia)</li>
-        <li>🚲 Spostamenti registrati (GPS, data, ora)</li>
-        <li>📋 Risposte ai questionari (profilo, percezioni, abitudini)</li>
-        <li>⚠️ Segnalazioni di problemi (es. buche o punti pericolosi)</li>
+        <li><strong>Dati di accesso:</strong> email e password (solo per autenticazione)</li>
+        <li><strong>Dati di mobilità:</strong> tracce GPS (orario, durata, percorso)</li>
+        <li><strong>Dati da questionari:</strong> risposte su profilo, abitudini, percezioni ed esperienze</li>
+        <li><strong>Segnalazioni:</strong> note geolocalizzate su sicurezza o infrastrutture</li>
+        <li><strong>Dati tecnici:</strong> tipo di dispositivo, ID di sessione, timestamp</li>
+      </ul>
+      <p>La partecipazione è sempre volontaria e anonima.</p>
+    </section>
+
+    <section>
+      <h2>3️⃣ Finalità del Trattamento</h2>
+      <p>
+        I dati vengono raccolti per <strong>ricerca scientifica</strong> sulla ciclabilità urbana e la micromobilità,  
+        al fine di supportare la progettazione di sistemi di mobilità più sicuri e sostenibili.
+      </p>
+      <ul>
+        <li>Analizzare comportamenti e percezioni dei ciclisti</li>
+        <li>Valutare infrastrutture e accessibilità</li>
+        <li>Sviluppare indicatori di sicurezza e strumenti di pianificazione</li>
+        <li>Pubblicare dataset anonimizzati per ricerca e open data</li>
+      </ul>
+      <p><strong>Nessun dato è utilizzato per fini commerciali o di marketing.</strong></p>
+    </section>
+
+    <section>
+      <h2>4️⃣ Base Giuridica e Quadro di Ricerca</h2>
+      <p>
+        Il trattamento si basa sull’<strong>Articolo 89 del GDPR</strong> (trattamento per finalità di ricerca scientifica),  
+        all’interno dell’infrastruttura <strong>PlanEasy WebGIS Framework</strong>.  
+        I dati sono pseudonimizzati e usati esclusivamente per scopi di ricerca e interesse pubblico.
+      </p>
+    </section>
+
+    <section>
+      <h2>5️⃣ Conservazione e Livelli di Accesso</h2>
+      <ul>
+        <li><strong>Dati di accesso (email, password):</strong> conservati separatamente e criptati; accessibili solo agli amministratori tecnici.</li>
+        <li><strong>Dati di mobilità e questionari:</strong> pseudonimizzati e archiviati in database criptati accessibili solo al gruppo di ricerca.</li>
+        <li><strong>Dati aggregati:</strong> anonimizzati e pubblicati in dashboard pubbliche.</li>
+        <li><strong>Dataset scientifici:</strong> condivisi solo su richiesta con licenza d’uso per scopi di ricerca (principi FAIR).</li>
       </ul>
     </section>
 
     <section>
-      <h2>2️⃣ Perché li raccogliamo</h2>
-      <p>Per studiare i comportamenti di mobilità, migliorare la rete ciclabile urbana  
-      e creare dataset scientifici anonimizzati utili alla pianificazione sostenibile.</p>
-      <p><strong>Mai per scopi commerciali.</strong></p>
+      <h2>6️⃣ Periodo di Conservazione</h2>
+      <p>
+        I dati vengono conservati per un massimo di <strong>5 anni</strong> dalla conclusione del progetto,  
+        per consentire analisi longitudinali e pubblicazioni scientifiche.
+      </p>
     </section>
 
     <section>
-      <h2>3️⃣ Come proteggiamo i tuoi dati</h2>
+      <h2>7️⃣ Diritti degli Interessati</h2>
+      <p>L’utente può richiedere in qualsiasi momento:</p>
       <ul>
-        <li>I dati personali (email) sono salvati in un database separato e criptato.</li>
-        <li>I dati di viaggio e dei questionari sono collegati solo tramite un ID anonimo interno.</li>
-        <li>Le dashboard pubbliche mostrano solo informazioni aggregate e anonimizzate.</li>
+        <li>Accesso ai propri dati</li>
+        <li>Rettifica o cancellazione</li>
+        <li>Informazioni sulle modalità di trattamento</li>
       </ul>
+      <p>Contatto: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
     </section>
 
     <section>
-      <h2>📣 I tuoi diritti</h2>
-      <p>Puoi accedere, cancellare o chiedere chiarimenti sui tuoi dati in qualsiasi momento.  
-      Contatto: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
+      <h2>8️⃣ Finanziamento del Progetto</h2>
+      <p>
+        theBIKEnet è coordinato da <strong>Moving Projects Srl</strong>,  
+        in collaborazione con <strong>Sapienza Università di Roma – DICEA</strong>.
+      </p>
+      <p>
+        Finanziato nell’ambito del <strong>Piano Nazionale di Ripresa e Resilienza (PNRR)</strong> –  
+        Missione 4 “Istruzione e Ricerca”, Componente 2 “Dalla Ricerca all’Impresa”, Investimento 1.4,  
+        <em>Centro Nazionale CN4 – Mobilità Sostenibile</em>,  
+        Spoke 9 – Progetto Mobilità Urbana DICEA24SPOKE9UNI  
+        <strong>CUP B83C22002900007</strong>
+      </p>
     </section>
   </div>
 </body>
