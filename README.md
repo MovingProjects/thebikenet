@@ -3,7 +3,7 @@
   <table border="0" cellpadding="0" cellspacing="0" style="border:1px solid transparent;">
     <tr style="border:1px solid transparent;">
       <td style="border:1px solid transparent; vertical-align: middle; padding-right: 16px;">
-        <img src="https://github.com/MovingProjects/thebikenet/blob/main/docs/assets/theBIKEnet_logo.png" width="120" alt="theBIKEnet logo">
+        <img src="https://github.com/MovingProjects/thebikenet/blob/main/docs/assets/theBIKEnet_logo.png" width="80" alt="theBIKEnet logo">
       </td>
       <td style="border:1px solid transparent; vertical-align: middle;">
         <h1 style="margin: 0; padding: 0;">theBIKEnet</h1>
@@ -15,7 +15,7 @@
 
 ---
 
-**theBIKEnet** is a public research project developed within the **PlanEasy WebGIS Framework**,  
+**theBIKEnet** is a public research project developed within the **PlanEasy WebGIS and Crowdsourcing Framework**,  
 an open scientific infrastructure for land-use and transport planning.  
 
 It explores, visualizes, and analyses **urban cycling and micromobility behaviour**,  
@@ -44,7 +44,7 @@ helping researchers and decision-makers design safer and more inclusive mobility
 |------------|--------------|
 | **thebikenet-dashboard** | Main public dashboard for aggregated visualization (web app). |
 | **thebikenet-datasets** | Curated, anonymized datasets and derived indicators. |
-| **thebikenet-questionnaires** | Repository hosted by [WEMO Lab](https://github.com/wemolab/questionnaires/tree/main/theBIKEnet), containing all survey modules. |
+| **thebikenet-questionnaires** | Repository hosted by [PlanEasy WebGIS](https://github.com/planeasy-webgis/planeasy-crowdsourcing-framework/tree/main/questionnaires/theBIKEnet), containing all survey modules. |
 | **thebikenet-privacy** | Transparency and data protection documentation (this repository). |
 
 ---
@@ -63,7 +63,7 @@ helping researchers and decision-makers design safer and more inclusive mobility
 | **Trip Diary (pre/post)** | Actual mobility experiences and changes over time. |
 
 Each module is published and versioned in the  
-[**thebikenet-questionnaires repository →**](https://github.com/wemolab/questionnaires/tree/main/theBIKEnet)
+[**thebikenet-questionnaires repository →**](https://github.com/planeasy-webgis/planeasy-crowdsourcing-framework/tree/main/questionnaires/theBIKEnet)
 
 ---
 
@@ -85,7 +85,7 @@ Spoke 9 – *Urban Mobility Project DICEA24SPOKE9UNI*
 All data collected through *theBIKEnet* comply with **GDPR (Article 89)** and open-science principles.  
 Information on pseudonymization, ethics, and transparency is available here:
 
-- [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/guidelines/docs/transparency.html)  
+- [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/planeasy-crowdsourcing-framework/docs/transparency.html)  
 - [Privacy Policy – theBIKEnet (Full)](https://movingprojects.github.io/thebikenet/docs/privacy.html)  
 - [Privacy Explained Simply](https://movingprojects.github.io/thebikenet/docs/privacy-simple.html)
 
@@ -122,9 +122,3 @@ Any other use requires **explicit written permission** from *Moving Projects*.
 
 © 2025 **Moving Projects Srl** · All rights reserved.  
 Developed with the **PlanEasy WebGIS Framework**.
-
-If you use this repository or its data in scientific or institutional work, please cite:
-
-> Gentile, G., & Bresciani Miristice, L. M. (2025).  
-> **PlanEasy: A WebGIS Platform for Land-use and Transport Planning.**  
-> [https://github.com/planeasy-webgis](https://github.com/planeasy-webgis)
