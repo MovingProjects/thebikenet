@@ -85,7 +85,7 @@ Spoke 9 – *Urban Mobility Project DICEA24SPOKE9UNI*
 All data collected through *theBIKEnet* comply with **GDPR (Article 89)** and open-science principles.  
 Information on pseudonymization, ethics, and transparency is available here:
 
-- [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/planeasy-crowdsourcing-framework/docs/transparency.html)  
+- [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/planeasy-crowdsourcing-framework/docs/PRIVACY_GUIDELINES.html)  
 - [Privacy Policy – theBIKEnet (Full)](https://movingprojects.github.io/thebikenet/docs/privacy.html)  
 - [Privacy Explained Simply](https://movingprojects.github.io/thebikenet/docs/privacy-simple.html)
 
