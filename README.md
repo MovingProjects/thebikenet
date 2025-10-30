@@ -1,4 +1,3 @@
-#
 <div align="left">
 <br/>
   <table border="0" cellpadding="0" cellspacing="0" style="border:1px solid transparent;">
@@ -18,9 +17,10 @@
 
 **theBIKEnet** is a public research project developed within the **PlanEasy WebGIS Framework**,  
 an open scientific infrastructure for land-use and transport planning.  
+
 It explores, visualizes, and analyses **urban cycling and micromobility behaviour**,  
 integrating survey data, GPS traces, and spatial indicators into a unified environment  
-for studying safety, accessibility, and cycling culture in cities.
+for studying **safety**, **accessibility**, and **cycling culture** in cities.
 
 ---
 
@@ -43,7 +43,7 @@ helping researchers and decision-makers design safer and more inclusive mobility
 | Component | Description |
 |------------|--------------|
 | **thebikenet-dashboard** | Main public dashboard for aggregated visualization (web app). |
-| **thebikenet-datasets** | Curated, anonymized datasets and indicators derived from collected data. |
+| **thebikenet-datasets** | Curated, anonymized datasets and derived indicators. |
 | **thebikenet-questionnaires** | Repository hosted by [WEMO Lab](https://github.com/wemolab/questionnaires/tree/main/theBIKEnet), containing all survey modules. |
 | **thebikenet-privacy** | Transparency and data protection documentation (this repository). |
 
@@ -53,24 +53,24 @@ helping researchers and decision-makers design safer and more inclusive mobility
 
 | Module | Description |
 |---------|--------------|
-| **Profile** | Demographic and social information of participants. |
+| **Profile** | Demographic profile and cycling ability. |
 | **Context** | Built environment, infrastructure, and exposure conditions. |
 | **Safety Behaviour** | Individual practices, attention, and protective behaviour. |
 | **Safety Perception** | Perceived safety and comfort across trip scenarios. |
-| **Accidents & Risk Factors** | Self-reported incidents and perceived risk sources. |
-| **Mobility Services** | Use of micromobility and shared mobility options. |
+| **Accidents & Risk Factors** | Self-reported incidents and risk perception. |
+| **Mobility Services** | Shared mobility and integration with public transport. |
 | **Beliefs & Attitudes** | Cognitive and affective factors shaping cycling choices. |
 | **Trip Diary (pre/post)** | Actual mobility experiences and changes over time. |
 
-Each module is designed and maintained within the  
-[**thebikenet-questionnaires** repository →](https://github.com/wemolab/questionnaires/tree/main/theBIKEnet).
+Each module is published and versioned in the  
+[**thebikenet-questionnaires repository →**](https://github.com/wemolab/questionnaires/tree/main/theBIKEnet)
 
 ---
 
 ## 💶 Funding Acknowledgement
 
-Project coordinated by **Moving Projects Srl**
-and developed technically using the **PlanEasy WebGIS Framework**.
+Project coordinated by **Moving Projects Srl**,  
+developed using the **PlanEasy WebGIS Framework**.  
 
 Funded under the **National Recovery and Resilience Plan (PNRR)** –  
 Mission 4 “Education and Research”, Component 2 “From Research to Enterprise”, Investment 1.4  
@@ -82,8 +82,8 @@ Spoke 9 – *Urban Mobility Project DICEA24SPOKE9UNI*
 
 ## 🔐 Transparency and Data Protection
 
-All data collected through *theBIKEnet* follow GDPR and scientific research principles (Art. 89).  
-Information on methodology, pseudonymization, and ethical data management is public:
+All data collected through *theBIKEnet* comply with **GDPR (Article 89)** and open-science principles.  
+Information on pseudonymization, ethics, and transparency is available here:
 
 - [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/guidelines/docs/transparency.html)  
 - [Privacy Policy – theBIKEnet (Full)](https://movingprojects.github.io/thebikenet/docs/privacy.html)  
@@ -91,11 +91,17 @@ Information on methodology, pseudonymization, and ethical data management is pub
 
 ---
 
+## 🌐 Official Links
+
+- 🌍 **Website:** [https://movprojects.com/thebikenet](https://movprojects.com/thebikenet)  
+- 💾 **GitHub Repository:** [https://github.com/MovingProjects/thebikenet](https://github.com/MovingProjects/thebikenet)
+
+---
+
 ## 📬 Contact
 
 For collaborations, data requests, or privacy inquiries:  
-📧 **Dr. Lory Michelle Bresciani Miristice** — [lory.bresciani@movprojects.com](mailto:lory.bresciani@movprojects.com)  
-🌐 **Website:** [https://movprojects.com/thebikenet](https://movprojects.com/thebikenet)
+📧 **Dr. Lory Michelle Bresciani Miristice** — [lory.bresciani@movprojects.com](mailto:lory.bresciani@movprojects.com)
 
 ---
 
@@ -104,8 +110,8 @@ For collaborations, data requests, or privacy inquiries:
 All materials in this repository are released under the  
 **Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)** license.
 
-This means you are free to **share** and **adapt** the material  
-under the following terms:
+You are free to **share** and **adapt** the material  
+under the following conditions:
 
 - **Attribution (📘 BY):** Credit must be given to *Moving Projects*.  
 - **NonCommercial (💼 NC):** The material may not be used for commercial purposes.  
@@ -121,4 +127,4 @@ If you use this repository or its data in scientific or institutional work, plea
 
 > Gentile, G., & Bresciani Miristice, L. M. (2025).  
 > **PlanEasy: A WebGIS Platform for Land-use and Transport Planning.**  
-> https://github.com/planeasy-webgis
+> [https://github.com/planeasy-webgis](https://github.com/planeasy-webgis)
