@@ -1,21 +1,18 @@
-<div align="center">
-
-<table border="0" cellpadding="0" cellspacing="0" style="border:1px solid transparent;">
-  <tr style="border:1px solid transparent;">
-    <td style="border:1px solid transparent; vertical-align: middle; padding-right: 16px;">
-     <img src="https://github.com/MovingProjects/thebikenet/blob/main/docs/assets/theBIKEnet_logo.png" width="120" alt="theBIKEnet logo">
-    </td>
-    <td style="border:1px solid transparent; vertical-align: middle;">
-      <h1 style="margin: 0; padding: 0;">theBIKEnet – Urban Cycling and Micromobility Research Framework</h1>
-    </td>
-  </tr>
-</table>
-
+#
+<div align="left">
+<br/>
+  <table border="0" cellpadding="0" cellspacing="0" style="border:1px solid transparent;">
+    <tr style="border:1px solid transparent;">
+      <td style="border:1px solid transparent; vertical-align: middle; padding-right: 16px;">
+        <img src="https://github.com/MovingProjects/thebikenet/blob/main/docs/assets/theBIKEnet_logo.png" width="120" alt="theBIKEnet logo">
+      </td>
+      <td style="border:1px solid transparent; vertical-align: middle;">
+        <h1 style="margin: 0; padding: 0;">theBIKEnet</h1>
+        <p><strong>Transferring Human Experience into BIKE Network Evaluation Technologies</strong></p>
+      </td>
+    </tr>
+  </table>
 </div>
-
-[![Website](https://img.shields.io/badge/Dashboard-Live-brightgreen)](https://thebikenet-roma.web.app/)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC--BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Status](https://img.shields.io/badge/Status-Active-success)](#)
 
 ---
 
