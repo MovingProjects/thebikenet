@@ -140,6 +140,32 @@
     .otherlink { margin-top: 2rem; font-size: 1rem; }
     a { color: var(--bikenet-accent); text-decoration: none; font-weight: 500; }
     a:hover { text-decoration: underline; }
+	
+	.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mp-logo {
+  height: 50px;
+  width: auto;
+  filter: brightness(0.95);
+  transition: transform 0.2s ease;
+}
+
+.mp-logo:hover {
+  transform: scale(1.05);
+}
+
   </style>
 
   <script>
@@ -164,17 +190,23 @@
 <body>
   <header>
     <div class="header-flex">
+      <!-- Left side: theBIKEnet logo + title -->
       <div class="brand">
-        <img src="https://movprojects.com/assets/images/moving_projects_logo.png" alt="Moving Projects logo">
-        <img src="https://github.com/MovingProjects/thebikenet/blob/main/docs/assets/theBIKEnet_logo.png" alt="theBIKEnet logo">
+        <img src="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" alt="theBIKEnet logo">
         <div class="brand-title">
           <h1>theBIKEnet</h1>
           <p>Transferring Human Experience into BIKE Network Evaluation Technologies</p>
         </div>
       </div>
-      <button id="toggleLang" class="lang-toggle">EN / IT</button>
+
+      <!-- Right side: Moving Projects logo + language toggle -->
+      <div class="right-header">
+        <img src="https://movprojects.com/assets/images/moving_projects_logo.png" alt="Moving Projects logo" class="mp-logo">
+        <button id="toggleLang" class="lang-toggle">EN / IT</button>
+      </div>
     </div>
   </header>
+
 
     <!-- ENGLISH VERSION -->
   <div data-lang="en">
