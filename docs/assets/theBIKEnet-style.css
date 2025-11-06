@@ -1,0 +1,217 @@
+/* ===========================
+   theBIKEnet Privacy Page Style
+   =========================== */
+
+:root {
+  --primary: #0C9091;       /* teal – identity */
+  --secondary: #044F4D;     /* petrol – text base */
+  --highlight: #F2AD2B;     /* gold – accent */
+  --light-bg: #F5F5F5;
+  --panel-bg: rgba(255, 255, 255, 0.96);
+}
+
+/* Base layout */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--light-bg);
+  color: var(--secondary);
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 4px solid var(--primary);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand img {
+  height: 60px;
+  width: auto;
+}
+
+.brand-title h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.brand-title p {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mp-logo {
+  height: 50px;
+  width: auto;
+  filter: brightness(0.98);
+  transition: transform 0.2s ease;
+}
+
+.mp-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Language toggle */
+.lang-toggle {
+  background: var(--primary);
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 70px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: var(--secondary);
+  border-color: var(--highlight);
+}
+
+/* Sections */
+section {
+  background: var(--panel-bg);
+  border: 1px solid rgba(242, 173, 43, 0.35); /* soft gold */
+  border-left: 5px solid var(--primary);     /* teal stripe */
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+section:hover {
+  border-color: rgba(242, 173, 43, 0.6);
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h2::before {
+  content: attr(data-num);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--highlight);
+  color: var(--secondary);
+  font-weight: 700;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 0.9rem;
+  box-shadow: 0 0 0 2px white;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  background: #fff;
+  border-top: 3px solid var(--primary);
+  font-size: 0.9rem;
+  color: var(--secondary);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.funding-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.funding-logos img {
+  height: 55px;
+  max-width: 160px;
+  object-fit: contain;
+  filter: brightness(0.96);
+  transition: transform 0.2s;
+}
+
+.funding-logos img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  header, footer, section {
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .brand img {
+    height: 45px;
+  }
+
+  .mp-logo {
+    height: 40px;
+  }
+
+  .lang-toggle {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
