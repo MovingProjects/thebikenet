@@ -1,45 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy – theBIKEnet</title>
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 950px;
-      margin: 3rem auto;
-      padding: 1.5rem;
-      line-height: 1.6;
-      color: #222;
+    :root {
+      --bikenet-dark: #004a8f;
+      --bikenet-accent: #0c9091;
+      --bikenet-light: #f7f9fa;
     }
-    h1, h2, h3 { color: #004a8f; }
-    section { margin-top: 2rem; }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      line-height: 1.7;
+      color: #222;
+      background-color: #fff;
+    }
+
+    header {
+      background: var(--bikenet-light);
+      border-bottom: 3px solid var(--bikenet-accent);
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand img {
+      height: 60px;
+      width: auto;
+    }
+
+    .brand-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .brand-title h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--bikenet-dark);
+      font-weight: 700;
+    }
+
+    .brand-title p {
+      margin: 0;
+      color: var(--bikenet-accent);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .lang-toggle {
+      font-size: 0.9rem;
+      cursor: pointer;
+      background: var(--bikenet-accent);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 0.4rem 0.9rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background 0.3s;
+    }
+
+    .lang-toggle:hover {
+      background: #097879;
+    }
+
+    h1, h2, h3 {
+      color: var(--bikenet-dark);
+      font-weight: 600;
+    }
+
+    h2 {
+      border-left: 4px solid var(--bikenet-accent);
+      padding-left: 0.6rem;
+    }
+
+    section {
+      margin-top: 2rem;
+      background: var(--bikenet-light);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    ul { padding-left: 1.2rem; }
+
+    footer {
+      margin-top: 3rem;
+      background: var(--bikenet-light);
+      border-top: 3px solid var(--bikenet-accent);
+      font-size: 0.9rem;
+      color: #555;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .funding-logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .funding-logos img {
+      height: 60px;
+      max-width: 180px;
+      object-fit: contain;
+      filter: brightness(0.95);
+      transition: transform 0.2s;
+    }
+
+    .funding-logos img:hover {
+      transform: scale(1.05);
+    }
+
     [data-lang] { display: none; }
+    .otherlink { margin-top: 2rem; font-size: 1rem; }
+    a { color: var(--bikenet-accent); text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
   </style>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      const show = lang.startsWith('it') ? 'it' : 'en';
+      let show = lang.startsWith('it') ? 'it' : 'en';
 
-      document.querySelectorAll(`[data-lang='${show}']`).forEach(el => el.style.display = 'block');
+      function showLang(l) {
+        document.querySelectorAll('[data-lang]').forEach(el => el.style.display = 'none');
+        document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = 'block');
+        show = l;
+      }
 
-      const titles = {
-        en: "Privacy Policy – theBIKEnet",
-        it: "Informativa sulla Privacy – theBIKEnet"
-      };
-      document.title = titles[show];
-      const h1 = document.querySelector("h1[data-dynamic-title]");
-      if (h1) h1.textContent = titles[show];
+      showLang(show);
+      document.getElementById('toggleLang').addEventListener('click', () => {
+        showLang(show === 'en' ? 'it' : 'en');
+      });
     });
   </script>
 </head>
 
 <body>
-  <h1 data-dynamic-title>Privacy Policy – theBIKEnet</h1>
+  <header>
+    <div class="header-flex">
+      <div class="brand">
+        <img src="https://movprojects.com/assets/images/moving_projects_logo.png" alt="Moving Projects logo">
+        <img src="https://github.com/MovingProjects/thebikenet/blob/main/docs/assets/theBIKEnet_logo.png" alt="theBIKEnet logo">
+        <div class="brand-title">
+          <h1>theBIKEnet</h1>
+          <p>Transferring Human Experience into BIKE Network Evaluation Technologies</p>
+        </div>
+      </div>
+      <button id="toggleLang" class="lang-toggle">EN / IT</button>
+    </div>
+  </header>
 
-  <!-- ENGLISH VERSION -->
+    <!-- ENGLISH VERSION -->
   <div data-lang="en">
     <section>
       <h2>1️⃣ Data Controller</h2>
@@ -80,7 +217,7 @@
       <h2>4️⃣ Legal Basis and Research Framework</h2>
       <p>
         Processing is based on <strong>GDPR Article 89</strong> (processing for scientific research purposes),  
-        within the <strong>PlanEasy WebGIS Framework</strong> infrastructure.  
+        within the <strong>PlanEasy Crowdsourcing Framework</strong> infrastructure.  
         Data are pseudonymized and used exclusively for research and public-interest activities.
       </p>
     </section>
@@ -171,7 +308,7 @@
       <h2>4️⃣ Base Giuridica e Quadro di Ricerca</h2>
       <p>
         Il trattamento si basa sull’<strong>Articolo 89 del GDPR</strong> (trattamento per finalità di ricerca scientifica),  
-        all’interno dell’infrastruttura <strong>PlanEasy WebGIS Framework</strong>.  
+        all’interno dell’infrastruttura <strong>PlanEasy Crowdsourcing Framework</strong>.  
         I dati sono pseudonimizzati e usati esclusivamente per scopi di ricerca e interesse pubblico.
       </p>
     </section>
@@ -220,5 +357,21 @@
       </p>
     </section>
   </div>
+ 
+ <footer>
+    <div class="funding-logos">
+      <img src="https://movprojects.com/assets/images/next-generation-eu-logo.png" alt="EU NextGenerationEU logo">
+	  <img src="https://movprojects.com/assets/images/mur-logo.png" alt="Ministero dell’Università e della Ricerca logo">
+	  <img src="https://movprojects.com/assets/images/italia-domani-logo.png" alt="Italia Domani PNRR logo">
+	  <img src="https://movprojects.com/assets/images/sapienza-logo.png" alt="Sapienza Università di Roma logo">
+    </div>
+    <p>
+      Project funded by the European Union – NextGenerationEU under the
+      <strong>National Recovery and Resilience Plan (PNRR)</strong>,
+      CN4 – Sustainable Mobility, Spoke 9 – CUP B83C22002900007.
+    </p>
+
+    <p>© 2025 Moving Projects Srl · Developed with the PlanEasy Crowdsourcing Framework.</p>
+  </footer>
 </body>
 </html>
