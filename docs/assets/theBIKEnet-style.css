@@ -302,7 +302,7 @@ footer {
 
   .brand-title h1,
   .brand-title p {
-	color: #066E70; 
+	color: (--secondary);
   }
 
   .lang-toggle {
