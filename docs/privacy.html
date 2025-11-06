@@ -4,200 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – theBIKEnet</title>
-  <style>
-    :root {
-      --bikenet-dark: #004a8f;
-      --bikenet-accent: #0c9091;
-      --bikenet-bg: #f8fbfc;
-      --text-color: #2c3e50;
-    }
-
-    body {
-      font-family: "Segoe UI", system-ui, sans-serif;
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      line-height: 1.7;
-      color: var(--text-color);
-      background: var(--bikenet-bg);
-    }
-
-    /* ---------- HEADER ---------- */
-    header {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      border-bottom: 4px solid var(--bikenet-accent);
-      padding: 1rem 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .header-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .brand img {
-      height: 60px;
-      width: auto;
-      border-radius: 6px;
-    }
-
-    .brand-title h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      color: var(--bikenet-dark);
-      font-weight: 700;
-    }
-
-    .brand-title p {
-      margin: 0;
-      color: var(--bikenet-accent);
-      font-size: 0.95rem;
-      font-weight: 500;
-    }
-
-    .right-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .mp-logo {
-      height: 50px;
-      width: auto;
-      filter: brightness(0.98);
-      transition: transform 0.2s ease;
-    }
-
-    .mp-logo:hover {
-      transform: scale(1.05);
-    }
-
-    .lang-toggle {
-      font-size: 0.9rem;
-      cursor: pointer;
-      background: var(--bikenet-accent);
-      color: white;
-      border: none;
-      border-radius: 999px;
-      padding: 0.45rem 1rem;
-      font-weight: 600;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: background 0.3s;
-    }
-
-    .lang-toggle:hover {
-      background: #0a7f80;
-    }
-
-    /* ---------- CONTENT ---------- */
-    h1, h2, h3 {
-      color: var(--bikenet-dark);
-      font-weight: 600;
-    }
-
-    section {
-      background: #fff;
-      padding: 1.4rem 1.8rem;
-      border-radius: 12px;
-      margin-top: 1.6rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      border-left: 5px solid var(--bikenet-accent);
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      margin-top: 0;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--bikenet-dark);
-    }
-
-    h2::before {
-      content: attr(data-num);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--bikenet-accent);
-      color: #fff;
-      font-weight: 700;
-      border-radius: 50%;
-      width: 1.6rem;
-      height: 1.6rem;
-      font-size: 0.9rem;
-    }
-
-    ul { padding-left: 1.2rem; }
-
-    a {
-      color: var(--bikenet-accent);
-      font-weight: 500;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-
-    /* ---------- FOOTER ---------- */
-    footer {
-      margin-top: 3rem;
-      background: #fff;
-      border-top: 3px solid var(--bikenet-accent);
-      font-size: 0.9rem;
-      color: #555;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-radius: 12px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-    }
-
-    .funding-logos {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .funding-logos img {
-      height: 55px;
-      max-width: 160px;
-      object-fit: contain;
-      filter: brightness(0.96);
-      transition: transform 0.2s;
-    }
-
-    .funding-logos img:hover { transform: scale(1.05); }
-
-    [data-lang] { display: none; }
-  </style>
+  <link rel="stylesheet" href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet-style.css">
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      let show = lang.startsWith('it') ? 'it' : 'en';
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("toggleLang");
+  const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  let show = lang.startsWith('it') ? 'it' : 'en';
 
-      function showLang(l) {
-        document.querySelectorAll('[data-lang]').forEach(el => el.style.display = 'none');
-        document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = 'block');
-        show = l;
-      }
+  function showLang(l) {
+    document.querySelectorAll('[data-lang]').forEach(el => el.style.display = 'none');
+    document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = 'block');
+    show = l;
+    btn.textContent = l === 'en' ? 'EN' : 'IT';
+  }
 
-      showLang(show);
-      document.getElementById('toggleLang').addEventListener('click', () => {
-        showLang(show === 'en' ? 'it' : 'en');
-      });
-    });
-  </script>
+  showLang(show);
+  btn.addEventListener('click', () => {
+    showLang(show === 'en' ? 'it' : 'en');
+  });
+});
+</script>
+
 </head>
 
 <body>
