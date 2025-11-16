@@ -8,8 +8,6 @@ It enables participatory cycling data collection and spatial analytics to suppor
 These guidelines outline how the platform collects, processes, and stores data in full compliance with the **General Data Protection Regulation (GDPR)** and the **FAIR principles** (Findable, Accessible, Interoperable, Reusable).
 The system follows a *privacy-by-design* approach, integrating ethical research standards and transparent governance of participant-contributed data.
 
-The platform leverages and extends the **PlanEasy WebGIS and Crowdsourcing Framework** for participatory data collection and spatial analytics. While based on PlanEasy’s infrastructure, all project-specific components—including questionnaires, backend logic, and dashboards—have been independently developed and are maintained by **Moving Projects**.
-
 ---
 
 ## 2. Data Collection and Purpose
