@@ -185,20 +185,30 @@ header {
 
 .q-toggle {
   margin-top: 0.4rem;
-  border: 1px solid #0c9091;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #0c9091;
-  padding: 0.25rem 0.8rem;
-  font-size: 0.85rem;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0;
 }
 
 .q-toggle:hover,
 .q-toggle:focus-visible {
-  background: #0c9091;
-  color: #ffffff;
+  text-decoration: underline;
+}
+
+.q-toggle-icon {
+  font-size: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.q-toggle[aria-expanded="true"] .q-toggle-icon {
+  transform: rotate(180deg);
 }
 
 .q-desc-body {
@@ -492,4 +502,9 @@ footer {
   .funding-logos img {
     filter: brightness(1.15) saturate(1.25);
   }
+}
+
+/* Nascondi tutto ciò che ha data-lang finché lo script non decide cosa mostrare */
+[data-lang] {
+  display: none;
 }
