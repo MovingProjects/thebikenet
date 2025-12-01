@@ -63,6 +63,68 @@ header {
   width: auto;
 }
 
+/* === Cards style for questionnaires === */
+.q-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.q-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.2rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.q-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.q-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #0C9091;
+  word-break: break-all;
+}
+
+.q-card a {
+  margin-top: 0.8rem;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: #0C9091;
+}
+
+.q-card a::after {
+  content: "↗";
+  font-size: 0.9rem;
+}
+
+/* Placeload skeleton while loading */
+.q-placeholder {
+  height: 120px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #efefef, #f7f7f7, #efefef);
+  background-size: 200% 100%;
+  animation: loading 1.4s ease infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+
 .brand-title h1 {
   margin: 0;
   font-size: 1.6rem;
