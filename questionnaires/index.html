@@ -85,7 +85,7 @@
     </style>
 
     <!-- ✅ Script lingua (dal template privacy) -->
-<script>
+    <script>
   function initLangToggle() {
     const btn = document.getElementById("toggleLang");
     const main = document.querySelector("main");
@@ -123,9 +123,8 @@
   document.addEventListener("DOMContentLoaded", initLangToggle);
 </script>
 
-
     <!-- ✅ Script per caricare la lista dei questionari da GitHub (da index.html) -->
-<script>
+    <script>
   const OWNER = "MovingProjects";
   const REPO = "thebikenet";
   const PATH = "questionnaires";
@@ -134,7 +133,7 @@
   // Risultato finale: `${FORM_BASE_URL}/${projectId}/${questId}`
   const FORM_BASE_URL = "https://example.com/project"; // TODO: sostituisci col tuo dominio
 
-  const INDEX_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${PATH}/index.json`;
+  const INDEX_URL = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/index.json`;
 
   async function fetchIndex() {
     const res = await fetch(INDEX_URL);
@@ -143,7 +142,7 @@
   }
 
   async function fetchQuestionnaire(filename) {
-    const url = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${PATH}/${filename}`;
+    const url = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/${filename}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Cannot load ${filename}`);
     return res.json();
@@ -174,7 +173,7 @@
       for (const filename of list) {
         const baseName = filename.replace(".json", "");
 
-        const viewLink = `https://github.com/${OWNER}/${REPO}/blob/main/${PATH}/${filename}`;
+          const viewLink = `https://github.com/MovingProjects/thebikenet/blob/main/questionnaires/surveys/${filename}`;
         const questionnaireUrl =
           projectId && FORM_BASE_URL
             ? `${FORM_BASE_URL}/${projectId}/${baseName}`
@@ -320,8 +319,6 @@
   document.addEventListener("DOMContentLoaded", renderList);
 </script>
 
-
-
   </head>
 
   <body>
@@ -390,10 +387,10 @@
       <!-- Sezione comune con la lista (non dipende dalla lingua) -->
       <section aria-label="Elenco questionari GitHub">
         <div id="q-list" class="q-grid">
-  <div class="q-placeholder"></div>
-  <div class="q-placeholder"></div>
-  <div class="q-placeholder"></div>
-</div>
+          <div class="q-placeholder"></div>
+          <div class="q-placeholder"></div>
+          <div class="q-placeholder"></div>
+        </div>
       </section>
     </main>
 
