@@ -49,14 +49,14 @@ helping researchers and decision-makers design safer and more inclusive mobility
 | **Trip Diary (pre/post)** | Actual mobility experiences and changes over time. |
 
 Each module is published and versioned in the  
-[**thebikenet-questionnaires →**](https://github.com/MovingProjects/thebikenet](https://github.com/MovingProjects/thebikenet)
+[**thebikenet-questionnaires →**](https://github.com/MovingProjects/thebikenet)
 
 ---
 
 ## 💶 Funding Acknowledgement
 
 Project coordinated by **Moving Projects Srl**,  
-developed using the [**PlanEasy WebGIS Framework**](https://github.com/planeasy-webgis)].  
+developed using the **PlanEasy WebGIS Framework**.  
 
 Funded under the **National Recovery and Resilience Plan (PNRR)** –  
 Mission 4 “Education and Research”, Component 2 “From Research to Enterprise”, Investment 1.4  
