@@ -1,20 +1,11 @@
 {
   "project": "theBIKEnet",
   "organization": "Moving Projects",
-  "description": "Structured and versioned research questionnaires on cycling behaviour, safety perception, and micromobility use.",
+  "description": "Structured and versioned research questionnaires for trip feedback.",
   "license": "CC BY-NC 4.0",  
   "website": "https://movprojects.com/thebikenet",
   "questionnaires": [
-    "theBIKEnet_profile.json",
-    "theBIKEnet_context.json",
-    "theBIKEnet_safety_perception.json",
-    "theBIKEnet_safety_behaviour.json",
-    "theBIKEnet_travel_habits.json",
-    "theBIKEnet_accidents_and_risk_factors.json",
-    "theBIKEnet_mobility_services.json",
-    "theBIKEnet_beliefs_and_attitudes.json",
-    "theBIKEnet_bike_parking_report.json",
-    "theBIKEnet_trip_pre.json",
+    "theBIKEnet_trip_pre.json",	
     "theBIKEnet_trip_post.json"
   ],
   "destination": {

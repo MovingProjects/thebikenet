@@ -1,0 +1,28 @@
+{
+  "project": "theBIKEnet",
+  "organization": "Moving Projects",
+  "description": "Structured and versioned research questionnaires for spatial reporting.",
+  "license": "CC BY-NC 4.0",  
+  "website": "https://movprojects.com/thebikenet",
+  "questionnaires": [
+    "theBIKEnet_bike_parking_report.json"
+  ],
+  "destination": {
+    "firestore": {
+      "apiKey": "AIzaSyD42x7Qskt3uIRtWRAOCK4n7UdDhVvLaeA",
+      "authDomain": "thebikenet-cbf65.firebaseapp.com",
+      "projectId": "thebikenet-cbf65",
+      "storageBucket": "thebikenet-cbf65.firebasestorage.app",
+      "messagingSenderId": "667853109586",
+      "appId": "1:667853109586:web:00b10f3be08c33a6fa628b",
+      "measurementId": "G-W2FEF5BHK4"
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-10-30",
+    "language": "en",
+    "framework": "PlanEasy Crowdsourcing System",
+    "repository": "https://https://github.com/planeasy-webgis/planeasy-crowdsourcing-framework"
+  }
+}

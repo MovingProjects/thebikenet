@@ -85,70 +85,243 @@
     </style>
 
     <!-- ✅ Script lingua (dal template privacy) -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const btn = document.getElementById("toggleLang");
-        const main = document.querySelector("main");
-        const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-        let show = lang.startsWith("it") ? "it" : "en";
+<script>
+  function initLangToggle() {
+    const btn = document.getElementById("toggleLang");
+    const main = document.querySelector("main");
+    const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+    window.currentLang = lang.startsWith("it") ? "it" : "en";
 
-        function showLang(l) {
-          document.querySelectorAll("[data-lang]").forEach(el => el.style.display = "none");
-          document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = "block");
-          main.setAttribute("lang", l);
-          show = l;
-          btn.setAttribute("aria-label",
-            `Change language. Current: ${l === "en" ? "English" : "Italiano"}`);
-          btn.textContent = l.toUpperCase();
-        }
-
-        showLang(show);
-        btn.addEventListener("click", () => showLang(show === "en" ? "it" : "en"));
+    function showLang(l) {
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.style.display = el.getAttribute("data-lang") === l ? "block" : "none";
       });
-    </script>
+      if (main) main.setAttribute("lang", l);
+      window.currentLang = l;
+
+      if (btn) {
+        btn.setAttribute(
+          "aria-label",
+          `Change language. Current: ${l === "en" ? "English" : "Italiano"}`
+        );
+        btn.textContent = l.toUpperCase();
+      }
+    }
+
+    // rendo la funzione disponibile anche ad altri script
+    window.setLang = showLang;
+
+    showLang(window.currentLang);
+
+    if (btn) {
+      btn.addEventListener("click", () =>
+        showLang(window.currentLang === "en" ? "it" : "en")
+      );
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", initLangToggle);
+</script>
+
 
     <!-- ✅ Script per caricare la lista dei questionari da GitHub (da index.html) -->
-    <script>
-      // GitHub repo config
-      const OWNER = "MovingProjects";
-      const REPO = "thebikenet";
-      const PATH = "questionnaires"; // cartella dei questionari
+<script>
+  const OWNER = "MovingProjects";
+  const REPO = "thebikenet";
+  const PATH = "questionnaires";
 
-      async function fetchFiles() {
-        const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`;
-        const res = await fetch(url);
-        if (!res.ok) throw new Error("Cannot load repo content");
-        return res.json();
-      }
+  // 🔗 Base URL dell'app che espone i questionari da compilare
+  // Risultato finale: `${FORM_BASE_URL}/${projectId}/${questId}`
+  const FORM_BASE_URL = "https://example.com/project"; // TODO: sostituisci col tuo dominio
 
-      async function renderList() {
-        const list = document.getElementById("q-list");
-        if (!list) return;
-        list.innerHTML = "Caricamento…";
+  const INDEX_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${PATH}/index.json`;
+
+  async function fetchIndex() {
+    const res = await fetch(INDEX_URL);
+    if (!res.ok) throw new Error("Cannot load questionnaires/index.json");
+    return res.json();
+  }
+
+  async function fetchQuestionnaire(filename) {
+    const url = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${PATH}/${filename}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Cannot load ${filename}`);
+    return res.json();
+  }
+
+  async function renderList() {
+    const grid = document.getElementById("q-list");
+    if (!grid) return;
+
+    grid.innerHTML = `
+      <div class="q-placeholder"></div>
+      <div class="q-placeholder"></div>
+      <div class="q-placeholder"></div>
+    `;
+
+    try {
+      const data = await fetchIndex();
+      const list = data.questionnaires || [];
+      const projectId =
+        data.destination &&
+        data.destination.firestore &&
+        data.destination.firestore.projectId
+          ? data.destination.firestore.projectId
+          : null;
+
+      grid.innerHTML = "";
+
+      for (const filename of list) {
+        const baseName = filename.replace(".json", "");
+
+        const viewLink = `https://github.com/${OWNER}/${REPO}/blob/main/${PATH}/${filename}`;
+        const questionnaireUrl =
+          projectId && FORM_BASE_URL
+            ? `${FORM_BASE_URL}/${projectId}/${baseName}`
+            : null;
+
+        let titleEn = baseName;
+        let titleIt = baseName;
+        let descEn = "";
+        let descIt = "";
 
         try {
-          const files = await fetchFiles();
-          list.innerHTML = "";
+          const qJson = await fetchQuestionnaire(filename);
+          const qDef = qJson.questionnaire || {};
+          const sections = qDef.sections || [];
+          const languages = qJson.languages || {};
+          const itMap = languages.it || {};
 
-          files.forEach(f => {
-            if (!f.name.endsWith(".json")) return;
-            const li = document.createElement("li");
-            const a = document.createElement("a");
-            a.href = f.html_url;
-            a.target = "_blank";
-            a.rel = "noopener";
-            a.textContent = f.name;
-            li.appendChild(a);
-            list.appendChild(li);
-          });
-        } catch (e) {
-          list.innerHTML = "Errore nel caricamento.";
-          console.error(e);
+          if (qDef.name) {
+            titleEn = qDef.name;
+          }
+
+          const itTitleKey = qDef.name ? "#" + qDef.name : null;
+          if (itTitleKey && itMap[itTitleKey]) {
+            titleIt = itMap[itTitleKey];
+          } else {
+            titleIt = titleEn;
+          }
+
+          if (sections.length > 0) {
+            descEn =
+              sections[0].description ||
+              sections[0].title ||
+              "Structured questionnaire about cycling and urban mobility.";
+          } else {
+            descEn =
+              qDef.name ||
+              "Structured questionnaire about cycling and urban mobility.";
+          }
+
+          const itDescKey = "#" + descEn;
+          if (itMap[itDescKey]) {
+            descIt = itMap[itDescKey];
+          } else {
+            descIt = descEn;
+          }
+        } catch (err) {
+          console.warn(`Error parsing questionnaire ${filename}`, err);
+          titleEn = baseName;
+          titleIt = baseName;
+          descEn = "Structured questionnaire definition.";
+          descIt = "Definizione strutturata del questionario.";
         }
+
+        const card = document.createElement("div");
+        card.className = "q-card";
+
+        card.innerHTML = `
+          <div>
+            <h3>
+              <span data-lang="it">${titleIt}</span>
+              <span data-lang="en">${titleEn}</span>
+            </h3>
+
+            <div class="q-description">
+             <button type="button" class="q-toggle" aria-expanded="false">
+  <span class="q-toggle-icon">▼</span>
+  <span data-lang="it">Descrizione</span>
+  <span data-lang="en">Description</span>
+</button>
+
+              <div class="q-desc-body" hidden>
+                <p data-lang="it">${descIt}</p>
+                <p data-lang="en">${descEn}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="q-card-links">
+            <a href="${viewLink}" target="_blank" rel="noopener">
+              <span data-lang="it">📄 Vedi schema JSON</span>
+              <span data-lang="en">📄 View JSON schema</span>
+            </a>
+
+            ${
+              questionnaireUrl
+                ? `
+            <a href="${questionnaireUrl}" target="_blank" rel="noopener">
+              <span data-lang="it">📝 Rispondi al questionario</span>
+              <span data-lang="en">📝 Fill in the questionnaire</span>
+            </a>`
+                : ""
+            }
+          </div>
+        `;
+
+        // toggle descrizione
+        const toggleBtn = card.querySelector(".q-toggle");
+        const descBody = card.querySelector(".q-desc-body");
+        if (toggleBtn && descBody) {
+          toggleBtn.addEventListener("click", () => {
+            const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+            toggleBtn.setAttribute("aria-expanded", String(!isExpanded));
+            descBody.hidden = isExpanded;
+
+            const labelIt = toggleBtn.querySelector('span[data-lang="it"]');
+            const labelEn = toggleBtn.querySelector('span[data-lang="en"]');
+           if (!isExpanded) {
+  // ora si espande, quindi il testo diventa “Nascondi / Hide”
+  if (labelIt) labelIt.textContent = "Nascondi";
+  if (labelEn) labelEn.textContent = "Hide";
+} else {
+  // ora si chiude
+  if (labelIt) labelIt.textContent = "Descrizione";
+  if (labelEn) labelEn.textContent = "Description";
+}
+
+          });
+        }
+
+        grid.appendChild(card);
       }
 
-      document.addEventListener("DOMContentLoaded", renderList);
-    </script>
+      if (!grid.hasChildNodes()) {
+        grid.innerHTML = `
+          <p data-lang="it">Nessun questionario trovato.</p>
+          <p data-lang="en">No questionnaires found.</p>
+        `;
+      }
+
+      // ✅ riapplica il filtro lingua dopo aver creato le card
+      if (window.setLang && window.currentLang) {
+        window.setLang(window.currentLang);
+      }
+    } catch (err) {
+      console.error(err);
+      grid.innerHTML = `
+        <p data-lang="it">Errore nel caricamento dei questionari.</p>
+        <p data-lang="en">Error loading questionnaires.</p>
+      `;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", renderList);
+</script>
+
+
+
   </head>
 
   <body>
@@ -216,7 +389,11 @@
 
       <!-- Sezione comune con la lista (non dipende dalla lingua) -->
       <section aria-label="Elenco questionari GitHub">
-        <ul id="q-list"></ul>
+        <div id="q-list" class="q-grid">
+  <div class="q-placeholder"></div>
+  <div class="q-placeholder"></div>
+  <div class="q-placeholder"></div>
+</div>
       </section>
     </main>
 
