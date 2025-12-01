@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theBIKEnet – Questionari</title>
+
+    <!-- ✅ Primary metadata (puoi adattare se vuoi mantenerla come Privacy) -->
+    <meta name="description"
+      content="Elenco dei questionari di theBIKEnet, caricati automaticamente dal repository GitHub MovingProjects/thebikenet.">
+    <meta name="author" content="Moving Projects Srl">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0C9091">
+
+    <meta name="publisher" content="Moving Projects Srl" />
+    <meta name="organization" content="https://movprojects.com/" />
+
+    <!-- ✅ Open Graph / Facebook -->
+    <meta property="og:title" content="theBIKEnet – Questionari" />
+    <meta property="og:description"
+      content="Pagina che elenca i questionari di theBIKEnet dal repository GitHub MovingProjects/thebikenet." />
+    <meta property="og:image"
+      content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
+    <meta property="og:url"
+      content="https://movingprojects.github.io/thebikenet/docs/questionnaires.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="theBIKEnet – Questionari" />
+    <meta name="twitter:description"
+      content="Elenco automatico dei questionari di theBIKEnet dal repository GitHub MovingProjects/thebikenet." />
+    <meta name="twitter:image"
+      content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
+
+    <!-- ✅ Canonical URL -->
+    <link rel="canonical"
+      href="https://movingprojects.github.io/thebikenet/docs/questionnaires.html" />
+
+    <!-- ✅ Favicons -->
+    <link rel="icon"
+      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
+      type="image/png" />
+    <link rel="apple-touch-icon"
+      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
+
+    <!-- ✅ External theBIKEnet style -->
+    <link rel="stylesheet"
+      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet-style.css" />
+
+    <style>
+      /* ✅ Accessibility: visible focus outlines + skip link */
+      :focus-visible {
+        outline: 3px solid #F2AD2B;
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #0C9091;
+        color: #fff;
+        padding: 0.6rem 1rem;
+        border-radius: 0 0 6px 0;
+        transform: translateY(-120%);
+        transition: transform 0.3s ease;
+        z-index: 100;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      /* ✅ Stili per la lista dei questionari (da index.html) */
+      #q-list a {
+        color: #0C9091;
+        font-weight: 600;
+      }
+
+      #q-list li {
+        margin: 0.4rem 0;
+      }
+    </style>
+
+    <!-- ✅ Script lingua (dal template privacy) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("toggleLang");
+        const main = document.querySelector("main");
+        const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+        let show = lang.startsWith("it") ? "it" : "en";
+
+        function showLang(l) {
+          document.querySelectorAll("[data-lang]").forEach(el => el.style.display = "none");
+          document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = "block");
+          main.setAttribute("lang", l);
+          show = l;
+          btn.setAttribute("aria-label",
+            `Change language. Current: ${l === "en" ? "English" : "Italiano"}`);
+          btn.textContent = l.toUpperCase();
+        }
+
+        showLang(show);
+        btn.addEventListener("click", () => showLang(show === "en" ? "it" : "en"));
+      });
+    </script>
+
+    <!-- ✅ Script per caricare la lista dei questionari da GitHub (da index.html) -->
+    <script>
+      // GitHub repo config
+      const OWNER = "MovingProjects";
+      const REPO = "thebikenet";
+      const PATH = "questionnaires"; // cartella dei questionari
+
+      async function fetchFiles() {
+        const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`;
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("Cannot load repo content");
+        return res.json();
+      }
+
+      async function renderList() {
+        const list = document.getElementById("q-list");
+        if (!list) return;
+        list.innerHTML = "Caricamento…";
+
+        try {
+          const files = await fetchFiles();
+          list.innerHTML = "";
+
+          files.forEach(f => {
+            if (!f.name.endsWith(".json")) return;
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = f.html_url;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = f.name;
+            li.appendChild(a);
+            list.appendChild(li);
+          });
+        } catch (e) {
+          list.innerHTML = "Errore nel caricamento.";
+          console.error(e);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", renderList);
+    </script>
+  </head>
+
+  <body>
+    <!-- ✅ Skip link for keyboard/screen reader navigation -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <!-- ✅ Header landmark (dal template privacy) -->
+    <header role="banner">
+      <div class="header-flex">
+        <div class="brand">
+          <img
+            src="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
+            alt="theBIKEnet project logo" />
+          <div class="brand-title">
+            <h1>theBIKEnet</h1>
+            <p>Transferring Human Experience into BIKE Network Evaluation
+              Technologies</p>
+          </div>
+        </div>
+        <div class="right-header">
+          <img
+            src="https://movprojects.com/assets/images/moving_projects_logo.png"
+            alt="Moving Projects organisation logo" class="mp-logo" />
+          <button id="toggleLang" class="lang-toggle"
+            aria-label="Change language">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ✅ Main landmark -->
+    <main id="maincontent" tabindex="-1" role="main"
+      aria-label="Questionnaires list" lang="en">
+
+      <!-- ENGLISH VERSION -->
+      <div data-lang="en" lang="en">
+        <section>
+          <h2>Questionnaires (loaded automatically from GitHub)</h2>
+          <p>
+            This page lists the JSON files stored in the
+            <code>questionnaires</code> folder of the
+            <strong>MovingProjects/thebikenet</strong> repository on GitHub.
+          </p>
+          <p>
+            Clicking on each file opens the corresponding questionnaire
+            definition in a new browser tab.
+          </p>
+        </section>
+      </div>
+
+      <!-- ITALIAN VERSION -->
+      <div data-lang="it" lang="it">
+        <section>
+          <h2>Questionari (caricati automaticamente da GitHub)</h2>
+          <p>
+            Questa pagina mostra i file JSON presenti nella cartella
+            <code>questionnaires</code> del repository
+            <strong>MovingProjects/thebikenet</strong> su GitHub.
+          </p>
+          <p>
+            Cliccando su ciascun file si apre, in una nuova scheda,
+            la definizione del questionario corrispondente.
+          </p>
+        </section>
+      </div>
+
+      <!-- Sezione comune con la lista (non dipende dalla lingua) -->
+      <section aria-label="Elenco questionari GitHub">
+        <ul id="q-list"></ul>
+      </section>
+    </main>
+
+    <!-- ✅ Footer landmark (dal template privacy) -->
+    <footer role="contentinfo">
+      <div class="funding-logos">
+        <img
+          src="https://movprojects.com/assets/images/next-generation-eu-logo.png"
+          alt="European Union NextGenerationEU logo" />
+        <img src="https://movprojects.com/assets/images/mur-logo.png"
+          alt="Ministero dell’Università e della Ricerca logo" />
+        <img src="https://movprojects.com/assets/images/italia-domani-logo.png"
+          alt="Italia Domani PNRR logo" />
+        <img src="https://movprojects.com/assets/images/sapienza-logo.png"
+          alt="Sapienza Università di Roma logo" />
+      </div>
+
+      <p>Project funded by the European Union – NextGenerationEU under the
+        <strong>National Recovery and Resilience Plan (PNRR)</strong>,
+        CN4 – Sustainable Mobility, Spoke 9 – CUP B83C22002900007.</p>
+      <p>
+        © 2025 <a href="https://movprojects.com/" target="_blank"
+          rel="noopener">Moving Projects Srl</a> ·
+      </p>
+    </footer>
+  </body>
+</html>
