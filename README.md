@@ -49,7 +49,7 @@ helping researchers and decision-makers design safer and more inclusive mobility
 | **Trip Diary (pre/post)** | Actual mobility experiences and changes over time. |
 
 Each module is published and versioned in the  
-[**thebikenet-questionnaires →**](https://github.com/MovingProjects/thebikenet)
+[**thebikenet-questionnaires →**](https://movingprojects.github.io/thebikenet/questionnaires/)
 
 ---
 
