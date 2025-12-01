@@ -15,10 +15,7 @@
 
 ---
 
-**theBIKEnet** is a public research project developed within the **PlanEasy WebGIS and Crowdsourcing Framework**,  
-an open scientific infrastructure for land-use and transport planning.  
-
-It explores, visualizes, and analyses **urban cycling and micromobility behaviour**,  
+**theBIKEnet** is a public research project that explores, visualizes, and analyses **urban cycling and micromobility behaviour**,  
 integrating survey data, GPS traces, and spatial indicators into a unified environment  
 for studying **safety**, **accessibility**, and **cycling culture** in cities.
 
@@ -38,17 +35,6 @@ helping researchers and decision-makers design safer and more inclusive mobility
 
 ---
 
-## 🧩 Project Structure
-
-| Component | Description |
-|------------|--------------|
-| **thebikenet-dashboard** | Main public dashboard for aggregated visualization (web app). |
-| **thebikenet-datasets** | Curated, anonymized datasets and derived indicators. |
-| **thebikenet-questionnaires** | Repository hosted by [PlanEasy WebGIS](https://github.com/planeasy-webgis/planeasy-crowdsourcing-framework/tree/main/questionnaires/theBIKEnet), containing all survey modules. |
-| **thebikenet-privacy** | Transparency and data protection documentation (this repository). |
-
----
-
 ## 📊 Research Modules
 
 | Module | Description |
@@ -63,14 +49,14 @@ helping researchers and decision-makers design safer and more inclusive mobility
 | **Trip Diary (pre/post)** | Actual mobility experiences and changes over time. |
 
 Each module is published and versioned in the  
-[**thebikenet-questionnaires repository →**](https://github.com/planeasy-webgis/planeasy-crowdsourcing-framework/tree/main/questionnaires/theBIKEnet)
+[**thebikenet-questionnaires →**](https://github.com/MovingProjects/thebikenet](https://github.com/MovingProjects/thebikenet)
 
 ---
 
 ## 💶 Funding Acknowledgement
 
 Project coordinated by **Moving Projects Srl**,  
-developed using the **PlanEasy WebGIS Framework**.  
+developed using the [**PlanEasy WebGIS Framework**](https://github.com/planeasy-webgis)].  
 
 Funded under the **National Recovery and Resilience Plan (PNRR)** –  
 Mission 4 “Education and Research”, Component 2 “From Research to Enterprise”, Investment 1.4  
@@ -85,9 +71,9 @@ Spoke 9 – *Urban Mobility Project DICEA24SPOKE9UNI*
 All data collected through *theBIKEnet* comply with **GDPR (Article 89)** and open-science principles.  
 Information on pseudonymization, ethics, and transparency is available here:
 
-- [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/planeasy-crowdsourcing-framework/docs/PRIVACY_GUIDELINES.html)  
 - [Privacy Policy – theBIKEnet (Full)](https://movingprojects.github.io/thebikenet/docs/privacy.html)  
 - [Privacy Explained Simply](https://movingprojects.github.io/thebikenet/docs/privacy-simple.html)
+- [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/planeasy-crowdsourcing-framework/docs/PRIVACY_GUIDELINES.html)  
 
 ---
 
