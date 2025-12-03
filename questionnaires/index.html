@@ -1,130 +1,121 @@
-<!DOCTYPE html>
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>theBIKEnet – Questionari</title>
 
-    <!-- ✅ Primary metadata (puoi adattare se vuoi mantenerla come Privacy) -->
+    <!-- Metadata uniformati -->
     <meta name="description"
-      content="Elenco dei questionari di theBIKEnet, caricati automaticamente dal repository GitHub MovingProjects/thebikenet.">
-    <meta name="author" content="Moving Projects Srl">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0C9091">
+      content="Elenco dei questionari del progetto theBIKEnet, con caricamento automatico da GitHub e supporto multilingua.">
+    <meta name="author" content="Moving Projects Srl" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0C9091" />
 
-    <meta name="publisher" content="Moving Projects Srl" />
-    <meta name="organization" content="https://movprojects.com/" />
-
-    <!-- ✅ Open Graph / Facebook -->
-    <meta property="og:title" content="theBIKEnet – Questionari" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="theBIKEnet – Questionnaires" />
     <meta property="og:description"
-      content="Pagina che elenca i questionari di theBIKEnet dal repository GitHub MovingProjects/thebikenet." />
+      content="Explore the official theBIKEnet questionnaires on cycling behaviour, perceptions, context, safety and mobility." />
+    <meta property="og:type" content="website" />
     <meta property="og:image"
       content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
     <meta property="og:url"
-      content="https://movingprojects.github.io/thebikenet/docs/questionnaires.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_GB" />
+      content="https://movingprojects.github.io/thebikenet/questionnaires/index.html" />
 
-    <!-- ✅ Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="theBIKEnet – Questionari" />
     <meta name="twitter:description"
-      content="Elenco automatico dei questionari di theBIKEnet dal repository GitHub MovingProjects/thebikenet." />
-    <meta name="twitter:image"
-      content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
-
-    <!-- ✅ Canonical URL -->
-    <link rel="canonical"
-      href="https://movingprojects.github.io/thebikenet/docs/questionnaires.html" />
-
-    <!-- ✅ Favicons -->
-    <link rel="icon"
-      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
-      type="image/png" />
+      content="Explore the official theBIKEnet questionnaires on cycling behaviour, perceptions, context, safety and mobility." />
     <link rel="apple-touch-icon"
       href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
 
-    <!-- ✅ External theBIKEnet style -->
-    <link rel="stylesheet"
-      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet-style.css" />
+    <!-- Favicons -->
+    <link rel="icon"
+      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
+      type="image/png" />
 
+    <!-- Skip link accessibility style (minimal, resto via loader) -->
     <style>
-      /* ✅ Accessibility: visible focus outlines + skip link */
-      :focus-visible {
-        outline: 3px solid #F2AD2B;
-        outline-offset: 3px;
-      }
+:focus-visible { outline: 3px solid #F2AD2B; outline-offset: 3px; }
+.skip-link {
+position:absolute; top:0; left:0; background:#0C9091; color:#fff;
+padding:0.6rem 1rem; border-radius:0 0 6px 0;
+transform:translateY(-120%); transition:transform .3s ease;
+z-index:100;
+}
+.skip-link:focus { transform:translateY(0); }
+</style>
+  </head>
 
-      .skip-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #0C9091;
-        color: #fff;
-        padding: 0.6rem 1rem;
-        border-radius: 0 0 6px 0;
-        transform: translateY(-120%);
-        transition: transform 0.3s ease;
-        z-index: 100;
-      }
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
 
-      .skip-link:focus {
-        transform: translateY(0);
-      }
+    <!-- Header injected via template loader -->
+    <div id="bikenet-header"></div>
 
-      /* ✅ Stili per la lista dei questionari (da index.html) */
-      #q-list a {
-        color: #0C9091;
-        font-weight: 600;
-      }
+    <!-- MAIN CONTENT -->
+    <main id="maincontent" tabindex="-1" role="main"
+      aria-label="Questionnaires list">
 
-      #q-list li {
-        margin: 0.4rem 0;
-      }
-    </style>
+      <!-- 🇮🇹 ITALIANO -->
+      <div data-lang="it" lang="it">
+        <section>
+          <h2>I questionari di theBIKEnet</h2>
+          <p>
+            Questa pagina elenca tutti i questionari ufficiali del progetto
+            <strong>theBIKEnet</strong>. I questionari coprono profilo,
+            abitudini di viaggio, percezioni di sicurezza,
+            comportamenti di sicurezza, contesto urbano, condizioni
+            infrastrutturali,
+            servizi di mobilità, atteggiamenti, incidenti e fattori di rischio,
+            e diari di viaggio.
+          </p>
+          <p>
+            Ciascuna scheda mostra: titolo bilingue, descrizione, link per
+            compilarlo (se attivo)
+            e accesso diretto allo schema JSON, utile per ricerca e trasparenza.
+          </p>
+        </section>
+      </div>
 
-    <!-- ✅ Script lingua (dal template privacy) -->
-    <script>
-  function initLangToggle() {
-    const btn = document.getElementById("toggleLang");
-    const main = document.querySelector("main");
-    const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-    window.currentLang = lang.startsWith("it") ? "it" : "en";
+      <!-- ENGLISH VERSION -->
+      <div data-lang="en" lang="en">
+        <section>
+          <h2>theBIKEnet questionnaires</h2>
+          <p>
+            This page lists all official questionnaires used in the
+            <strong>theBIKEnet</strong> project.
+            The instruments cover profile, travel habits, safety perception,
+            safety behaviour,
+            urban context, infrastructure conditions, mobility services,
+            attitudes,
+            accidents and risk factors, and trip diaries.
+          </p>
+          <p>
+            Each card shows: bilingual title, description, a link to complete
+            the survey
+            (when an active campaign is available) and direct access to the JSON
+            definition
+            for transparency and research reuse.
+          </p>
+        </section>
+      </div>
 
-    function showLang(l) {
-      document.querySelectorAll("[data-lang]").forEach(el => {
-        el.style.display = el.getAttribute("data-lang") === l ? "block" : "none";
-      });
-      if (main) main.setAttribute("lang", l);
-      window.currentLang = l;
+      <!-- LISTA QUESTIONARI -->
+      <section aria-label="Elenco questionari GitHub">
+        <div id="q-list" class="q-grid">
+          <div class="q-placeholder"></div>
+          <div class="q-placeholder"></div>
+          <div class="q-placeholder"></div>
+        </div>
+      </section>
+    </main>
 
-      if (btn) {
-        btn.setAttribute(
-          "aria-label",
-          `Change language. Current: ${l === "en" ? "English" : "Italiano"}`
-        );
-        btn.textContent = l.toUpperCase();
-      }
-    }
+    <!-- Footer via template loader -->
+    <div id="bikenet-footer"></div>
 
-    // rendo la funzione disponibile anche ad altri script
-    window.setLang = showLang;
+    <!-- Loader template/stile/lingua -->
+    <script src="../docs/assets/theBIKEnet-web-init.js"></script>
 
-    showLang(window.currentLang);
-
-    if (btn) {
-      btn.addEventListener("click", () =>
-        showLang(window.currentLang === "en" ? "it" : "en")
-      );
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", initLangToggle);
-</script>
-
-    <!-- ✅ Script per caricare la lista dei questionari da GitHub (da index.html) -->
-    <script>
+    <!-- GitHub Questionnaire Loader  -->
+    <script> 
   const OWNER = "MovingProjects";
   const REPO = "thebikenet";
   const PATH = "questionnaires";
@@ -320,111 +311,5 @@ console.log(questionnaireUrl);
   document.addEventListener("DOMContentLoaded", renderList);
 </script>
 
-  </head>
-
-  <body>
-    <!-- ✅ Skip link for keyboard/screen reader navigation -->
-    <a href="#maincontent" class="skip-link">Skip to main content</a>
-
-    <!-- ✅ Header landmark (dal template privacy) -->
-    <header role="banner">
-      <div class="header-flex">
-        <div class="brand">
-          <img
-            src="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
-            alt="theBIKEnet project logo" />
-          <div class="brand-title">
-            <h1>theBIKEnet</h1>
-            <p>Transferring Human Experience into BIKE Network Evaluation
-              Technologies</p>
-          </div>
-        </div>
-        <div class="right-header">
-          <img
-            src="https://movprojects.com/assets/images/moving_projects_logo.png"
-            alt="Moving Projects organisation logo" class="mp-logo" />
-          <button id="toggleLang" class="lang-toggle"
-            aria-label="Change language">EN</button>
-        </div>
-      </div>
-    </header>
-
-    <!-- ✅ Main landmark -->
-    <main id="maincontent" tabindex="-1" role="main"
-      aria-label="Questionnaires list" lang="en">
-
-      <!-- ENGLISH VERSION -->
-      <div data-lang="en" lang="en">
-        <section>
-          <h2>theBIKEnet questionnaires</h2>
-          <p>
-            Here you can explore the questionnaires used in theBIKEnet project
-            to
-            understand everyday cycling, micromobility and safety perceptions.
-          </p>
-          <p>
-            Each card corresponds to one questionnaire. When a survey is open,
-            you can
-            use the <strong>“Fill in the questionnaire”</strong> button to
-            participate.
-            The link to the JSON schema is provided for transparency and for
-            researchers who want to reuse the structure.
-          </p>
-        </section>
-      </div>
-
-      <!-- ITALIAN VERSION -->
-      <div data-lang="it" lang="it">
-        <section>
-          <h2>I questionari di theBIKEnet</h2>
-          <p>
-            In questa pagina puoi esplorare i questionari utilizzati nel
-            progetto
-            theBIKEnet per capire come ci si muove in bici e in micromobilità
-            e come viene percepita la sicurezza.
-          </p>
-          <p>
-            Ogni scheda corrisponde a un questionario. Quando una rilevazione è
-            attiva puoi partecipare cliccando su <strong>“Rispondi al
-              questionario”</strong>.
-            Il link allo schema JSON è pensato per trasparenza e per chi vuole
-            riutilizzare la struttura a fini di ricerca.
-          </p>
-        </section>
-
-      </div>
-
-      <!-- Sezione comune con la lista (non dipende dalla lingua) -->
-      <section aria-label="Elenco questionari GitHub">
-        <div id="q-list" class="q-grid">
-          <div class="q-placeholder"></div>
-          <div class="q-placeholder"></div>
-          <div class="q-placeholder"></div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ✅ Footer landmark (dal template privacy) -->
-    <footer role="contentinfo">
-      <div class="funding-logos">
-        <img
-          src="https://movprojects.com/assets/images/next-generation-eu-logo.png"
-          alt="European Union NextGenerationEU logo" />
-        <img src="https://movprojects.com/assets/images/mur-logo.png"
-          alt="Ministero dell’Università e della Ricerca logo" />
-        <img src="https://movprojects.com/assets/images/italia-domani-logo.png"
-          alt="Italia Domani PNRR logo" />
-        <img src="https://movprojects.com/assets/images/sapienza-logo.png"
-          alt="Sapienza Università di Roma logo" />
-      </div>
-
-      <p>Project funded by the European Union – NextGenerationEU under the
-        <strong>National Recovery and Resilience Plan (PNRR)</strong>,
-        CN4 – Sustainable Mobility, Spoke 9 – CUP B83C22002900007.</p>
-      <p>
-        © 2025 <a href="https://movprojects.com/" target="_blank"
-          rel="noopener">Moving Projects Srl</a> ·
-      </p>
-    </footer>
   </body>
 </html>
