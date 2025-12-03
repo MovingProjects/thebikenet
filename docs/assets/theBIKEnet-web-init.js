@@ -53,9 +53,11 @@
     const cssURL     = buildURL(LOCAL_BASE, FILES.style);
     const fallbackURL = buildURL(REMOTE_BASE, FILES.style);
 
+    const tryLocal = !location.hostname.includes("github.io");
+
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = cssURL;
+    link.href = tryLocal ? cssURL : fallbackURL;
 
     link.onerror = () => {
       console.warn("⚠️ CSS local missing → loading GitHub version");
