@@ -6,7 +6,7 @@
 */
 
 (async function () {
-  const LOCAL_BASE  = "./assets/";
+  const LOCAL_BASE  = "./";
   const REMOTE_BASE = "https://movingprojects.github.io/thebikenet/docs/assets/";
 
   const FILES = {
