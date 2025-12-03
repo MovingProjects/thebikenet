@@ -2,7 +2,7 @@
   "project": "theBIKEnet",
   "organization": "Moving Projects",
   "description": "Structured and versioned research questionnaires on cycling behaviour, safety perception, and micromobility use.",
-  "license": "CC BY-NC 4.0",  
+  "license": "CC BY-NC 4.0",
   "website": "https://movprojects.com/thebikenet",
   "questionnaires": [
     "theBIKEnet_profile.json",
@@ -11,25 +11,17 @@
     "theBIKEnet_safety_behaviour.json",
     "theBIKEnet_travel_habits.json",
     "theBIKEnet_accidents_and_risk_factors.json",
-    "theBIKEnet_mobility_services.json",
-    "theBIKEnet_beliefs_and_attitudes.json"
+    "theBIKEnet_beliefs_and_attitudes.json",
+    "theBIKEnet_mobility_services.json"
   ],
   "destination": {
     "firestore": {
-      "apiKey": "AIzaSyD42x7Qskt3uIRtWRAOCK4n7UdDhVvLaeA",
-      "authDomain": "thebikenet-cbf65.firebaseapp.com",
-      "projectId": "thebikenet-cbf65",
-      "storageBucket": "thebikenet-cbf65.firebasestorage.app",
-      "messagingSenderId": "667853109586",
-      "appId": "1:667853109586:web:00b10f3be08c33a6fa628b",
-      "measurementId": "G-W2FEF5BHK4"
+      "apiKey": "AIzaSyBdLJ3pCBNnreYS7qj2fXqOGWHi5n2f-qs",
+      "authDomain": "thebikenet-rome.firebaseapp.com",
+      "projectId": "thebikenet-rome",
+      "storageBucket": "thebikenet-rome.firebasestorage.app",
+      "messagingSenderId": "263188832725",
+      "appId": "1:263188832725:web:de3f397b0af8c3cdfb1d5c"
     }
-  },
-  "metadata": {
-    "version": "1.0.0",
-    "last_updated": "2025-10-30",
-    "language": "en",
-    "framework": "PlanEasy Crowdsourcing System",
-    "repository": "https://https://github.com/planeasy-webgis/planeasy-crowdsourcing-framework"
   }
 }
