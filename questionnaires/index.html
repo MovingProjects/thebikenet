@@ -131,7 +131,7 @@
 
   // 🔗 Base URL dell'app che espone i questionari da compilare
   // Risultato finale: `${FORM_BASE_URL}/${projectId}/${questId}`
-  const FORM_BASE_URL = "https://thebikenet-app-mock.web.app/"; // TODO: sostituisci col tuo dominio
+  const FORM_BASE_URL = "https://thebikenet-rome-questionnaires.wemolab.eu/"; // TODO: sostituisci col tuo dominio
 
   const BASE_URL = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys`;
 
@@ -172,12 +172,13 @@
 
       for (const filename of list) {
         const baseName = filename.replace(".json", "");
-
           const viewLink = `https://github.com/MovingProjects/thebikenet/blob/main/questionnaires/surveys/${filename}`;
         const questionnaireUrl =
           FORM_BASE_URL
-            ? FORM_BASE_URL
-            : null; //`${FORM_BASE_URL}/${projectId}/${baseName}`
+            ? `${FORM_BASE_URL}quest?id=${baseName}`
+            : null; 
+
+console.log(questionnaireUrl);
 
         let titleEn = baseName;
         let titleIt = baseName;
