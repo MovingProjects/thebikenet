@@ -36,8 +36,12 @@
     link.rel = "stylesheet";
     link.href = cssURL;
 
+    let useWeb = false;
     link.onerror = () => {
-      console.warn("⚠️ CSS locale non trovato, uso GitHub");
+      if(!useWeb) {
+		  useWeb = true;
+		  console.warn("⚠️ CSS locale non trovato, uso GitHub");
+	  }
       link.href = fallbackURL;
     };
 
