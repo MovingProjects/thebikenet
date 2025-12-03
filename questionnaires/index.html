@@ -131,18 +131,18 @@
 
   // 🔗 Base URL dell'app che espone i questionari da compilare
   // Risultato finale: `${FORM_BASE_URL}/${projectId}/${questId}`
-  const FORM_BASE_URL = "https://example.com/project"; // TODO: sostituisci col tuo dominio
+  const FORM_BASE_URL = "https://thebikenet-app-mock.web.app/"; // TODO: sostituisci col tuo dominio
 
-  const INDEX_URL = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/index.json`;
+  const BASE_URL = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys`;
 
   async function fetchIndex() {
-    const res = await fetch(INDEX_URL);
+    const res = await fetch(`${BASE_URL}/index.json`);
     if (!res.ok) throw new Error("Cannot load questionnaires/index.json");
     return res.json();
   }
 
   async function fetchQuestionnaire(filename) {
-    const url = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/${filename}`;
+    const url = `${BASE_URL}/${filename}`  
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Cannot load ${filename}`);
     return res.json();
@@ -175,9 +175,9 @@
 
           const viewLink = `https://github.com/MovingProjects/thebikenet/blob/main/questionnaires/surveys/${filename}`;
         const questionnaireUrl =
-          projectId && FORM_BASE_URL
-            ? `${FORM_BASE_URL}/${projectId}/${baseName}`
-            : null;
+          FORM_BASE_URL
+            ? FORM_BASE_URL
+            : null; //`${FORM_BASE_URL}/${projectId}/${baseName}`
 
         let titleEn = baseName;
         let titleIt = baseName;
@@ -251,12 +251,7 @@
             </div>
           </div>
 
-          <div class="q-card-links">
-            <a href="${viewLink}" target="_blank" rel="noopener">
-              <span data-lang="it">📄 Vedi schema JSON</span>
-              <span data-lang="en">📄 View JSON schema</span>
-            </a>
-
+          <div class="q-card-links">           
             ${
               questionnaireUrl
                 ? `
@@ -266,6 +261,11 @@
             </a>`
                 : ""
             }
+			
+			<a href="${viewLink}" target="_blank" rel="noopener">
+              <span data-lang="it">📄 Vedi schema JSON</span>
+              <span data-lang="en">📄 View JSON schema</span>
+            </a>
           </div>
         `;
 
