@@ -5,91 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>theBIKEnet – La rete della bici urbana</title>
 
+    <!-- Metadata -->
     <meta name="description"
       content="theBIKEnet – Transferring Human Experience into BIKE Network Evaluation Technologies. Un progetto per rendere le città più ciclabili, promosso da Moving Projects e Sapienza Università di Roma." />
     <meta name="author" content="Moving Projects Srl" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0C9091" />
 
-    <!-- ✅ Open Graph -->
-    <meta property="og:title"
-      content="theBIKEnet – La rete della bici urbana" />
-    <meta property="og:description"
-      content="Una rete di dati e persone per città più ciclabili." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="theBIKEnet – La rete della bici urbana" />
+    <meta property="og:description" content="Una rete di dati e persone per città più ciclabili." />
     <meta property="og:image"
       content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
-    <meta property="og:url"
-      content="https://movingprojects.github.io/thebikenet/index.html" />
+    <meta property="og:url" content="https://movingprojects.github.io/thebikenet/index.html" />
     <meta property="og:type" content="website" />
 
+    <!-- Favicon -->
     <link rel="icon"
       href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
       type="image/png" />
-    <link rel="stylesheet"
-      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet-style.css" />
-
-    <style>
-      :focus-visible { outline: 3px solid #F2AD2B; outline-offset: 3px; }
-      .skip-link { position:absolute;top:0;left:0;background:#0C9091;color:#fff;padding:0.6rem 1rem;border-radius:0 0 6px 0;transform:translateY(-120%);transition:transform 0.3s ease;z-index:100; }
-      .skip-link:focus { transform:translateY(0); }
-    </style>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const btn = document.getElementById("toggleLang");
-        const main = document.querySelector("main");
-        const lang = (navigator.language || "it").toLowerCase();
-        let show = lang.startsWith("it") ? "it" : "en";
-        function showLang(l) {
-          document.querySelectorAll("[data-lang]").forEach(el => el.style.display = "none");
-          document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = "block");
-          main.setAttribute("lang", l);
-          btn.textContent = l.toUpperCase();
-        }
-        showLang(show);
-        btn.addEventListener("click", () => showLang(show === "en" ? "it" : "en"));
-      });
-    </script>
   </head>
 
   <body>
+    <!-- Skip link -->
     <a href="#maincontent" class="skip-link">Salta al contenuto principale</a>
 
-    <header role="banner">
-      <div class="header-flex">
-        <div class="brand">
-          <img
-            src="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
-            alt="Logo theBIKEnet" />
-          <div class="brand-title">
-            <h1>theBIKEnet</h1>
-            <p>Transferring Human Experience into BIKE Network Evaluation
-              Technologies</p>
-          </div>
-        </div>
-        <div class="right-header">
-          <img
-            src="https://movprojects.com/assets/images/moving_projects_logo.png"
-            alt="Logo Moving Projects" class="mp-logo" />
-          <button id="toggleLang" class="lang-toggle"
-            aria-label="Cambia lingua">IT</button>
-        </div>
-      </div>
-    </header>
+    <!-- HEADER from template -->
+    <div id="bikenet-header"></div>
 
-    <main id="maincontent" tabindex="-1" role="main"
-      aria-label="Contenuti principali" lang="it">
+    <main id="maincontent" tabindex="-1" role="main" aria-label="Contenuti principali" lang="it">
 
       <!-- 🇮🇹 ITALIANO -->
       <div data-lang="it" lang="it">
+
         <section>
           <h2>La nostra visione</h2>
           <p><strong>theBIKEnet</strong> vuole facilitare la ricerca sui fattori
             che influenzano le scelte dei ciclisti: <em>percezioni</em>,
-            <em>attitudini</em>, <em>preferenze</em>. Il nostro obiettivo è
-            aumentare la consapevolezza della mobilità ciclabile urbana,
-            informare decisori e attivisti, e promuovere percorsi sicuri basati
-            sulle esperienze reali.</p>
+            <em>attitudini</em>, <em>preferenze</em>. Il nostro obiettivo è aumentare
+            la consapevolezza della mobilità ciclabile urbana, informare decisori
+            e attivisti, e promuovere percorsi sicuri basati sulle esperienze reali.</p>
         </section>
 
         <section>
@@ -103,14 +58,10 @@
         <section>
           <h2>Cosa cambierà grazie a theBIKEnet?</h2>
           <ul>
-            <li>📊 <strong>Dataset pubblici</strong> – per ricerche e decisioni
-              informate</li>
-            <li>🚴‍♀️ <strong>Più visibilità alla bici</strong> – una scelta
-              urbana riconosciuta</li>
-            <li>⚠️ <strong>Zone critiche</strong> – più sicurezza dove serve
-              davvero</li>
-            <li>🧭 <strong>Esperienze condivise</strong> – per percorsi
-              migliori, non solo brevi</li>
+            <li>📊 <strong>Dataset pubblici</strong> – per ricerche e decisioni informate</li>
+            <li>🚴‍♀️ <strong>Più visibilità alla bici</strong> – una scelta urbana riconosciuta</li>
+            <li>⚠️ <strong>Zone critiche</strong> – più sicurezza dove serve davvero</li>
+            <li>🧭 <strong>Esperienze condivise</strong> – per percorsi migliori, non solo brevi</li>
           </ul>
         </section>
 
@@ -127,60 +78,36 @@
         <section>
           <h2>I nostri obiettivi</h2>
           <ol>
-            <li>Progettare un'app per raccogliere dati utili e coinvolgere chi
-              usa la bici</li>
-            <li>Visualizzare come i flussi ciclabili evolvono nel tempo tramite
-              dashboard pubbliche</li>
-            <li>Analizzare l'adeguatezza delle infrastrutture alle esigenze
-              reali dei ciclisti</li>
+            <li>Progettare un'app per raccogliere dati utili e coinvolgere chi usa la bici</li>
+            <li>Visualizzare come i flussi ciclabili evolvono nel tempo tramite dashboard pubbliche</li>
+            <li>Analizzare l'adeguatezza delle infrastrutture alle esigenze reali dei ciclisti</li>
             <li>Offrire percorsi suggeriti basati sull’esperienza condivisa</li>
           </ol>
         </section>
 
         <section>
           <h2>Dove lo testiamo</h2>
-          <p>
-            A Roma! Nel 2025 abbiamo avviato una prima sperimentazione nel
-            Municipio IV
-            con un piccolo gruppo di ciclisti e associazioni. Ora siamo pronti
-            ad allargare il test:
-          </p>
+          <p>A Roma! Nel 2025 abbiamo avviato una prima sperimentazione nel Municipio IV con un piccolo gruppo di ciclisti e associazioni. Ora siamo pronti ad allargare il test:</p>
           <ul>
-            <li>Estate 2025: feedback su app e questionari con il primo gruppo
-              di tester</li>
-            <li>Autunno 2025: mappatura dell’area di studio e rifinitura del
-              sistema</li>
-            <li>Inverno 2026: estensione del pilot a un numero più ampio di
-              partecipanti</li>
+            <li>Estate 2025: feedback su app e questionari</li>
+            <li>Autunno 2025: mappatura dell’area di studio</li>
+            <li>Inverno 2026: estensione del pilot</li>
           </ul>
         </section>
 
         <section>
           <h2>Partecipa</h2>
           <p>
-            Vuoi partecipare alla raccolta dati con l’applicazione per
-            smartphone?<br>
+            Vuoi partecipare alla raccolta dati?<br>
             <a href="https://forms.gle/k1wGJE78noE4L5ua8" target="_blank">
               <strong>Registrati qui</strong>
-            </a> e aiutaci a costruire una città più ciclabile!
-          </p>
-
-          <p>
-            Rispondi ai nostri
-            <a
-              href="https://movingprojects.github.io/thebikenet/questionnaires/"
-              target="_blank">
-              questionari
-            </a>.
-          </p>
-
-          <p>
-            Seguici sul canale
-            <a href="https://whatsapp.com/channel/0029Vb5v3z28fewvlzgrTP0W"
-              target="_blank">
-              WhatsApp
             </a>
-            – è anonimo e senza chat!
+          </p>
+
+          <p>Rispondi ai nostri <a href="https://movingprojects.github.io/thebikenet/questionnaires/" target="_blank">questionari</a>.</p>
+
+          <p>
+            Seguici sul canale <a href="https://whatsapp.com/channel/0029Vb5v3z28fewvlzgrTP0W" target="_blank">WhatsApp</a> – anonimo e senza chat!
           </p>
         </section>
 
@@ -188,145 +115,127 @@
           <h2>News e aggiornamenti</h2>
           <article>
             <h3>theBIKEnet alla Festa della Bicicletta – 2 giugno 2025</h3>
-            <p>Saremo presenti alla <a href="https://festadellabicicletta.it/"
-                target="_blank">Festa della Bicicletta 2025</a>, al Parco della
-              Caffarella (Roma). Vieni a scoprire il progetto, lascia un’idea e
-              unisciti alla rete!</p>
+            <p>Saremo presenti alla <a href="https://festadellabicicletta.it/" target="_blank">Festa della Bicicletta 2025</a>, al Parco della Caffarella.</p>
           </article>
         </section>
+
       </div>
 
-      <!-- 🇬🇧 ENGLISH -->
       <div data-lang="en" lang="en">
-        <section>
-          <h2>Our vision</h2>
-          <p><strong>theBIKEnet</strong> aims to support research on the factors
-            that influence cyclists’ choices: <em>perceptions</em>,
-            <em>attitudes</em>, <em>preferences</em>. Our goal is to raise
-            awareness about urban cycling, inform planners and activists, and
-            promote safe routes based on real experiences.</p>
-        </section>
 
-        <section>
-          <h2>What we do</h2>
-          <p>We collect stories and data from everyday riders: GPS traces,
-            perceptions, habits, dreams. We want to understand what makes a
-            route safer, more comfortable and desirable – and share this
-            knowledge with those who shape the city.</p>
-        </section>
+  <section>
+    <h2>Our vision</h2>
+    <p>
+      <strong>theBIKEnet</strong> is a research initiative designed to connect 
+      everyday cycling experience with urban data.  
+      We study how people <em>move</em>, how they <em>perceive</em> safety and comfort, 
+      and what influences their <em>choices</em> when travelling by bike or micromobility.  
+      Our goal is to support cities in becoming safer, more accessible, and more cycling-friendly.
+    </p>
+  </section>
 
-        <section>
-          <h2>What will change with theBIKEnet?</h2>
-          <ul>
-            <li>📊 <strong>Open datasets</strong> – for research and informed
-              decisions</li>
-            <li>🚴‍♀️ <strong>More visibility for cycling</strong> – an urban
-              choice recognized</li>
-            <li>⚠️ <strong>Critical areas</strong> – greater safety where it
-              really matters</li>
-            <li>🧭 <strong>Shared experiences</strong> – for better, not just
-              shorter routes</li>
-          </ul>
-        </section>
+  <section>
+    <h2>What we do</h2>
+    <p>
+      We collect stories and real-world data from everyday riders: GPS traces, 
+      trip contexts, perceptions, habits, and attitudes.  
+      By combining these with spatial and infrastructural indicators, we build a 
+      detailed picture of how cycling is experienced across the city.
+    </p>
+  </section>
 
-        <section>
-          <h2>Why it’s different</h2>
-          <ul>
-            <li>It connects technical data with human feelings</li>
-            <li>It’s co-created with users</li>
-            <li>It’s open source and transparent</li>
-            <li>It speaks also to those who don’t yet consider themselves
-              cyclists</li>
-          </ul>
-        </section>
+  <section>
+    <h2>What will change thanks to theBIKEnet?</h2>
+    <ul>
+      <li>📊 <strong>Open behavioural datasets</strong> for research and public decision-making</li>
+      <li>🚴‍♀️ <strong>Greater visibility for cycling</strong> as a legitimate mode of transport</li>
+      <li>⚠️ <strong>Identification of critical areas</strong> based on real exposure and perception</li>
+      <li>🧭 <strong>Shared experience-based routing</strong> beyond shortest-path logic</li>
+    </ul>
+  </section>
 
-        <section>
-          <h2>Our goals</h2>
-          <ol>
-            <li>Design an app to collect meaningful data and engage riders</li>
-            <li>Visualize cycling flows and trends through public
-              dashboards</li>
-            <li>Evaluate infrastructure adequacy to real user needs</li>
-            <li>Provide route suggestions based on shared experience</li>
-          </ol>
-        </section>
+  <section>
+    <h2>Why theBIKEnet is different</h2>
+    <p>
+      theBIKEnet integrates human experience—perceptions, behaviours, emotions—
+      with quantitative mobility data.  
+      The approach is:
+    </p>
+    <ul>
+      <li><strong>Human-centred</strong> – built around the lived experience of cyclists</li>
+      <li><strong>Co-designed</strong> – developed with users, associations, and local actors</li>
+      <li><strong>Open and transparent</strong> – methodologies and data structures are public</li>
+      <li><strong>Inclusive</strong> – attentive to those who do not yet feel confident cycling</li>
+    </ul>
+  </section>
 
-        <section>
-          <h2>Where we test it</h2>
-          <p>
-            In Rome! In 2025 we launched an initial pilot in Municipio IV
-            (eastern area)
-            with a small group of riders and local associations. We are now
-            ready to scale up:
-          </p>
-          <ul>
-            <li>Summer 2025: feedback on the app and questionnaires with early
-              testers</li>
-            <li>Autumn 2025: mapping of the study area and system
-              refinement</li>
-            <li>Winter 2026: extended pilot with a larger group of
-              participants</li>
-          </ul>
-        </section>
+  <section>
+    <h2>What we aim to achieve</h2>
+    <ol>
+      <li>Develop an app that collects meaningful data while engaging everyday cyclists</li>
+      <li>Provide public dashboards showing how cycling flows evolve over time</li>
+      <li>Analyse infrastructure adequacy based on real usage and perceived safety</li>
+      <li>Support cities with tools for experience-based, cyclist-friendly planning</li>
+    </ol>
+  </section>
 
-        <section>
-          <h2>Get involved</h2>
-          <p>
-            Want to join the data collection using our smartphone app?<br>
-            <a href="https://forms.gle/k1wGJE78noE4L5ua8" target="_blank">
-              <strong>Sign up here</strong>
-            </a> and help us build a more bike-friendly city!
-          </p>
+  <section>
+    <h2>Where we are testing it</h2>
+    <p>
+      Our first on-field experiment started in 2025 in Rome (Municipio IV),  
+      in collaboration with local cyclists, associations, and research groups.  
+      The testing roadmap includes:
+    </p>
+    <ul>
+      <li>Summer 2025 – user feedback on the app and questionnaires</li>
+      <li>Autumn 2025 – mapping and analysis of the study area</li>
+      <li>Winter 2026 – expansion of the pilot to additional districts</li>
+    </ul>
+  </section>
 
-          <p>
-            Fill out our
-            <a
-              href="https://movingprojects.github.io/thebikenet/questionnaires/"
-              target="_blank">
-              questionnaires
-            </a>.
-          </p>
+  <section>
+    <h2>Take part</h2>
+    <p>
+      Would you like to join our data collection?<br>
+      <a href="https://forms.gle/k1wGJE78noE4L5ua8" target="_blank"><strong>Register here</strong></a>
+    </p>
 
-          <p>
-            Follow us on
-            <a href="https://whatsapp.com/channel/0029Vb5v3z28fewvlzgrTP0W"
-              target="_blank">
-              WhatsApp
-            </a>
-            — anonymous and chat-free!
-          </p>
-        </section>
+    <p>
+      You can explore and answer our  
+      <a href="https://movingprojects.github.io/thebikenet/questionnaires/" target="_blank">
+        behavioural and perception questionnaires
+      </a>.
+    </p>
 
-        <section>
-          <h2>News & Updates</h2>
-          <article>
-            <h3>theBIKEnet at the Bicycle Festival – June 2, 2025</h3>
-            <p>Join us at <a href="https://festadellabicicletta.it/"
-                target="_blank">Festa della Bicicletta 2025</a>, at Parco della
-              Caffarella (Rome). Discover the project, share ideas, and join the
-              network!</p>
-          </article>
-        </section>
-      </div>
+    <p>
+      Follow project updates through our  
+      <a href="https://whatsapp.com/channel/0029Vb5v3z28fewvlzgrTP0W" target="_blank">
+        WhatsApp channel
+      </a> – anonymous and read-only.
+    </p>
+  </section>
+
+  <section>
+    <h2>News and updates</h2>
+    <article>
+      <h3>theBIKEnet at the “Festa della Bicicletta” – June 2, 2025</h3>
+      <p>
+        We will participate in the <a href="https://festadellabicicletta.it/" target="_blank">
+          Festa della Bicicletta 2025
+        </a> at Parco della Caffarella.  
+        Come meet us and discover how real experiences help shape safer cycling cities.
+      </p>
+    </article>
+  </section>
+
+</div>
     </main>
 
-    <footer role="contentinfo">
-      <div class="funding-logos">
-        <img
-          src="https://movprojects.com/assets/images/next-generation-eu-logo.png"
-          alt="Logo NextGenerationEU" />
-        <img src="https://movprojects.com/assets/images/mur-logo.png"
-          alt="Logo MUR" />
-        <img src="https://movprojects.com/assets/images/italia-domani-logo.png"
-          alt="Logo Italia Domani PNRR" />
-        <img src="https://movprojects.com/assets/images/sapienza-logo.png"
-          alt="Logo Sapienza" />
-      </div>
-      <p>Progetto finanziato dall’Unione Europea – NextGenerationEU nell’ambito
-        del <strong>Piano Nazionale di Ripresa e Resilienza (PNRR)</strong>, CN4
-        – Mobilità Sostenibile, Spoke 9 – CUP B83C22002900007.</p>
-      <p>© 2025 <a href="https://movprojects.com/" target="_blank"
-          rel="noopener">Moving Projects Srl</a></p>
-    </footer>
+    <!-- FOOTER from template -->
+    <div id="bikenet-footer"></div>
+
+    <!-- Loader -->
+    <script src="./docs/assets/theBIKEnet-web-init.js"></script>
+
   </body>
 </html>
