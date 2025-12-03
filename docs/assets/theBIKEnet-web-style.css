@@ -1,0 +1,450 @@
+/* =============================================================
+   theBIKEnet – COMPLETE, CLEAN & FULLY RESPONSIVE STYLE
+   Light Mode + Dark Mode fully harmonized
+   ============================================================= */
+
+/* -------------------------------------------------------------
+   ROOT VARIABLES
+------------------------------------------------------------- */
+:root {
+  --primary: #0c9091;
+  --primary-dark: #159fa0;
+  --secondary: #044f4d;
+  --secondary-dark: #e2f1f1;
+  --highlight: #f2ad2b;
+  --highlight-dark: #e6b43d;
+
+  --bg-light: #f5f5f5;
+  --bg-dark: #0f2222;
+
+  --card-bg-light: #ffffff;
+  --card-bg-dark: #1a3031;
+
+  --panel-bg-light: rgba(255, 255, 255, 0.97);
+  --panel-bg-dark: rgba(25, 40, 40, 0.9);
+
+  --text-main-light: #044f4d;
+  --text-main-dark: #e2f1f1;
+
+  --teal-accessible: #066e70;
+}
+
+/* -------------------------------------------------------------
+   BASE LAYOUT
+------------------------------------------------------------- */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--bg-light);
+  color: var(--text-main-light);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--highlight);
+  outline-offset: 3px;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: top 0.3s ease;
+}
+.skip-link:focus { top: 10px; }
+
+.logo-wrapper {
+  background: rgba(255,255,255,0.06);
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(3px);
+}
+
+
+/* -------------------------------------------------------------
+   HEADER
+------------------------------------------------------------- */
+header {
+  background: #fff;
+  border-bottom: 4px solid var(--primary);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* LOGHI – dimensioni originali (light + dark) */
+.brand img {
+  height: 60px !important;
+  width: auto !important;
+}
+.mp-logo {
+  height: 48px !important;
+  width: auto !important;
+  display: block;
+    filter: none;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+.mp-logo:hover { transform: scale(1.05); filter: brightness(1.05); }
+
+.brand-title h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--secondary);
+  font-weight: 700;
+}
+.brand-title p {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------------
+   LANGUAGE BUTTON (pretty pill button)
+------------------------------------------------------------- */
+.lang-toggle {
+  background: var(--teal-accessible);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 70px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all .25s ease;
+}
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  background: var(--secondary);
+  border-color: var(--highlight);
+}
+
+/* -------------------------------------------------------------
+   QUESTIONNAIRES GRID
+------------------------------------------------------------- */
+.q-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 720px) {
+  .q-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+/* CARD */
+.q-card {
+  background: var(--card-bg-light);
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.2rem;
+  transition: box-shadow .2s ease, transform .2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--secondary);
+}
+.q-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.q-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+  word-break: normal;
+  hyphens: auto;
+}
+
+.q-card p,
+.q-desc-body p {
+  color: var(--text-main-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  .q-card p,
+  .q-desc-body p {
+    color: var(--text-main-dark) !important;
+  }
+}
+
+/* LINKS INSIDE CARDS */
+.q-card-links {
+  margin-top: .8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .8rem;
+}
+.q-card-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+.q-card-links a:hover { text-decoration: underline; }
+
+/* Description toggle */
+.q-description { margin-top: .4rem; }
+.q-toggle {
+  margin-top: .4rem;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: 0;
+}
+.q-toggle:hover { text-decoration: underline; }
+.q-toggle-icon { transition: transform .25s ease; }
+.q-toggle[aria-expanded="true"] .q-toggle-icon { transform: rotate(180deg); }
+
+.q-desc-body {
+  margin-top: .4rem;
+  font-size: .95rem;
+  color: var(--secondary);
+}
+
+/* -------------------------------------------------------------
+   SECTION PANELS
+------------------------------------------------------------- */
+section {
+  background: var(--panel-bg-light);
+  border: 1px solid rgba(242,173,43,0.35);
+  border-left: 5px solid var(--primary);
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+section:hover {
+  border-color: rgba(230,180,61,0.25);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+h2::before {
+  content: attr(data-num);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: .9rem;
+  font-weight: 700;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* -------------------------------------------------------------
+   LINKS
+------------------------------------------------------------- */
+a {
+  color: var(--teal-accessible);
+  text-decoration: underline;
+  font-weight: 500;
+}
+a:hover { color: var(--highlight); }
+
+/* -------------------------------------------------------------
+   FOOTER
+------------------------------------------------------------- */
+footer {
+  margin-top: 3rem;
+  background: #fff;
+  border-top: 3px solid var(--primary);
+  padding: 2rem 1rem;
+  font-size: .9rem;
+  color: var(--secondary);
+  border-radius: 12px;
+  text-align: center;
+}
+.funding-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.funding-logos img {
+  height: 55px !important;
+  max-width: 160px;
+  object-fit: contain;
+  filter: none;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+.funding-logos img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* -------------------------------------------------------------
+   RESPONSIVE
+------------------------------------------------------------- */
+@media (max-width: 600px) {
+  body {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  header, footer, section {
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  .brand img { height: 45px !important; }
+  .mp-logo { height: 40px !important; }
+  .lang-toggle {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  h2 { font-size: 1.05rem; }
+}
+
+/* -------------------------------------------------------------
+   DARK MODE – unified & polished
+------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--bg-dark);
+    color: var(--text-main-dark);
+  }
+
+  header, footer {
+      background: #0f2a2c;  
+    border-color: var(--primary-dark);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.45);
+  }
+
+  .brand-title h1,
+  .brand-title p {
+    color: var(--text-main-dark);
+  }
+
+  section {
+    background: var(--panel-bg-dark);
+    border-color: rgba(249,202,79,0.35);
+  }
+
+  h2 { color: var(--text-main-dark); }
+  h2::before {
+    background: var(--primary-dark);
+    box-shadow: 0 0 0 2px var(--panel-bg-dark);
+  }
+
+  /* CARDS */
+  .q-card {
+    background: var(--card-bg-dark);
+    border-color: rgba(21,159,160,0.35);
+    color: var(--text-main-dark);
+  }
+  .q-card h3 { color: var(--primary-dark); font-weight: 700; }
+  .q-desc-body,
+  .q-desc-body p,
+  .q-description p {
+    color: var(--text-main-dark) !important;
+  }
+  .q-toggle {
+    color: var(--primary-dark);
+  }
+  .q-toggle:hover { color: var(--highlight-dark); }
+
+  a { color: var(--primary-dark); }
+  a:hover { color: var(--highlight-dark); }
+
+  /* LANGUAGE BUTTON restored pretty look */
+  .lang-toggle {
+    background: var(--primary-dark);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  .lang-toggle:hover,
+  .lang-toggle:focus-visible {
+    background: var(--highlight-dark);
+    color: #142c2c;
+    border-color: var(--highlight-dark);
+  }
+
+   .funding-logos img {
+    filter: brightness(1.15) contrast(1.15);
+  }
+}
+
+/* Hide language content until JS selects the one to show */
+[data-lang] { display: none; }
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.header-flex {
+  align-items: flex-start;
+}
+
+.brand,
+.right-header {
+  flex: 1 1 auto;
+}
+
+.header-flex {
+  row-gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-header {
+    justify-content: center;
+  }
+}

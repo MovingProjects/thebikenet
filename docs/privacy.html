@@ -5,336 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy – theBIKEnet</title>
 
-    <!-- ✅ Primary metadata -->
-    <meta name="description"
-      content="Privacy Policy for theBIKEnet – Transferring Human Experience into BIKE Network Evaluation Technologies.">
+    <!-- Metadata -->
+    <meta name="description" content="Privacy Policy for theBIKEnet – Transferring Human Experience into BIKE Network Evaluation Technologies.">
     <meta name="author" content="Moving Projects Srl">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0C9091">
 
-    <meta name="publisher" content="Moving Projects Srl" />
-    <meta name="organization" content="https://movprojects.com/" />
-
-    <!-- ✅ Open Graph / Facebook -->
     <meta property="og:title" content="Privacy Policy – theBIKEnet" />
-    <meta property="og:description"
-      content="Learn how theBIKEnet collects and processes data for scientific research on cycling and micromobility." />
-    <meta property="og:image"
-      content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
-    <meta property="og:url"
-      content="https://movingprojects.github.io/thebikenet/docs/privacy.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_GB" />
+    <meta property="og:url" content="https://movingprojects.github.io/thebikenet/docs/privacy.html" />
+    <meta property="og:image" content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
 
-    <!-- ✅ Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Privacy Policy – theBIKEnet" />
-    <meta name="twitter:image"
-      content="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
-
-    <!-- ✅ Canonical URL -->
-    <link rel="canonical"
-      href="https://movingprojects.github.io/thebikenet/docs/privacy.html" />
-
-    <!-- ✅ Favicons -->
-    <link rel="icon"
-      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
-      type="image/png" />
-    <link rel="apple-touch-icon"
-      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" />
-
-    <!-- ✅ External theBIKEnet style -->
-    <link rel="stylesheet"
-      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet-style.css" />
-
-    <style>
-      /* ✅ Accessibility: visible focus outlines + skip link */
-      :focus-visible {
-        outline: 3px solid #F2AD2B;
-        outline-offset: 3px;
-      }
-
-      .skip-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #0C9091;
-        color: #fff;
-        padding: 0.6rem 1rem;
-        border-radius: 0 0 6px 0;
-        transform: translateY(-120%);
-        transition: transform 0.3s ease;
-        z-index: 100;
-      }
-
-      .skip-link:focus {
-        transform: translateY(0);
-      }
-    </style>
-
-    <!-- ✅ Accessibility & Language Logic -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const btn = document.getElementById("toggleLang");
-        const main = document.querySelector("main");
-        const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-        let show = lang.startsWith("it") ? "it" : "en";
-
-        function showLang(l) {
-          document.querySelectorAll("[data-lang]").forEach(el => el.style.display = "none");
-          document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = "block");
-          main.setAttribute("lang", l);
-          show = l;
-          btn.setAttribute("aria-label",
-            `Change language. Current: ${l === "en" ? "English" : "Italiano"}`);
-          btn.textContent = l.toUpperCase();
-        }
-
-        showLang(show);
-        btn.addEventListener("click", () => showLang(show === "en" ? "it" : "en"));
-      });
-    </script>
   </head>
 
   <body>
-    <!-- ✅ Skip link for keyboard/screen reader navigation -->
+    <!-- Skip link -->
     <a href="#maincontent" class="skip-link">Skip to main content</a>
 
-    <!-- ✅ Header landmark -->
-    <header role="banner">
-      <div class="header-flex">
-        <div class="brand">
-          <img
-            src="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png"
-            alt="theBIKEnet project logo" />
-          <div class="brand-title">
-            <h1>theBIKEnet</h1>
-            <p>Transferring Human Experience into BIKE Network Evaluation
-              Technologies</p>
-          </div>
-        </div>
-        <div class="right-header">
-          <img
-            src="https://movprojects.com/assets/images/moving_projects_logo.png"
-            alt="Moving Projects organisation logo" class="mp-logo" />
-          <button id="toggleLang" class="lang-toggle"
-            aria-label="Change language">EN</button>
-        </div>
-      </div>
-    </header>
+    <!-- Template placeholders -->
+    <div id="bikenet-header"></div>
 
-    <!-- ✅ Main landmark for accessibility -->
-    <main id="maincontent" tabindex="-1" role="main"
-      aria-label="Privacy Policy content" lang="en">
-
+    <!-- Main content -->
+    <main id="maincontent" tabindex="-1" role="main">
+      
       <!-- ENGLISH VERSION -->
       <div data-lang="en" lang="en">
         <section><h2 data-num="1">Data Controller</h2>
-          <p>The data controller is <strong><a href="https://movprojects.com/"
-                target="_blank" rel="noopener">Moving Projects Srl</a></strong>,
-            Via Labicana 50, 00184, Rome, Italy –
+          <p>The data controller is <strong><a href="https://movprojects.com/" target="_blank" rel="noopener">Moving Projects Srl</a></strong>,
+            Via Labicana 50, 00184, Rome, Italy – 
             <a href="mailto:info@movprojects.com">info@movprojects.com</a>.
           </p>
         </section>
 
         <section><h2 data-num="2">Categories of Data Collected</h2>
           <ul>
-            <li><strong>Access data:</strong> email and password (for
-              authentication only)</li>
-            <li><strong>Mobility data:</strong> GPS traces (time, duration,
-              route)</li>
-            <li><strong>Survey data:</strong> responses about profile, habits,
-              perceptions, and experiences</li>
-            <li><strong>Reports:</strong> geolocated notes on safety or
-              infrastructure issues</li>
-            <li><strong>Technical metadata:</strong> device type, session
-              identifiers, timestamps</li>
+            <li><strong>Access data:</strong> email and password (authentication only)</li>
+            <li><strong>Mobility data:</strong> GPS traces</li>
+            <li><strong>Survey data:</strong> profile, habits, perceptions</li>
+            <li><strong>Reports:</strong> geolocated safety notes</li>
+            <li><strong>Technical metadata:</strong> timestamp, device type</li>
           </ul>
-          <p>Participation is always voluntary and anonymous.</p>
         </section>
 
         <section><h2 data-num="3">Purpose of Processing</h2>
-          <p>Data are collected for <strong>scientific research</strong> on
-            urban cycling and micromobility,
-            to support the design of safer and more sustainable mobility
-            systems.</p>
+          <p>Data are collected for <strong>scientific research</strong> on cycling and micromobility.</p>
           <ul>
-            <li>Analyse cycling behaviours and perceptions</li>
-            <li>Evaluate infrastructure and accessibility</li>
-            <li>Develop safety indicators and planning tools</li>
-            <li>Publish anonymized datasets for research and open data
-              initiatives</li>
+            <li>Analyse cycling behaviour</li>
+            <li>Evaluate infrastructure</li>
+            <li>Create safety indicators</li>
+            <li>Publish anonymized datasets</li>
           </ul>
-          <p><strong>No data are used for commercial or marketing
-              purposes.</strong></p>
         </section>
 
         <section><h2 data-num="4">Legal Basis and Research Framework</h2>
-          <p>Processing is based on <strong>GDPR Article 89</strong> (processing
-            for scientific research purposes).
-            Data are pseudonymized and used exclusively for research and
-            public-interest activities.</p>
+          <p>The legal basis is <strong>GDPR Article 89</strong> (processing for scientific research).</p>
         </section>
 
         <section><h2 data-num="5">Data Storage and Access Levels</h2>
           <ul>
-            <li><strong>Access data:</strong> stored separately and encrypted;
-              accessible only to system administrators.</li>
-            <li><strong>Mobility and survey data:</strong> pseudonymized and
-              stored in encrypted databases accessible only to the research
-              team.</li>
-            <li><strong>Aggregated data:</strong> anonymized and published on
-              public dashboards.</li>
-            <li><strong>Scientific datasets:</strong> shared only under license
-              for research purposes (FAIR principles).</li>
+            <li><strong>Access data:</strong> encrypted and separated</li>
+            <li><strong>Mobility/survey data:</strong> pseudonymized</li>
+            <li><strong>Aggregated data:</strong> anonymized</li>
+            <li><strong>Scientific datasets:</strong> shared under license</li>
           </ul>
         </section>
 
         <section><h2 data-num="6">Retention Period</h2>
-          <p>Data are kept for up to <strong>5 years</strong> after the
-            project’s conclusion
-            to allow for longitudinal analysis and scientific publication.</p>
+          <p>Data are kept for up to <strong>5 years</strong> after project closure.</p>
         </section>
 
         <section><h2 data-num="7">Rights of Participants</h2>
           <ul>
-            <li>Access to your data</li>
-            <li>Correction or deletion</li>
-            <li>Information on processing methods</li>
+            <li>Access, correction, deletion</li>
+            <li>Information on processing</li>
           </ul>
-          <p>Contact: <a
-              href="mailto:info@movprojects.com">info@movprojects.com</a></p>
+          <p>Contact: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
         </section>
 
         <section><h2 data-num="8">Project Funding</h2>
-          <p>theBIKEnet is coordinated by <strong>Moving Projects Srl</strong>,
-            in collaboration with <strong>Sapienza University of Rome –
-              DICEA</strong>.</p>
-          <p>Funded under the <strong>National Recovery and Resilience Plan
-              (PNRR)</strong> –
-            Mission 4 “Education and Research”, Component 2 “From Research to
-            Enterprise”, Investment 1.4,
-            <em>National Centre CN4 – Sustainable Mobility</em>, Spoke 9 – Urban
-            Mobility Project DICEA24SPOKE9UNI
-            <strong>CUP B83C22002900007</strong>.</p>
+          <p>theBIKEnet is coordinated by <strong>Moving Projects Srl</strong> with <strong>Sapienza University</strong>.</p>
+          <p>Funded under the <strong>PNRR</strong>, CN4 Sustainable Mobility – CUP B83C22002900007.</p>
         </section>
       </div>
 
       <!-- ITALIAN VERSION -->
       <div data-lang="it" lang="it">
+
         <section><h2 data-num="1">Titolare del Trattamento</h2>
-          <p>Il titolare del trattamento è <strong><a
-                href="https://movprojects.com/"
-                target="_blank" rel="noopener">Moving Projects Srl</a></strong>,
-            Via Labicana 50, 00184, Roma, Italy –
-            <a href="mailto:info@movprojects.com">info@movprojects.com</a>.</p>
+          <p>Il titolare del trattamento è <strong><a href="https://movprojects.com/" target="_blank" rel="noopener">Moving Projects Srl</a></strong>,
+            Via Labicana 50, 00184, Roma – 
+            <a href="mailto:info@movprojects.com">info@movprojects.com</a>.
+          </p>
         </section>
+
         <section><h2 data-num="2">Tipologie di Dati Raccolti</h2>
           <ul>
-            <li><strong>Dati di accesso:</strong> email e password (solo per
-              autenticazione)</li>
-            <li><strong>Dati di mobilità:</strong> tracce GPS (orario, durata,
-              percorso)</li>
-            <li><strong>Dati da questionari:</strong> risposte su profilo,
-              abitudini, percezioni ed esperienze</li>
-            <li><strong>Segnalazioni:</strong> note geolocalizzate su sicurezza
-              o infrastrutture</li>
-            <li><strong>Dati tecnici:</strong> tipo di dispositivo, ID di
-              sessione, timestamp</li>
+            <li>Dati di accesso</li>
+            <li>Dati GPS</li>
+            <li>Dati dei questionari</li>
+            <li>Segnalazioni geolocalizzate</li>
+            <li>Metadati tecnici</li>
           </ul>
-          <p>La partecipazione è sempre volontaria e anonima.</p>
         </section>
 
         <section><h2 data-num="3">Finalità del Trattamento</h2>
-          <p>I dati vengono raccolti per <strong>ricerca scientifica</strong>
-            sulla ciclabilità urbana e la micromobilità, al fine di supportare
-            la progettazione di sistemi di mobilità più sicuri e
-            sostenibili.</p>
+          <p>Dati raccolti per <strong>ricerca scientifica</strong> sulla ciclabilità.</p>
           <ul>
-            <li>Analizzare comportamenti e percezioni dei ciclisti</li>
-            <li>Valutare infrastrutture e accessibilità</li>
-            <li>Sviluppare indicatori di sicurezza e strumenti di
-              pianificazione</li>
-            <li>Pubblicare dataset anonimizzati per ricerca e open data</li>
+            <li>Analisi mobilità</li>
+            <li>Valutazione infrastrutture</li>
+            <li>Indicatori di sicurezza</li>
+            <li>Dataset anonimizzati</li>
           </ul>
-          <p><strong>Nessun dato è utilizzato per fini commerciali o di
-              marketing.</strong></p>
         </section>
 
-        <section><h2 data-num="4">Base Giuridica e Quadro di Ricerca</h2>
-          <p>Il trattamento si basa sull’<strong>Articolo 89 del GDPR</strong>
-            (trattamento per finalità di ricerca scientifica). I dati sono pseudonimizzati e usati
-            esclusivamente per scopi di ricerca e interesse pubblico.</p>
+        <section><h2 data-num="4">Base Giuridica</h2>
+          <p>Trattamento basato su <strong>Art. 89 GDPR</strong>.</p>
         </section>
 
-        <section><h2 data-num="5">Conservazione e Livelli di Accesso</h2>
+        <section><h2 data-num="5">Conservazione e Accesso</h2>
           <ul>
-            <li><strong>Dati di accesso (email, password):</strong> conservati
-              separatamente e criptati; accessibili solo agli amministratori
-              tecnici.</li>
-            <li><strong>Dati di mobilità e questionari:</strong> pseudonimizzati
-              e archiviati in database criptati accessibili solo al gruppo di
-              ricerca.</li>
-            <li><strong>Dati aggregati:</strong> anonimizzati e pubblicati in
-              dashboard pubbliche.</li>
-            <li><strong>Dataset scientifici:</strong> condivisi solo su
-              richiesta con licenza d’uso per scopi di ricerca (principi
-              FAIR).</li>
+            <li>Dati di accesso: criptati</li>
+            <li>Dati di mobilità/questionari: pseudonimizzati</li>
+            <li>Dati aggregati: anonimizzati</li>
+            <li>Dataset scientifici: condivisi con licenza</li>
           </ul>
         </section>
 
         <section><h2 data-num="6">Periodo di Conservazione</h2>
-          <p>I dati vengono conservati per un massimo di <strong>5 anni</strong>
-            dalla conclusione del progetto, per consentire analisi longitudinali
-            e pubblicazioni scientifiche.</p>
+          <p>Massimo <strong>5 anni</strong> dalla chiusura del progetto.</p>
         </section>
 
         <section><h2 data-num="7">Diritti degli Interessati</h2>
-          <p>L’utente può richiedere in qualsiasi momento:</p>
           <ul>
-            <li>Accesso ai propri dati</li>
-            <li>Rettifica o cancellazione</li>
-            <li>Informazioni sulle modalità di trattamento</li>
+            <li>Accesso, rettifica, cancellazione</li>
+            <li>Informazioni sul trattamento</li>
           </ul>
-          <p>Contatto: <a
-              href="mailto:info@movprojects.com">info@movprojects.com</a></p>
+          <p>Contatto: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
         </section>
 
-        <section><h2 data-num="8">Finanziamento del Progetto</h2>
-          <p>theBIKEnet è coordinato da <strong>Moving Projects Srl</strong>, in
-            collaborazione con <strong>Sapienza Università di Roma –
-              DICEA</strong>.</p>
-          <p>Finanziato nell’ambito del <strong>Piano Nazionale di Ripresa e
-              Resilienza (PNRR)</strong> – Missione 4 “Istruzione e Ricerca”,
-            Componente 2 “Dalla Ricerca all’Impresa”, Investimento 1.4,
-            <em>Centro Nazionale CN4 – Mobilità Sostenibile</em>, Spoke 9 –
-            Progetto Mobilità Urbana DICEA24SPOKE9UNI <strong>CUP
-              B83C22002900007</strong>.</p>
+        <section><h2 data-num="8">Finanziamento</h2>
+          <p>Progetto coordinato da <strong>Moving Projects Srl</strong> con <strong>Sapienza – DICEA</strong>.</p>
+          <p>Finanziato da PNRR, CN4 – CUP B83C22002900007.</p>
         </section>
       </div>
     </main>
 
-    <!-- ✅ Footer landmark -->
-    <footer role="contentinfo">
-      <div class="funding-logos">
-        <img
-          src="https://movprojects.com/assets/images/next-generation-eu-logo.png"
-          alt="European Union NextGenerationEU logo" />
-        <img src="https://movprojects.com/assets/images/mur-logo.png"
-          alt="Ministero dell’Università e della Ricerca logo" />
-        <img src="https://movprojects.com/assets/images/italia-domani-logo.png"
-          alt="Italia Domani PNRR logo" />
-        <img src="https://movprojects.com/assets/images/sapienza-logo.png"
-          alt="Sapienza Università di Roma logo" />
-      </div>
+    <!-- Template footer -->
+    <div id="bikenet-footer"></div>
 
-      <p>Project funded by the European Union – NextGenerationEU under the
-        <strong>National Recovery and Resilience Plan (PNRR)</strong>,
-        CN4 – Sustainable Mobility, Spoke 9 – CUP B83C22002900007.</p>
-      <p>
-        © 2025 <a href="https://movprojects.com/" target="_blank"
-          rel="noopener">Moving Projects Srl</a> ·
-      </p>
-    </footer>
+    <!-- Loader: stile + template -->
+    <script src="../assets/theBIKEnet-web-init.js"></script>
   </body>
 </html>

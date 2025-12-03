@@ -1,0 +1,85 @@
+<!-- theBIKEnet Base Template: Header + Footer + Script Loader -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>theBIKEnet – Template</title>
+
+  <!-- Import shared style -->
+  <link rel="stylesheet" href="../theBIKEnet-style.css" />
+  
+  <!-- 
+	<link rel="stylesheet"
+      href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet-style.css" />
+    -->
+</head>
+
+<body>
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header role="banner">
+    <div class="header-flex">
+      <div class="brand">
+        <img src="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" alt="theBIKEnet project logo" />
+        <div class="brand-title">
+          <h1>theBIKEnet</h1>
+          <p>Transferring Human Experience into BIKE Network Evaluation Technologies</p>
+        </div>
+      </div>
+
+      <div class="right-header">
+        <img src="https://movprojects.com/assets/images/moving_projects_logo.png" alt="Moving Projects organisation logo" class="mp-logo" />
+        <button id="toggleLang" class="lang-toggle" aria-label="Change language">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT WRAPPER ================= -->
+  <main id="maincontent" tabindex="-1" role="main">
+    <!-- Your page content will be inserted here -->
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer role="contentinfo">
+    <div class="funding-logos">
+      <img src="https://movprojects.com/assets/images/next-generation-eu-logo.png" alt="European Union NextGenerationEU logo" />
+      <img src="https://movprojects.com/assets/images/mur-logo.png" alt="Ministero dell’Università e della Ricerca logo" />
+      <img src="https://movprojects.com/assets/images/italia-domani-logo.png" alt="Italia Domani PNRR logo" />
+      <img src="https://movprojects.com/assets/images/sapienza-logo.png" alt="Sapienza Università di Roma logo" />
+    </div>
+
+    <p>Project funded by the European Union – NextGenerationEU under the
+      <strong>National Recovery and Resilience Plan (PNRR)</strong>, CN4 – Sustainable Mobility, Spoke 9 – CUP B83C22002900007.</p>
+
+    <p>© 2025 <a href="https://movprojects.com/" target="_blank" rel="noopener">Moving Projects Srl</a></p>
+  </footer>
+
+  <!-- ================= LANGUAGE TOGGLE SCRIPT ================= -->
+  <script>
+    function initLangToggle() {
+      const btn = document.getElementById("toggleLang");
+      const main = document.querySelector("main");
+      const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      window.currentLang = lang.startsWith("it") ? "it" : "en";
+
+      function showLang(l) {
+        document.querySelectorAll("[data-lang]").forEach(el => {
+          el.style.display = el.getAttribute("data-lang") === l ? "block" : "none";
+        });
+        if (main) main.setAttribute("lang", l);
+        window.currentLang = l;
+        if (btn) btn.textContent = l.toUpperCase();
+      }
+
+      window.setLang = showLang;
+
+      showLang(window.currentLang);
+      if (btn) btn.addEventListener("click", () => showLang(window.currentLang === "en" ? "it" : "en"));
+    }
+
+    document.addEventListener("DOMContentLoaded", initLangToggle);
+  </script>
+</body>
+</html>
