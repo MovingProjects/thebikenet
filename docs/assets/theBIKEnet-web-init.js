@@ -14,8 +14,6 @@
     const local = LOCAL_BASE + filename;
     const remote = REMOTE_BASE + filename;
 
-    link.href = USE_WEB ? fallbackURL : cssURL;
-
     if (USE_WEB) {
       try {
         const r2 = await fetch(remote, { cache: "no-cache" });
