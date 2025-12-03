@@ -5,282 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy – theBIKEnet (Simple)</title>
 
-  <link rel="stylesheet"
-        href="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet-style.css">
-
-  <style>
-    body {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: #f7f9fa;
-      color: #044f4d;
-      font-family: "Segoe UI", system-ui, sans-serif;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #fff;
-      border-bottom: 3px solid #0C9091;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      padding: 1rem 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .header-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .brand img {
-      height: 60px;
-      width: auto;
-    }
-
-    .brand-title h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      color: #044f4d;
-      font-weight: 700;
-    }
-
-    .brand-title p {
-      margin: 0;
-      color: #066E70; /* accessibile teal */
-      font-weight: 500;
-    }
-
-    section {
-      background: #fff;
-      border-left: 5px solid #0C9091;
-      border-radius: 12px;
-      padding: 1.4rem 1.8rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      color: #044f4d;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    a {
-      color: #066E70;
-      font-weight: 500;
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: #F2AD2B;
-    }
-
-    footer {
-      margin-top: 3rem;
-      background: #fff;
-      border-top: 3px solid #0C9091;
-      font-size: 0.9rem;
-      color: #044f4d;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-radius: 12px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .funding-logos {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .funding-logos img {
-      height: 55px;
-      max-width: 160px;
-      object-fit: contain;
-      filter: brightness(0.96);
-      transition: transform 0.2s;
-    }
-
-    .funding-logos img:hover {
-      transform: scale(1.05);
-    }
-
-    [data-lang] { display: none; }
-    .lang-toggle {
-      background: #066E70;
-      color: #fff;
-      border-radius: 999px;
-      border: 2px solid transparent;
-      padding: 0.4rem 0.9rem;
-      cursor: pointer;
-      font-weight: 600;
-    }
-  </style>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const btn = document.getElementById("toggleLang");
-      const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-      let show = lang.startsWith("it") ? "it" : "en";
-
-      function showLang(l) {
-        document.querySelectorAll("[data-lang]").forEach(el => el.style.display = "none");
-        document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => el.style.display = "block");
-        btn.textContent = l.toUpperCase();
-        btn.setAttribute("aria-label", `Change language. Current: ${l === "en" ? "English" : "Italiano"}`);
-        show = l;
-      }
-
-      showLang(show);
-      btn.addEventListener("click", () => showLang(show === "en" ? "it" : "en"));
-    });
-  </script>
+  <meta name="description" content="Simplified privacy explanation for theBIKEnet.">
+  <meta name="author" content="Moving Projects Srl">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0C9091">
 </head>
 
 <body>
-  <header role="banner">
-    <div class="header-flex">
-      <div class="brand">
-        <img src="https://movingprojects.github.io/thebikenet/docs/assets/theBIKEnet_logo.png" alt="theBIKEnet logo">
-        <div class="brand-title">
-          <h1>theBIKEnet</h1>
-          <p>Transferring Human Experience into BIKE Network Evaluation Technologies</p>
-        </div>
-      </div>
-      <div class="right-header">
-        <img src="https://movprojects.com/assets/images/moving_projects_logo.png" alt="Moving Projects logo" style="height:50px;width:auto">
-        <button id="toggleLang" class="lang-toggle">EN</button>
-      </div>
-    </div>
-  </header>
 
-  <main role="main" aria-label="Simple privacy information">
+  <!-- Skip link -->
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+  <!-- Header from template -->
+  <div id="bikenet-header"></div>
+
+  <!-- Main content -->
+  <main id="maincontent" tabindex="-1" role="main">
+
     <!-- ENGLISH VERSION -->
-      <div data-lang="en">
-        <section>
-          <h2 data-num="1">How we use your data</h2>
-          <p><strong>theBIKEnet</strong> is a public research project by
-            <a href="https://movprojects.com/" target="_blank" rel="noopener">Moving Projects Srl</a>,
-            studying how people cycle in cities.
-            Participation is voluntary and anonymous. Your data help design safer and more inclusive mobility systems.
-          </p>
-        </section>
+    <div data-lang="en">
+      <section>
+        <h2 data-num="1">How we use your data</h2>
+        <p><strong>theBIKEnet</strong> is a public research project led by
+          <a href="https://movprojects.com/" target="_blank" rel="noopener">Moving Projects Srl</a>.
+          Participation is voluntary and anonymous. Your data contribute to safer and more inclusive mobility systems.
+        </p>
+      </section>
 
-        <section>
-          <h2 data-num="2">What we collect</h2>
-          <ul>
-            <li>Email and access code (for login and participation history)</li>
-            <li>Recorded trips (GPS, date, time)</li>
-            <li>Questionnaire responses (profile, perceptions, habits)</li>
-            <li>Reports of safety or infrastructure issues</li>
-          </ul>
-        </section>
+      <section>
+        <h2 data-num="2">What we collect</h2>
+        <ul>
+          <li>Email and access code (minimal login info)</li>
+          <li>GPS-based trip recordings</li>
+          <li>Survey responses (profile, behaviour, perceptions)</li>
+          <li>Optional safety or infrastructure reports</li>
+        </ul>
+      </section>
 
-        <section>
-          <h2 data-num="3">Why we collect data</h2>
-          <p>Data are collected to study urban cycling, improve mobility networks, and develop anonymized scientific datasets for public research and planning.</p>
-          <p><strong>Never used for commercial purposes.</strong></p>
-        </section>
+      <section>
+        <h2 data-num="3">Why we collect data</h2>
+        <p>Data help study urban cycling, understand real behaviours, and produce anonymized public datasets for scientific research.</p>
+        <p><strong>Never used for commercial purposes.</strong></p>
+      </section>
 
-        <section>
-          <h2 data-num="4">How your data are protected</h2>
-          <ul>
-            <li>Personal data (email) stored in a separate, encrypted database.</li>
-            <li>Trip and survey data linked only through an internal anonymous ID.</li>
-            <li>Public dashboards show only aggregated and anonymized data.</li>
-          </ul>
-        </section>
+      <section>
+        <h2 data-num="4">Data protection</h2>
+        <ul>
+          <li>Email stored separately in an encrypted database</li>
+          <li>Trip and survey data linked only via an anonymous ID</li>
+          <li>All published results are aggregated and anonymized</li>
+        </ul>
+      </section>
 
-        <section>
-          <h2 data-num="5">Your rights</h2>
-          <p>You can access, delete, or request clarification about your data at any time.<br>
-          Contact: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
-        </section>
-      </div>
+      <section>
+        <h2 data-num="5">Your rights</h2>
+        <p>You may request data deletion or information at any time:<br>
+          <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
+      </section>
+    </div>
 
-      <!-- ITALIAN VERSION -->
-      <div data-lang="it">
-        <section>
-          <h2 data-num="1">Come usiamo i tuoi dati</h2>
-          <p><strong>theBIKEnet</strong> è un progetto di ricerca pubblica promosso da
-            <a href="https://movprojects.com/" target="_blank" rel="noopener">Moving Projects Srl</a>,
-            che studia la mobilità ciclabile urbana.
-            La partecipazione è volontaria e anonima. I dati raccolti servono a progettare sistemi di mobilità più sicuri e inclusivi.
-          </p>
-        </section>
+    <!-- ITALIAN VERSION -->
+    <div data-lang="it">
+      <section>
+        <h2 data-num="1">Come usiamo i tuoi dati</h2>
+        <p><strong>theBIKEnet</strong> è un progetto di ricerca pubblica coordinato da
+          <a href="https://movprojects.com/" target="_blank" rel="noopener">Moving Projects Srl</a>.
+          La partecipazione è volontaria e anonima. I dati servono a progettare sistemi di mobilità più sicuri e inclusivi.
+        </p>
+      </section>
 
-        <section>
-          <h2 data-num="2">Cosa raccogliamo</h2>
-          <ul>
-            <li>Email e codice di accesso (per login e cronologia)</li>
-            <li>Spostamenti registrati (GPS, data, ora)</li>
-            <li>Risposte ai questionari (profilo, percezioni, abitudini)</li>
-            <li>Segnalazioni su sicurezza o infrastrutture</li>
-          </ul>
-        </section>
+      <section>
+        <h2 data-num="2">Cosa raccogliamo</h2>
+        <ul>
+          <li>Email e codice di accesso (informazioni minime)</li>
+          <li>Tracciamento GPS dei tragitti</li>
+          <li>Risposte ai questionari (profilo, comportamenti, percezioni)</li>
+          <li>Segnalazioni opzionali su sicurezza e infrastrutture</li>
+        </ul>
+      </section>
 
-        <section>
-          <h2 data-num="3">Perché li raccogliamo</h2>
-          <p>I dati vengono raccolti per studiare i comportamenti di mobilità, migliorare le reti ciclabili e produrre dataset scientifici anonimizzati per la ricerca e la pianificazione pubblica.</p>
-          <p><strong>Mai utilizzati per fini commerciali.</strong></p>
-        </section>
+      <section>
+        <h2 data-num="3">Perché li raccogliamo</h2>
+        <p>I dati servono per studiare la ciclabilità urbana, analizzare i comportamenti e generare dataset scientifici anonimizzati.</p>
+        <p><strong>Mai utilizzati per fini commerciali.</strong></p>
+      </section>
 
-        <section>
-          <h2 data-num="4">Come proteggiamo i tuoi dati</h2>
-          <ul>
-            <li>I dati personali (email) sono salvati in un database separato e criptato.</li>
-            <li>I dati di viaggio e dei questionari sono collegati solo tramite un ID anonimo.</li>
-            <li>Le dashboard pubbliche mostrano solo informazioni aggregate e anonimizzate.</li>
-          </ul>
-        </section>
+      <section>
+        <h2 data-num="4">Come proteggiamo i tuoi dati</h2>
+        <ul>
+          <li>Email salvata in database separato e criptato</li>
+          <li>I dati GPS e dei questionari sono collegati solo tramite un ID anonimo</li>
+          <li>Tutti i risultati pubblici sono aggregati e anonimizzati</li>
+        </ul>
+      </section>
 
-        <section>
-          <h2 data-num="5">I tuoi diritti</h2>
-          <p>Puoi accedere, cancellare o chiedere chiarimenti sui tuoi dati in qualsiasi momento.<br>
-          Contatto: <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
-        </section>
-      </div>
-   </main>
+      <section>
+        <h2 data-num="5">I tuoi diritti</h2>
+        <p>Puoi richiedere la cancellazione o l’accesso ai tuoi dati in qualsiasi momento:<br>
+          <a href="mailto:info@movprojects.com">info@movprojects.com</a></p>
+      </section>
+    </div>
 
-    <!-- ✅ Footer landmark -->
-    <footer role="contentinfo">
-      <div class="funding-logos">
-        <img
-          src="https://movprojects.com/assets/images/next-generation-eu-logo.png"
-          alt="European Union NextGenerationEU logo" />
-        <img src="https://movprojects.com/assets/images/mur-logo.png"
-          alt="Ministero dell’Università e della Ricerca logo" />
-        <img src="https://movprojects.com/assets/images/italia-domani-logo.png"
-          alt="Italia Domani PNRR logo" />
-        <img src="https://movprojects.com/assets/images/sapienza-logo.png"
-          alt="Sapienza Università di Roma logo" />
-      </div>
+  </main>
 
-      <p>Project funded by the European Union – NextGenerationEU under the
-        <strong>National Recovery and Resilience Plan (PNRR)</strong>,
-        CN4 – Sustainable Mobility, Spoke 9 – CUP B83C22002900007.</p>
-      <p>
-        © 2025 <a href="https://movprojects.com/" target="_blank"
-          rel="noopener">Moving Projects Srl</a>·
-      </p>
-    </footer>
-  </body>
+  <!-- Footer from template -->
+  <div id="bikenet-footer"></div>
+
+  <!-- Loader: template + style + language -->
+  <script src="./assets/theBIKEnet-web-init-full.js"></script>
+</body>
 </html>
