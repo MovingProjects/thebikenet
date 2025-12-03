@@ -1,25 +1,32 @@
 (async function () {
-  const LOCAL_BASE  = "../";
-  const REMOTE_BASE = "https://movingprojects.github.io/thebikenet/docs/assets/";
+  const USE_WEB = true;
+
+  const LOCAL_BASE = "../";
+  const REMOTE_BASE =
+    "https://movingprojects.github.io/thebikenet/docs/assets/";
 
   const FILES = {
     template: "theBIKEnet-web-template.html",
-    style:    "theBIKEnet-web-style.css"
+    style: "theBIKEnet-web-style.css",
   };
 
   async function fetchWithFallback(filename) {
     const local = LOCAL_BASE + filename;
     const remote = REMOTE_BASE + filename;
 
-    try {
-      const r1 = await fetch(local, { cache: "no-cache" });
-      if (r1.ok) return r1.text();
-    } catch (e) {}
+    link.href = USE_WEB ? fallbackURL : cssURL;
 
-    try {
-      const r2 = await fetch(remote, { cache: "no-cache" });
-      if (r2.ok) return r2.text();
-    } catch (e) {}
+    if (USE_WEB) {
+      try {
+        const r2 = await fetch(remote, { cache: "no-cache" });
+        if (r2.ok) return r2.text();
+      } catch (e) {}
+    } else {
+      try {
+        const r1 = await fetch(local, { cache: "no-cache" });
+        if (r1.ok) return r1.text();
+      } catch (e) {}
+    }
 
     console.error("❌ Impossibile caricare", filename);
     return null;
@@ -34,14 +41,10 @@
 
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = cssURL;
+    link.href = USE_WEB ? fallbackURL : cssURL;
 
-    let useWeb = false;
     link.onerror = () => {
-      if(!useWeb) {
-		  useWeb = true;
-		  console.warn("⚠️ CSS locale non trovato, uso GitHub");
-	  }
+      console.warn("⚠️ CSS locale non trovato, uso GitHub");
       link.href = fallbackURL;
     };
 
@@ -61,8 +64,10 @@
     const header = tpl.querySelector("header");
     const footer = tpl.querySelector("footer");
 
-    if (header) document.getElementById("bikenet-header").innerHTML = header.outerHTML;
-    if (footer) document.getElementById("bikenet-footer").innerHTML = footer.outerHTML;
+    if (header)
+      document.getElementById("bikenet-header").innerHTML = header.outerHTML;
+    if (footer)
+      document.getElementById("bikenet-footer").innerHTML = footer.outerHTML;
 
     if (window.initLangToggle) window.initLangToggle();
   }
