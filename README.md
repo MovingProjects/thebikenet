@@ -71,9 +71,9 @@ Spoke 9 – *Urban Mobility Project DICEA24SPOKE9UNI*
 All data collected through *theBIKEnet* comply with **GDPR (Article 89)** and open-science principles.  
 Information on pseudonymization, ethics, and transparency is available here:
 
-- [Privacy Policy – theBIKEnet (Full)](https://movingprojects.github.io/thebikenet/docs/privacy.html)  
-- [Privacy Explained Simply](https://movingprojects.github.io/thebikenet/docs/privacy-simple.html)
-- [Transparency and Data Protection – PlanEasy Framework](https://planeasy-webgis.github.io/planeasy-crowdsourcing-framework/docs/PRIVACY_GUIDELINES.html)  
+- [Privacy Notice](https://movingprojects.github.io/thebikenet/docs/privacy.html)  
+- [Simplified Privacy Notice](https://movingprojects.github.io/thebikenet/docs/privacy-simple.html)
+- [Privacy and Data Architecture Guidelines](https://github.com/MovingProjects/thebikenet/blob/main/docs/PRIVACY_AND_DATA_ARCHITECTURE.md)  
 
 ---
 
@@ -106,5 +106,4 @@ Any other use requires **explicit written permission** from *Moving Projects*.
 
 📄 Full license text: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
 
-© 2025 **Moving Projects Srl** · All rights reserved.  
-Developed with the **PlanEasy WebGIS Framework**.
+© 2025 **Moving Projects Srl** ·
