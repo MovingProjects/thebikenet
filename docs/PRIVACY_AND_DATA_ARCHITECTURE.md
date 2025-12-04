@@ -49,6 +49,7 @@ The platform implements a **three-layer architecture** ensuring strict separatio
 | **3️⃣ Transparency Layer (Public)**    | Contains aggregated, anonymised results and indicators.                      | PostgreSQL / static JSON/GeoJSON files for WebGIS     | Publicly accessible for transparency, research, and open-data reuse.          |
 
 This layered separation guarantees that no personally identifiable information (PII) is ever stored or processed together with behavioural or spatial data.
+In specific and regulated cases, derived pseudonymised datasets from the Research Layer may be shared with qualified research partners under Data Use Agreements (DUAs). These datasets never contain direct identifiers (such as email or account information), are not publicly downloadable, and remain under the scope of GDPR Article 89 as personal data processed exclusively for scientific research and public-interest purposes.
 
 ### 3.2 Data Protection Principles
 
@@ -111,7 +112,8 @@ By adhering to FAIR, Moving Projects ensures transparency and fosters collaborat
 * **Personal identifiers (Access Layer):** deleted upon user request or within 6 months after project closure.
 * **Pseudonymised research data:** retained for up to 5 years after the end of data collection for scientific analysis under secure, access-controlled storage.
 * **Aggregated public data:** remain permanently available as open datasets. These datasets are reviewed to ensure that no variable combination enables re-identification.
-* **Data sharing:** limited to anonymised or aggregated outputs; no raw or identifiable data are shared externally.
+* **Pseudonymised scientific datasets:** in specific research collaborations, derived pseudonymised datasets (never containing direct identifiers) may be shared with qualified research partners under strict Data Use Agreements (DUAs). These datasets are not publicly downloadable and remain within the scope of GDPR Article 89 (scientific research and public-interest purposes).
+* **Data sharing:** remains limited to anonymised or aggregated public outputs and to strictly controlled pseudonymised research datasets shared under DUAs. No raw or directly identifiable data are ever shared externally.
 
 Any data exchange or reuse complies with GDPR Article 89 (processing for scientific research purposes).
 
