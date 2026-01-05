@@ -1,6 +1,6 @@
 {
 	"questionnaire": {
-		"name": "8. theBIKEnet Mobility Services – Shared Use, Integration and Willingness to Pay",
+		"name": "8. theBIKEnet Mobility Services - Shared Use, Integration and Willingness to Pay",
 		"questionnaire_id": "theBIKEnet_mobility_services",
 		"questionnaire_version": "1.0.0",
 		"project": "theBIKEnet",
@@ -12,8 +12,8 @@
 		"gdpr_link": "https://movingprojects.github.io/thebikenet/docs/privacy.html",
 		"sections": [
 			{
-				"title": "Welcome to the theBIKEnet Mobility Services Questionnaire",
-				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> — such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+				"title": "theBIKEnet Mobility Services Questionnaire",
+				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> - such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 				"backgroundColor": "#0c9091",
 				"questions": []
 			},
@@ -32,10 +32,10 @@
 								"text": "Daily (5 or more times per week)"
 							},
 							{
-								"text": "Frequently (3–4 times per week)"
+								"text": "Frequently (3-4 times per week)"
 							},
 							{
-								"text": "Sometimes (1–2 times per week or at least twice per month)"
+								"text": "Sometimes (1-2 times per week or at least twice per month)"
 							},
 							{
 								"text": "Rarely (less than twice per month)"
@@ -58,10 +58,10 @@
 								"text": "Daily (5 or more times per week)"
 							},
 							{
-								"text": "Frequently (3–4 times per week)"
+								"text": "Frequently (3-4 times per week)"
 							},
 							{
-								"text": "Sometimes (1–2 times per week or at least twice per month)"
+								"text": "Sometimes (1-2 times per week or at least twice per month)"
 							},
 							{
 								"text": "Rarely (less than twice per month)"
@@ -84,10 +84,10 @@
 								"text": "Daily (5 or more times per week)"
 							},
 							{
-								"text": "Frequently (3–4 times per week)"
+								"text": "Frequently (3-4 times per week)"
 							},
 							{
-								"text": "Sometimes (1–2 times per week or at least twice per month)"
+								"text": "Sometimes (1-2 times per week or at least twice per month)"
 							},
 							{
 								"text": "Rarely (less than twice per month)"
@@ -380,15 +380,15 @@
 	"languages": {
 		"it": {
 			"code": "it",
-			"#8. theBIKEnet Mobility Services – Shared Use, Integration and Willingness to Pay": "8. theBIKEnet Servizi di Mobilità – Uso Condiviso, Integrazione e Disponibilità a Pagare",
-			"#Welcome to the theBIKEnet Mobility Services Questionnaire": "Benvenutə al questionario theBIKEnet – Servizi di Mobilità",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> — such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta nelle città — unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutti.<br><br>Questo ottavo questionario si concentra sui <b>servizi di mobilità condivisa e pubblica</b> — come bike sharing, monopattini elettrici condivisi e trasporto pubblico. Indaga <b>quanto spesso utilizzi questi servizi, come li combini tra loro e quali miglioramenti potrebbero renderli più accessibili</b>. Il tuo contributo ci aiuterà a progettare sistemi di mobilità <b>più integrati, accessibili ed economicamente sostenibili</b>.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate solo a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
+			"#8. theBIKEnet Mobility Services - Shared Use, Integration and Willingness to Pay": "8. theBIKEnet Servizi di Mobilità - Uso Condiviso, Integrazione e Disponibilità a Pagare",
+			"#theBIKEnet Mobility Services Questionnaire": "Questionario theBIKEnet - Servizi di Mobilità",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> - such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta nelle città - unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutte le persone.<br><br>Questo ottavo questionario si concentra sui <b>servizi di mobilità condivisa e pubblica</b> - come bike sharing, monopattini elettrici condivisi e trasporto pubblico. Indaga <b>quanto spesso utilizzi questi servizi, come li combini tra loro e quali miglioramenti potrebbero renderli più accessibili</b>. Il tuo contributo ci aiuterà a progettare sistemi di mobilità <b>più integrati, accessibili ed economicamente sostenibili</b>.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate solo a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
 			"#Use of Shared and Public Mobility Services": "Uso dei Servizi di Mobilità Condivisa e del Trasporto Pubblico",
 			"#How frequently you use shared vehicles or public transport, and how safe and comfortable you feel while doing so.": "Con quale frequenza utilizzi i servizi di mobilità condivisa o i mezzi pubblici, e quanto ti senti sicuro/a e a tuo agio durante l’utilizzo.",
 			"#How often do you use bike or e-bike sharing services?": "Con quale frequenza utilizzi i servizi di bike sharing o e-bike sharing?",
 			"#Daily (5 or more times per week)": "Quotidianamente (5 o più volte a settimana)",
-			"#Frequently (3–4 times per week)": "Frequentemente (3–4 volte a settimana)",
-			"#Sometimes (1–2 times per week or at least twice per month)": "A volte (1–2 volte a settimana o almeno due volte al mese)",
+			"#Frequently (3-4 times per week)": "Frequentemente (3-4 volte a settimana)",
+			"#Sometimes (1-2 times per week or at least twice per month)": "A volte (1-2 volte a settimana o almeno due volte al mese)",
 			"#Rarely (less than twice per month)": "Raramente (meno di due volte al mese)",
 			"#Only in my free time": "Solo nel tempo libero",
 			"#Never": "Mai",
@@ -454,15 +454,15 @@
 		},
 		"en": {
 			"code": "en",
-			"#8. theBIKEnet Mobility Services – Shared Use, Integration and Willingness to Pay": "8. theBIKEnet Mobility Services – Shared Use, Integration and Willingness to Pay",
-			"#Welcome to the theBIKEnet Mobility Services Questionnaire": "Welcome to the theBIKEnet Mobility Services Questionnaire",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> — such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> — such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+			"#8. theBIKEnet Mobility Services - Shared Use, Integration and Willingness to Pay": "8. theBIKEnet Mobility Services - Shared Use, Integration and Willingness to Pay",
+			"#theBIKEnet Mobility Services Questionnaire": "theBIKEnet Mobility Services Questionnaire",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> - such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This eighth questionnaire focuses on <b>shared and public mobility services</b> - such as bike sharing, e-scooter sharing, and public transport. It investigates <b>how often you use these services, how you combine them, and what improvements could make them more accessible</b>. Your feedback will help us design <b>better-integrated, affordable, and sustainable</b> mobility systems.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 			"#Use of Shared and Public Mobility Services": "Use of Shared and Public Mobility Services",
 			"#How frequently you use shared vehicles or public transport, and how safe and comfortable you feel while doing so.": "How frequently you use shared vehicles or public transport, and how safe and comfortable you feel while doing so.",
 			"#How often do you use bike or e-bike sharing services?": "How often do you use bike or e-bike sharing services?",
 			"#Daily (5 or more times per week)": "Daily (5 or more times per week)",
-			"#Frequently (3–4 times per week)": "Frequently (3–4 times per week)",
-			"#Sometimes (1–2 times per week or at least twice per month)": "Sometimes (1–2 times per week or at least twice per month)",
+			"#Frequently (3-4 times per week)": "Frequently (3-4 times per week)",
+			"#Sometimes (1-2 times per week or at least twice per month)": "Sometimes (1-2 times per week or at least twice per month)",
 			"#Rarely (less than twice per month)": "Rarely (less than twice per month)",
 			"#Only in my free time": "Only in my free time",
 			"#Never": "Never",

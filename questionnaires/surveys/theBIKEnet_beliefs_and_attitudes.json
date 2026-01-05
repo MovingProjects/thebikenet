@@ -1,6 +1,6 @@
 {
 	"questionnaire": {
-		"name": "7. theBIKEnet Beliefs and Attitudes – Cycling, Wellbeing and Micromobility",
+		"name": "7. theBIKEnet Beliefs and Attitudes - Cycling, Wellbeing and Micromobility",
 		"questionnaire_id": "theBIKEnet_beliefs_and_attitudes",
 		"questionnaire_version": "1.0.0",
 		"project": "theBIKEnet",
@@ -12,8 +12,8 @@
 		"gdpr_link": "https://movingprojects.github.io/thebikenet/docs/privacy.html",
 		"sections": [
 			{
-				"title": "Welcome to the theBIKEnet Beliefs and Attitudes Questionnaire",
-				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+				"title": "theBIKEnet Beliefs and Attitudes Questionnaire",
+				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 				"backgroundColor": "#0c9091",
 				"questions": []
 			},
@@ -213,10 +213,10 @@
 								"text": "Very common (≥50% of my friends)"
 							},
 							{
-								"text": "Quite common (~20–49%)"
+								"text": "Quite common (~20-49%)"
 							},
 							{
-								"text": "Occasional (~5–19%)"
+								"text": "Occasional (~5-19%)"
 							},
 							{
 								"text": "Rare (<5%)"
@@ -492,9 +492,9 @@
 	"languages": {
 		"it": {
 			"code": "it",
-			"#7. theBIKEnet Beliefs and Attitudes – Cycling, Wellbeing and Micromobility": "7. theBIKEnet Credenze e Atteggiamenti – Ciclismo, Benessere e Micromobilità",
-			"#Welcome to the theBIKEnet Beliefs and Attitudes Questionnaire": "Benvenutə al questionario theBIKEnet – Credenze e Atteggiamenti",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta nelle città — unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutti.<br><br>Questo settimo questionario si concentra sulle <b>tue credenze, atteggiamenti ed emozioni</b> riguardo all’uso della bicicletta e della micromobilità. Analizza <b>motivazioni, barriere, influenze sociali e benessere</b> che influenzano le scelte di mobilità quotidiane. Comprendere questi aspetti ci aiuta a esplorare <b>come i fattori culturali, emotivi e personali</b> incidano sui comportamenti di mobilità sostenibile.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate solo a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
+			"#7. theBIKEnet Beliefs and Attitudes - Cycling, Wellbeing and Micromobility": "7. theBIKEnet Credenze e Atteggiamenti - Ciclismo, Benessere e Micromobilità",
+			"#theBIKEnet Beliefs and Attitudes Questionnaire": "Questionario theBIKEnet - Credenze e Atteggiamenti",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta nelle città - unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutte le persone.<br><br>Questo settimo questionario si concentra sulle <b>tue credenze, atteggiamenti ed emozioni</b> riguardo all’uso della bicicletta e della micromobilità. Analizza <b>motivazioni, barriere, influenze sociali e benessere</b> che influenzano le scelte di mobilità quotidiane. Comprendere questi aspetti ci aiuta a esplorare <b>come i fattori culturali, emotivi e personali</b> incidano sui comportamenti di mobilità sostenibile.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate solo a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
 			"#Perceived Advantages and Disadvantages": "Vantaggi e Svantaggi Percepiti",
 			"#People adopt or avoid cycling and micromobility for different reasons. This section explores both the perceived benefits and the perceived inconveniences of these modes.": "Le persone scelgono o evitano la bicicletta e la micromobilità per diverse ragioni. Questa sezione esplora sia i benefici percepiti sia gli inconvenienti di queste modalità.",
 			"#In your opinion, what are the main advantages of using bicycles or e-scooters?": "Secondo te, quali sono i principali vantaggi dell’uso di biciclette o monopattini elettrici?",
@@ -537,8 +537,8 @@
 			"#No one in my family uses them": "Nessuno nella mia famiglia li utilizza",
 			"#How common is cycling or e-scooter use among your close friends or peers?": "Quanto è diffuso l’uso della bicicletta o del monopattino tra i tuoi amici o conoscenti?",
 			"#Very common (≥50% of my friends)": "Molto comune (≥50% dei miei amici)",
-			"#Quite common (~20–49%)": "Abbastanza comune (~20–49%)",
-			"#Occasional (~5–19%)": "Occasionale (~5–19%)",
+			"#Quite common (~20-49%)": "Abbastanza comune (~20-49%)",
+			"#Occasional (~5-19%)": "Occasionale (~5-19%)",
 			"#Rare (<5%)": "Raro (<5%)",
 			"#I don’t know": "Non so",
 			"#Perceived Risks and Practical Challenges": "Rischi e Difficoltà Percepite",
@@ -603,9 +603,9 @@
 		},
 		"en": {
 			"code": "en",
-			"#7. theBIKEnet Beliefs and Attitudes – Cycling, Wellbeing and Micromobility": "7. theBIKEnet Beliefs and Attitudes – Cycling, Wellbeing and Micromobility",
-			"#Welcome to the theBIKEnet Beliefs and Attitudes Questionnaire": "Welcome to the theBIKEnet Beliefs and Attitudes Questionnaire",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+			"#7. theBIKEnet Beliefs and Attitudes - Cycling, Wellbeing and Micromobility": "7. theBIKEnet Beliefs and Attitudes - Cycling, Wellbeing and Micromobility",
+			"#theBIKEnet Beliefs and Attitudes Questionnaire": "theBIKEnet Beliefs and Attitudes Questionnaire",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This seventh questionnaire focuses on <b>your beliefs, attitudes, and feelings</b> about cycling and micromobility. It looks at <b>motivations, barriers, social influences, and wellbeing</b> that shape everyday mobility choices. Understanding these aspects helps us explore <b>how cultural, emotional, and personal factors</b> influence sustainable mobility behaviour.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 			"#Perceived Advantages and Disadvantages": "Perceived Advantages and Disadvantages",
 			"#People adopt or avoid cycling and micromobility for different reasons. This section explores both the perceived benefits and the perceived inconveniences of these modes.": "People adopt or avoid cycling and micromobility for different reasons. This section explores both the perceived benefits and the perceived inconveniences of these modes.",
 			"#In your opinion, what are the main advantages of using bicycles or e-scooters?": "In your opinion, what are the main advantages of using bicycles or e-scooters?",
@@ -700,8 +700,8 @@
 			"#Overall, how much do these issues discourage you from using a bicycle or e-scooter?": "Overall, how much do these issues discourage you from using a bicycle or e-scooter?",
 			"#Quite a lot": "Quite a lot",
 			"#Very common (≥50% of my friends)": "Very common (≥50% of my friends)",
-			"#Quite common (~20–49%)": "Quite common (~20–49%)",
-			"#Occasional (~5–19%)": "Occasional (~5–19%)",
+			"#Quite common (~20-49%)": "Quite common (~20-49%)",
+			"#Occasional (~5-19%)": "Occasional (~5-19%)",
 			"#Rare (<5%)": "Rare (<5%)",
 			"#Which of the following issues make you feel less confident or less inclined to use a bicycle or e-scooter (in the past 3 months)?": "Which of the following issues make you feel less confident or less inclined to use a bicycle or e-scooter (in the past 3 months)?",
 			"#How easy do you find it to integrate micromobility (e.g., cycling, e-scooter) into your daily routine?": "How easy do you find it to integrate micromobility (e.g., cycling, e-scooter) into your daily routine?",

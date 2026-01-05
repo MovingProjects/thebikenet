@@ -1,6 +1,6 @@
 {
 	"questionnaire": {
-		"name": "6. Experience with Accidents and Risk Perception – Your experience with accidents or risky situations",
+		"name": "6. Experience with Accidents and Risk Perception - Your experience with accidents or risky situations",
 		"questionnaire_id": "theBIKEnet_accidents_and_risk_factors",
 		"questionnaire_version": "1.0.0",
 		"project": "theBIKEnet",
@@ -12,8 +12,8 @@
 		"gdpr_link": "https://movingprojects.github.io/thebikenet/docs/privacy.html",
 		"sections": [
 			{
-				"title": "Welcome to the theBIKEnet Accidents and Risk Perception Questionnaire",
-				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+				"title": "theBIKEnet Accidents and Risk Perception Questionnaire",
+				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 				"backgroundColor": "#0c9091",
 				"questions": []
 			},
@@ -35,10 +35,10 @@
 								"text": "Once"
 							},
 							{
-								"text": "2–3 times"
+								"text": "2-3 times"
 							},
 							{
-								"text": "4–6 times"
+								"text": "4-6 times"
 							},
 							{
 								"text": "7 or more times"
@@ -58,10 +58,10 @@
 								"text": "Once"
 							},
 							{
-								"text": "2–3 times"
+								"text": "2-3 times"
 							},
 							{
-								"text": "4–6 times"
+								"text": "4-6 times"
 							},
 							{
 								"text": "7 or more times"
@@ -247,14 +247,14 @@
 	"languages": {
 		"it": {
 			"code": "it",
-			"#6. Experience with Accidents and Risk Perception – Your experience with accidents or risky situations": "6. Esperienze di incidenti e percezione del rischio – La tua esperienza con incidenti o situazioni pericolose",
+			"#6. Experience with Accidents and Risk Perception - Your experience with accidents or risky situations": "6. Esperienze di incidenti e percezione del rischio - La tua esperienza con incidenti o situazioni pericolose",
 			"#Experience with Accidents": "Esperienze di incidenti",
 			"#How often you’ve experienced dangerous situations or accidents, and what caused them.": "Con quale frequenza hai vissuto situazioni pericolose o incidenti, e quali ne sono state le cause.",
 			"#In the past 12 months, how often have you experienced dangerous situations or near-misses while cycling or using an e-scooter?": "Negli ultimi 12 mesi, con quale frequenza hai vissuto situazioni pericolose o mancati incidenti mentre andavi in bici o usavi un monopattino elettrico?",
 			"#Never": "Mai",
 			"#Once": "Una volta",
-			"#2–3 times": "2–3 volte",
-			"#4–6 times": "4–6 volte",
+			"#2-3 times": "2-3 volte",
+			"#4-6 times": "4-6 volte",
 			"#7 or more times": "7 o più volte",
 			"#Over the past 12 months, how often have you lost control of your bicycle or e-scooter (without collision)?": "Negli ultimi 12 mesi, con quale frequenza hai perso il controllo della bici o del monopattino (senza collisione)?",
 			"#Have you ever been involved in a road crash while cycling or using an e-scooter?": "Sei mai stato coinvolto in un incidente stradale mentre andavi in bici o usavi un monopattino elettrico?",
@@ -299,19 +299,19 @@
 			"#Somewhat more exposed": "Un po’ più esposto",
 			"#Much more exposed": "Molto più esposto",
 			"#Please describe a situation where you felt particularly at risk while cycling or using an e-scooter.": "Descrivi una situazione in cui ti sei sentito particolarmente a rischio mentre andavi in bici o usavi un monopattino elettrico.",
-			"#Welcome to the theBIKEnet Accidents and Risk Perception Questionnaire": "Benvenutə al questionario theBIKEnet – Incidenti e Percezione del Rischio",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta nelle città — unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutti.<br><br>Questo sesto questionario si concentra sulle <b>tue esperienze di incidenti, quasi incidenti e situazioni di rischio</b> durante l’uso della bicicletta o della micromobilità. Esplora inoltre <b>come percepisci e gestisci il rischio</b> negli spostamenti quotidiani. Comprendere queste esperienze ci aiuta a individuare <b>i principali fattori di rischio</b> e a sviluppare strategie per <b>ridurre gli incidenti</b> e <b>migliorare la sicurezza</b> di tutti gli utenti della strada.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate solo a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>"
+			"#theBIKEnet Accidents and Risk Perception Questionnaire": "Questionario theBIKEnet - Incidenti e Percezione del Rischio",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta nelle città - unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutte le persone.<br><br>Questo sesto questionario si concentra sulle <b>tue esperienze di incidenti, quasi incidenti e situazioni di rischio</b> durante l’uso della bicicletta o della micromobilità. Esplora inoltre <b>come percepisci e gestisci il rischio</b> negli spostamenti quotidiani. Comprendere queste esperienze ci aiuta a individuare <b>i principali fattori di rischio</b> e a sviluppare strategie per <b>ridurre gli incidenti</b> e <b>migliorare la sicurezza</b> di tutti gli utenti della strada.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate solo a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>"
 		},
 		"en": {
 			"code": "en",
-			"#6. Experience with Accidents and Risk Perception – Your experience with accidents or risky situations": "6. Experience with Accidents and Risk Perception – Your experience with accidents or risky situations",
+			"#6. Experience with Accidents and Risk Perception - Your experience with accidents or risky situations": "6. Experience with Accidents and Risk Perception - Your experience with accidents or risky situations",
 			"#Experience with Accidents": "Experience with Accidents",
 			"#How often you’ve experienced dangerous situations or accidents, and what caused them.": "How often you’ve experienced dangerous situations or accidents, and what caused them.",
 			"#In the past 12 months, how often have you experienced dangerous situations or near-misses while cycling or using an e-scooter?": "In the past 12 months, how often have you experienced dangerous situations or near-misses while cycling or using an e-scooter?",
 			"#Never": "Never",
 			"#Once": "Once",
-			"#2–3 times": "2–3 times",
-			"#4–6 times": "4–6 times",
+			"#2-3 times": "2-3 times",
+			"#4-6 times": "4-6 times",
 			"#7 or more times": "7 or more times",
 			"#Over the past 12 months, how often have you lost control of your bicycle or e-scooter (without collision)?": "Over the past 12 months, how often have you lost control of your bicycle or e-scooter (without collision)?",
 			"#Have you ever been involved in a road crash while cycling or using an e-scooter?": "Have you ever been involved in a road crash while cycling or using an e-scooter?",
@@ -356,8 +356,8 @@
 			"#Somewhat more exposed": "Somewhat more exposed",
 			"#Much more exposed": "Much more exposed",
 			"#Please describe a situation where you felt particularly at risk while cycling or using an e-scooter.": "Please describe a situation where you felt particularly at risk while cycling or using an e-scooter.",
-			"#Welcome to the theBIKEnet Accidents and Risk Perception Questionnaire": "Welcome to the theBIKEnet Accidents and Risk Perception Questionnaire",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>"
+			"#theBIKEnet Accidents and Risk Perception Questionnaire": "theBIKEnet Accidents and Risk Perception Questionnaire",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or using micromobility. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>"
 		}
 	},
 	"id": "theBIKEnet_accidents_and_risk_factors",
