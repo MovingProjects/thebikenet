@@ -1,8 +1,8 @@
 {
 	"questionnaire": {
-		"name": "3. theBIKEnet Safety Perception – How safe you feel on the road",
+		"name": "3. theBIKEnet Safety Perception - How safe you feel on the road",
 		"questionnaire_id": "theBIKEnet_safety_perception",
-		"questionnaire_version": "1.0.0",
+		"questionnaire_version": "1.0.1",
 		"project": "theBIKEnet",
 		"options": {
 			"review_mode": true,
@@ -12,8 +12,8 @@
 		"gdpr_link": "https://movprojects.com/thebikenet/privacy_policy",
 		"sections": [
 			{
-				"title": "Welcome to the theBIKEnet Safety Perception Questionnaire",
-				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+				"title": "theBIKEnet Safety Perception Questionnaire",
+				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 				"backgroundColor": "#0c9091",
 				"questions": []
 			},
@@ -23,48 +23,52 @@
 				"backgroundColor": "#0c9091",
 				"questions": [
 					{
-						"text": "How familiar are you with bicycle and e-scooter traffic rules?",
+						"text": "How well do you know the traffic rules that apply to bicycles and e-scooters?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
-								"text": "Not at all familiar"
+								"text": "Not at all (I do not know the specific rules for bicycles or e-scooters)"
 							},
 							{
-								"text": "Slightly familiar"
+								"text": "A little (I know some basic and obvious rules, for example not running red lights)"
 							},
 							{
-								"text": "Somewhat familiar"
+								"text": "Moderately (I mainly know the traffic rules for cars, such as priorities and intersections)"
 							},
 							{
-								"text": "Moderately familiar"
+								"text": "Well (I know the rules that specifically apply to bicycles and e-scooters, such as required equipment)"
 							},
 							{
-								"text": "Very familiar"
+								"text": "Very well (I also know more advanced or specific rules, such as the difference between cycle paths and shared pedestrian–cycle paths, or when you must dismount at pedestrian crossings)"
 							}
 						]
 					},
 					{
-						"text": "When cycling or using an e-scooter in Rome, how comfortable do you generally feel?",
+						"text": "How at ease do you generally feel, in terms of calmness and stress, when cycling or riding an e-scooter in your city?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
-								"text": "Very uncomfortable"
+								"text": "Not at all at ease"
 							},
 							{
-								"text": "Uncomfortable"
+								"text": "Slightly at ease"
 							},
 							{
-								"text": "Neutral"
+								"text": "Neither at ease nor uneasy"
 							},
 							{
-								"text": "Comfortable"
+								"text": "At ease"
 							},
 							{
-								"text": "Very comfortable"
+								"text": "Very much at ease"
 							}
 						]
 					},
@@ -72,7 +76,9 @@
 						"text": "How safe do you currently feel when cycling or riding an e-scooter in your daily environment?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
 								"text": "Very unsafe"
@@ -95,7 +101,9 @@
 						"text": "How would you rate the overall quality of cycling and micromobility infrastructure along your main routes?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": true,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
 								"text": "Very poor"
@@ -118,7 +126,9 @@
 						"text": "During the past month, how often have you felt at risk of an accident while cycling or riding?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
 								"text": "Never"
@@ -145,10 +155,12 @@
 				"backgroundColor": "#0c9091",
 				"questions": [
 					{
-						"text": "Which factors most reduce your feeling of safety when cycling or riding on the road?",
+						"text": "Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?",
 						"question_type": "multiple_options",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
 								"text": "High car traffic"
@@ -163,7 +175,7 @@
 								"text": "Poor or missing cycle lanes"
 							},
 							{
-								"text": "Scooters on cycle lanes"
+								"text": "Mopeds or motorcycles on cycle lanes"
 							},
 							{
 								"text": "Cars parked illegally"
@@ -201,10 +213,12 @@
 						]
 					},
 					{
-						"text": "Which elements make you feel safer when cycling or riding?",
+						"text": "Which elements make you feel safer when cycling or riding an e-scooter?",
 						"question_type": "multiple_options",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
 								"text": "Separated or protected bike lanes"
@@ -239,7 +253,9 @@
 						"text": "How would you rate driver respect toward cyclists or micromobility users in your city?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
 						"add_other": false,
+						"checks_inline": false,
 						"options": [
 							{
 								"text": "Very low"
@@ -263,98 +279,25 @@
 		]
 	},
 	"languages": {
-		"it": {
-			"code": "it",
-			"#3. theBIKEnet Safety Perception – How safe you feel on the road": "3. theBIKEnet Percezione della Sicurezza – Quanto ti senti sicuro sulla strada",
-			"#Welcome to the theBIKEnet Safety Perception Questionnaire": "Benvenutə al questionario theBIKEnet – Percezione della Sicurezza",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta nelle città — unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutti.<br><br>Questo terzo questionario si concentra su <b>quanto ti senti sicurə e a tuo agio</b> quando ti sposti in bicicletta o utilizzi mezzi di micromobilità nella tua città. Esplora <b>le condizioni del traffico, la qualità delle infrastrutture e i fattori ambientali</b> che influenzano la tua esperienza quotidiana di viaggio. Comprendere questi aspetti ci aiuta a individuare <b>priorità e miglioramenti</b> per rendere la mobilità urbana più sicura e piacevole per tutti.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate solo a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
-			"#Perceived Safety and Comfort": "Sicurezza e comfort percepiti",
-			"#How safe and comfortable you feel when riding in your city.": "Quanto ti senti sicuro e a tuo agio quando ti muovi nella tua città.",
-			"#How familiar are you with bicycle and e-scooter traffic rules?": "Quanto conosci le regole del traffico per biciclette e monopattini elettrici?",
-			"#Not at all familiar": "Per niente familiare",
-			"#Slightly familiar": "Poco familiare",
-			"#Somewhat familiar": "Abbastanza familiare",
-			"#Moderately familiar": "Moderatamente familiare",
-			"#Very familiar": "Molto familiare",
-			"#When cycling or using an e-scooter in Rome, how comfortable do you generally feel?": "Quando vai in bici o usi un monopattino elettrico a Roma, quanto ti senti generalmente a tuo agio?",
-			"#Very uncomfortable": "Molto a disagio",
-			"#Uncomfortable": "A disagio",
-			"#Neutral": "Neutro",
-			"#Comfortable": "A tuo agio",
-			"#Very comfortable": "Molto a tuo agio",
-			"#How safe do you currently feel when cycling or riding an e-scooter in your daily environment?": "Quanto ti senti sicuro quando vai in bici o usi un monopattino nel tuo ambiente quotidiano?",
-			"#Very unsafe": "Per niente sicuro",
-			"#Unsafe": "Poco sicuro",
-			"#Neither safe nor unsafe": "Né sicuro né insicuro",
-			"#Safe": "Sicuro",
-			"#Very safe": "Molto sicuro",
-			"#How would you rate the overall quality of cycling and micromobility infrastructure along your main routes?": "Come valuti la qualità complessiva delle infrastrutture ciclabili e per la micromobilità lungo i tuoi percorsi principali?",
-			"#Very poor": "Molto scarsa",
-			"#Poor": "Scarsa",
-			"#Average": "Media",
-			"#Good": "Buona",
-			"#Very good": "Molto buona",
-			"#During the past month, how often have you felt at risk of an accident while cycling or riding?": "Nell’ultimo mese, quanto spesso ti sei sentito a rischio di incidente mentre andavi in bici o in monopattino?",
-			"#Never": "Mai",
-			"#Rarely": "Raramente",
-			"#Sometimes": "A volte",
-			"#Often": "Spesso",
-			"#Very often": "Molto spesso",
-			"#Environmental and Traffic Factors": "Fattori ambientali e di traffico",
-			"#What elements of the road and environment make you feel safer or less safe.": "Quali elementi della strada e dell’ambiente ti fanno sentire più o meno sicuro.",
-			"#Which factors most reduce your feeling of safety when cycling or riding on the road?": "Quali fattori riducono maggiormente la tua sensazione di sicurezza quando vai in bici o in monopattino sulla strada?",
-			"#High car traffic": "Traffico automobilistico intenso",
-			"#High vehicle speeds": "Velocità elevate dei veicoli",
-			"#Aggressive or distracted drivers": "Conducenti aggressivi o distratti",
-			"#Poor or missing cycle lanes": "Piste ciclabili assenti o in cattive condizioni",
-			"#Scooters on cycle lanes": "Monopattini o altri veicoli sulle piste ciclabili",
-			"#Cars parked illegally": "Auto parcheggiate illegalmente",
-			"#Unsafe intersections or crossings": "Incroci o attraversamenti pericolosi",
-			"#Potholes or damaged road surfaces": "Buche o manto stradale danneggiato",
-			"#Poor or confusing signage and road markings": "Segnaletica e strisce stradali scarse o poco chiare",
-			"#Poor lighting or low visibility at night": "Illuminazione insufficiente o scarsa visibilità notturna",
-			"#Physical access barriers (e.g., stairs, narrow elevators)": "Barriere fisiche all’accesso (es. scale, ascensori stretti)",
-			"#Distracted pedestrians": "Pedoni distratti",
-			"#Other micromobility users (e-scooters, etc.)": "Altri utenti della micromobilità (monopattini, ecc.)",
-			"#Bad weather conditions": "Condizioni meteorologiche sfavorevoli",
-			"#Fear of accidents or theft": "Paura di incidenti o furti",
-			"#Lack of personal experience": "Mancanza di esperienza personale",
-			"#Which elements make you feel safer when cycling or riding?": "Quali elementi ti fanno sentire più sicuro quando vai in bici o in monopattino?",
-			"#Separated or protected bike lanes": "Piste ciclabili separate o protette",
-			"#Lower car traffic speeds": "Velocità più basse del traffico automobilistico",
-			"#Good road maintenance": "Buona manutenzione stradale",
-			"#Clear road signs and markings": "Segnaletica e strisce stradali chiare",
-			"#Adequate lighting and visibility": "Illuminazione e visibilità adeguate",
-			"#Dedicated signals for cyclists or scooters": "Semafori dedicati a ciclisti o monopattini",
-			"#Presence of other cyclists or riders": "Presenza di altri ciclisti o utenti della strada simili",
-			"#Police presence or traffic enforcement": "Presenza di forze dell’ordine o controlli sul traffico",
-			"#Daylight conditions": "Condizioni di luce diurna",
-			"#How would you rate driver respect toward cyclists or micromobility users in your city?": "Come valuti il rispetto dei conducenti verso ciclisti e utenti della micromobilità nella tua città?",
-			"#Very low": "Molto basso",
-			"#Low": "Basso",
-			"#Moderate": "Moderato",
-			"#High": "Alto",
-			"#Very high": "Molto alto"
-		},
 		"en": {
 			"code": "en",
-			"#3. theBIKEnet Safety Perception – How safe you feel on the road": "3. theBIKEnet Safety Perception – How safe you feel on the road",
-			"#Welcome to the theBIKEnet Safety Perception Questionnaire": "Welcome to the theBIKEnet Safety Perception Questionnaire",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities — combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+			"#3. theBIKEnet Safety Perception - How safe you feel on the road": "3. theBIKEnet Safety Perception - How safe you feel on the road",
+			"#theBIKEnet Safety Perception Questionnaire": "theBIKEnet Safety Perception Questionnaire",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 			"#Perceived Safety and Comfort": "Perceived Safety and Comfort",
 			"#How safe and comfortable you feel when riding in your city.": "How safe and comfortable you feel when riding in your city.",
-			"#How familiar are you with bicycle and e-scooter traffic rules?": "How familiar are you with bicycle and e-scooter traffic rules?",
-			"#Not at all familiar": "Not at all familiar",
-			"#Slightly familiar": "Slightly familiar",
-			"#Somewhat familiar": "Somewhat familiar",
-			"#Moderately familiar": "Moderately familiar",
-			"#Very familiar": "Very familiar",
-			"#When cycling or using an e-scooter in Rome, how comfortable do you generally feel?": "When cycling or using an e-scooter in Rome, how comfortable do you generally feel?",
-			"#Very uncomfortable": "Very uncomfortable",
-			"#Uncomfortable": "Uncomfortable",
-			"#Neutral": "Neutral",
-			"#Comfortable": "Comfortable",
-			"#Very comfortable": "Very comfortable",
+			"#How well do you know the traffic rules that apply to bicycles and e-scooters?": "How well do you know the traffic rules that apply to bicycles and e-scooters?",
+			"#Not at all (I do not know the specific rules for bicycles or e-scooters)": "Not at all (I do not know the specific rules for bicycles or e-scooters)",
+			"#A little (I know some basic and obvious rules, for example not running red lights)": "A little (I know some basic and obvious rules, for example not running red lights)",
+			"#Moderately (I mainly know the traffic rules for cars, such as priorities and intersections)": "Moderately (I mainly know the traffic rules for cars, such as priorities and intersections)",
+			"#Well (I know the rules that specifically apply to bicycles and e-scooters, such as required equipment)": "Well (I know the rules that specifically apply to bicycles and e-scooters, such as required equipment)",
+			"#Very well (I also know more advanced or specific rules, such as the difference between cycle paths and shared pedestrian–cycle paths, or when you must dismount at pedestrian crossings)": "Very well (I also know more advanced or specific rules, such as the difference between cycle paths and shared pedestrian–cycle paths, or when you must dismount at pedestrian crossings)",
+			"#How at ease do you generally feel, in terms of calmness and stress, when cycling or riding an e-scooter in your city?": "How at ease do you generally feel, in terms of calmness and stress, when cycling or riding an e-scooter in your city?",
+			"#Not at all at ease": "Not at all at ease",
+			"#Slightly at ease": "Slightly at ease",
+			"#Neither at ease nor uneasy": "Neither at ease nor uneasy",
+			"#At ease": "At ease",
+			"#Very much at ease": "Very much at ease",
 			"#How safe do you currently feel when cycling or riding an e-scooter in your daily environment?": "How safe do you currently feel when cycling or riding an e-scooter in your daily environment?",
 			"#Very unsafe": "Very unsafe",
 			"#Unsafe": "Unsafe",
@@ -375,12 +318,12 @@
 			"#Very often": "Very often",
 			"#Environmental and Traffic Factors": "Environmental and Traffic Factors",
 			"#What elements of the road and environment make you feel safer or less safe.": "What elements of the road and environment make you feel safer or less safe.",
-			"#Which factors most reduce your feeling of safety when cycling or riding on the road?": "Which factors most reduce your feeling of safety when cycling or riding on the road?",
+			"#Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?": "Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?",
 			"#High car traffic": "High car traffic",
 			"#High vehicle speeds": "High vehicle speeds",
 			"#Aggressive or distracted drivers": "Aggressive or distracted drivers",
 			"#Poor or missing cycle lanes": "Poor or missing cycle lanes",
-			"#Scooters on cycle lanes": "Scooters on cycle lanes",
+			"#Mopeds or motorcycles on cycle lanes": "Mopeds or motorcycles on cycle lanes",
 			"#Cars parked illegally": "Cars parked illegally",
 			"#Unsafe intersections or crossings": "Unsafe intersections or crossings",
 			"#Potholes or damaged road surfaces": "Potholes or damaged road surfaces",
@@ -392,7 +335,7 @@
 			"#Bad weather conditions": "Bad weather conditions",
 			"#Fear of accidents or theft": "Fear of accidents or theft",
 			"#Lack of personal experience": "Lack of personal experience",
-			"#Which elements make you feel safer when cycling or riding?": "Which elements make you feel safer when cycling or riding?",
+			"#Which elements make you feel safer when cycling or riding an e-scooter?": "Which elements make you feel safer when cycling or riding an e-scooter?",
 			"#Separated or protected bike lanes": "Separated or protected bike lanes",
 			"#Lower car traffic speeds": "Lower car traffic speeds",
 			"#Good road maintenance": "Good road maintenance",
@@ -408,6 +351,79 @@
 			"#Moderate": "Moderate",
 			"#High": "High",
 			"#Very high": "Very high"
+		},
+		"it": {
+			"code": "it",
+			"#3. theBIKEnet Safety Perception - How safe you feel on the road": "3. theBIKEnet – Percezione della sicurezza: quanto ti senti sicura/o sulla strada",
+			"#theBIKEnet Safety Perception Questionnaire": "Questionario theBIKEnet – Percezione della sicurezza",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si spostano in bicicletta e in città, combinando scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutte le persone.<br><br>Questo terzo questionario si concentra su <b>quanto ti senti sicura/o e a tuo agio</b> quando vai in bicicletta o utilizzi mezzi di micromobilità nella tua città. Esplora <b>le condizioni del traffico, la qualità delle infrastrutture e i fattori ambientali</b> che influenzano l’esperienza quotidiana di spostamento. Comprendere questi aspetti ci aiuta a individuare <b>priorità e possibili miglioramenti</b> per rendere la mobilità urbana più sicura e piacevole per tutte le persone.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate esclusivamente per fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
+			"#Perceived Safety and Comfort": "Sicurezza e agio percepiti",
+			"#How safe and comfortable you feel when riding in your city.": "Quanto ti senti sicura/o e a tuo agio quando ti sposti nella tua città.",
+			"#How well do you know the traffic rules that apply to bicycles and e-scooters?": "Quanto conosci le regole del traffico che si applicano a biciclette e monopattini elettrici?",
+			"#Not at all (I do not know the specific rules for bicycles or e-scooters)": "Per niente (non conosco le regole specifiche per biciclette o monopattini elettrici)",
+			"#A little (I know some basic and obvious rules, for example not running red lights)": "Poco (conosco alcune regole di base e ovvie, ad esempio non passare con il rosso)",
+			"#Moderately (I mainly know the traffic rules for cars, such as priorities and intersections)": "Abbastanza (conosco soprattutto le regole del traffico per le automobili, come precedenze e incroci)",
+			"#Well (I know the rules that specifically apply to bicycles and e-scooters, such as required equipment)": "Molto (conosco le regole specifiche per biciclette e monopattini elettrici, ad esempio le dotazioni obbligatorie)",
+			"#Very well (I also know more advanced or specific rules, such as the difference between cycle paths and shared pedestrian–cycle paths, or when you must dismount at pedestrian crossings)": "Moltissimo (conosco anche regole più specifiche o avanzate, come la differenza tra pista ciclabile e ciclopedonale, o quando è necessario scendere dalla bici agli attraversamenti pedonali)",
+			"#How at ease do you generally feel, in terms of calmness and stress, when cycling or riding an e-scooter in your city?": "Quanto ti senti generalmente a tuo agio, in termini di tranquillità e stress, quando vai in bicicletta o utilizzi un monopattino elettrico nella tua città?",
+			"#Not at all at ease": "Per niente a tuo agio",
+			"#Slightly at ease": "Poco a tuo agio",
+			"#Neither at ease nor uneasy": "Né a tuo agio né a disagio",
+			"#At ease": "A tuo agio",
+			"#Very much at ease": "Molto a tuo agio",
+			"#How safe do you currently feel when cycling or riding an e-scooter in your daily environment?": "Quanto ti senti attualmente sicura/o quando vai in bicicletta o utilizzi un monopattino elettrico nel tuo ambiente quotidiano?",
+			"#Very unsafe": "Per niente sicura/o",
+			"#Unsafe": "Poco sicura/o",
+			"#Neither safe nor unsafe": "Né sicura/o né insicura/o",
+			"#Safe": "Sicura/o",
+			"#Very safe": "Molto sicura/o",
+			"#How would you rate the overall quality of cycling and micromobility infrastructure along your main routes?": "Come valuti la qualità complessiva delle infrastrutture ciclabili e per la micromobilità lungo i tuoi percorsi principali?",
+			"#Very poor": "Molto scarsa",
+			"#Poor": "Scarsa",
+			"#Average": "Media",
+			"#Good": "Buona",
+			"#Very good": "Molto buona",
+			"#During the past month, how often have you felt at risk of an accident while cycling or riding?": "Nell’ultimo mese, quanto spesso ti sei sentita/o a rischio di incidente mentre andavi in bicicletta o in monopattino?",
+			"#Never": "Mai",
+			"#Rarely": "Raramente",
+			"#Sometimes": "A volte",
+			"#Often": "Spesso",
+			"#Very often": "Molto spesso",
+			"#Environmental and Traffic Factors": "Fattori ambientali e di traffico",
+			"#What elements of the road and environment make you feel safer or less safe.": "Quali elementi della strada e dell’ambiente ti fanno sentire più o meno sicura/o.",
+			"#Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?": "Quali fattori riducono maggiormente la tua sensazione di sicurezza quando vai in bicicletta o utilizzi un monopattino elettrico sulla strada?",
+			"#High car traffic": "Traffico automobilistico intenso",
+			"#High vehicle speeds": "Velocità elevate dei veicoli",
+			"#Aggressive or distracted drivers": "Persone alla guida aggressive o distratte",
+			"#Poor or missing cycle lanes": "Piste ciclabili assenti o in cattive condizioni",
+			"#Mopeds or motorcycles on cycle lanes": "Motorini o motocicli sulle piste ciclabili",
+			"#Cars parked illegally": "Auto parcheggiate illegalmente",
+			"#Unsafe intersections or crossings": "Incroci o attraversamenti pericolosi",
+			"#Potholes or damaged road surfaces": "Buche o manto stradale danneggiato",
+			"#Poor or confusing signage and road markings": "Segnaletica e strisce stradali scarse o poco chiare",
+			"#Poor lighting or low visibility at night": "Illuminazione insufficiente o scarsa visibilità notturna",
+			"#Physical access barriers (e.g., stairs, narrow elevators)": "Barriere fisiche all’accesso (ad esempio scale o ascensori stretti)",
+			"#Distracted pedestrians": "Persone a piedi distratte",
+			"#Other micromobility users (e-scooters, etc.)": "Altre persone che utilizzano mezzi di micromobilità (monopattini elettrici, ecc.)",
+			"#Bad weather conditions": "Condizioni meteorologiche sfavorevoli",
+			"#Fear of accidents or theft": "Paura di incidenti o furti",
+			"#Lack of personal experience": "Mancanza di esperienza personale",
+			"#Which elements make you feel safer when cycling or riding an e-scooter?": "Quali elementi ti fanno sentire più sicura/o quando vai in bicicletta o utilizzi un monopattino elettrico?",
+			"#Separated or protected bike lanes": "Piste ciclabili separate o protette",
+			"#Lower car traffic speeds": "Velocità più basse del traffico automobilistico",
+			"#Good road maintenance": "Buona manutenzione stradale",
+			"#Clear road signs and markings": "Segnaletica e strisce stradali chiare",
+			"#Adequate lighting and visibility": "Illuminazione e visibilità adeguate",
+			"#Dedicated signals for cyclists or scooters": "Semafori dedicati a ciclisti e monopattini",
+			"#Presence of other cyclists or riders": "Presenza di altre persone in bicicletta o su mezzi simili",
+			"#Police presence or traffic enforcement": "Presenza delle forze dell’ordine o controlli sul traffico",
+			"#Daylight conditions": "Condizioni di luce diurna",
+			"#How would you rate driver respect toward cyclists or micromobility users in your city?": "Come valuti il rispetto da parte di chi guida nei confronti di ciclisti e utenti della micromobilità nella tua città?",
+			"#Very low": "Molto basso",
+			"#Low": "Basso",
+			"#Moderate": "Moderato",
+			"#High": "Alto",
+			"#Very high": "Molto alto"
 		}
 	},
 	"id": "theBIKEnet_safety_perception",
