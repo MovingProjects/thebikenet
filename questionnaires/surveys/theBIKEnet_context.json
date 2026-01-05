@@ -212,7 +212,7 @@
 						]
 					},
 					{
-						"text": "Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself?",
+						"text": "Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)",
 						"question_type": "multiple_options",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
@@ -335,7 +335,7 @@
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
-						"add_other": false,
+						"add_other": true,
 						"checks_inline": false,
 						"options": [
 							{
@@ -475,27 +475,27 @@
 						]
 					},
 					{
-						"text": "Do you have parking available at your workplace or study location?",
+						"text": "Is there any formal or designated parking available at your workplace or study location?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
-						"add_i_dont_know": false,
+						"add_i_dont_know": true,
 						"add_other": false,
 						"checks_inline": false,
 						"options": [
 							{
-								"text": "Yes, secure parking for bicycles or e-scooters"
+								"text": "Yes, parking specifically for bicycles or e-scooters"
 							},
 							{
-								"text": "Yes, parking for cars"
+								"text": "Yes, parking only for cars"
 							},
 							{
-								"text": "Yes, for both"
+								"text": "Yes, parking for both bicycles/e-scooters and cars"
 							},
 							{
-								"text": "No, no dedicated parking available"
+								"text": "No, there is no parking available"
 							},
 							{
-								"text": "I do not work/study outside home"
+								"text": "I do not work or study outside home"
 							}
 						]
 					},
@@ -525,7 +525,7 @@
 						]
 					},
 					{
-						"text": "When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a bicycle or e-scooter nearby?",
+						"text": "When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
@@ -533,16 +533,19 @@
 						"checks_inline": false,
 						"options": [
 							{
-								"text": "Very easy"
+								"text": "Only a few minutes"
 							},
 							{
-								"text": "Fairly easy"
+								"text": "Up to 30 minutes"
 							},
 							{
-								"text": "Sometimes difficult"
+								"text": "Up to 1–2 hours"
 							},
 							{
-								"text": "Very difficult"
+								"text": "Several hours"
+							},
+							{
+								"text": "I do not feel comfortable leaving it unattended"
 							},
 							{
 								"text": "Not applicable (I do not use a bicycle or e-scooter)"
@@ -582,7 +585,6 @@
 			"#Which is the second Municipio you travel in most frequently?": "Which is the second Municipio you travel in most frequently?",
 			"#None": "None",
 			"#Which is the third Municipio you travel in most frequently?": "Which is the third Municipio you travel in most frequently?",
-			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself?": "Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself?",
 			"#Heavy or fast motor traffic": "Heavy or fast motor traffic",
 			"#Lack of dedicated cycling infrastructure": "Lack of dedicated cycling infrastructure",
 			"#Poor road surface or obstacles (e.g. potholes, debris)": "Poor road surface or obstacles (e.g. potholes, debris)",
@@ -644,19 +646,25 @@
 			"#Moderate effort (stairs or narrow passage)": "Moderate effort (stairs or narrow passage)",
 			"#High effort (need to lift or carry the bike frequently)": "High effort (need to lift or carry the bike frequently)",
 			"#I do not park a bicycle or e-bike at home": "I do not park a bicycle or e-bike at home",
-			"#Do you have parking available at your workplace or study location?": "Do you have parking available at your workplace or study location?",
-			"#Yes, secure parking for bicycles or e-scooters": "Yes, secure parking for bicycles or e-scooters",
-			"#Yes, parking for cars": "Yes, parking for cars",
-			"#Yes, for both": "Yes, for both",
-			"#No, no dedicated parking available": "No, no dedicated parking available",
-			"#I do not work/study outside home": "I do not work/study outside home",
 			"#When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a car nearby?": "When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a car nearby?",
 			"#Very easy": "Very easy",
 			"#Sometimes difficult": "Sometimes difficult",
 			"#Very difficult": "Very difficult",
 			"#Not applicable (I do not use a car)": "Not applicable (I do not use a car)",
-			"#When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a bicycle or e-scooter nearby?": "When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a bicycle or e-scooter nearby?",
-			"#Not applicable (I do not use a bicycle or e-scooter)": "Not applicable (I do not use a bicycle or e-scooter)"
+			"#Not applicable (I do not use a bicycle or e-scooter)": "Not applicable (I do not use a bicycle or e-scooter)",
+			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)": "Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)",
+			"#When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?": "When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?",
+			"#Only a few minutes": "Only a few minutes",
+			"#Up to 30 minutes": "Up to 30 minutes",
+			"#Up to 1–2 hours": "Up to 1–2 hours",
+			"#Several hours": "Several hours",
+			"#I do not feel comfortable leaving it unattended": "I do not feel comfortable leaving it unattended",
+			"#Is there any formal or designated parking available at your workplace or study location?": "Is there any formal or designated parking available at your workplace or study location?",
+			"#Yes, parking specifically for bicycles or e-scooters": "Yes, parking specifically for bicycles or e-scooters",
+			"#Yes, parking only for cars": "Yes, parking only for cars",
+			"#Yes, parking for both bicycles/e-scooters and cars": "Yes, parking for both bicycles/e-scooters and cars",
+			"#No, there is no parking available": "No, there is no parking available",
+			"#I do not work or study outside home": "I do not work or study outside home"
 		},
 		"it": {
 			"code": "it",
@@ -672,7 +680,7 @@
 			"#Outside Rome": "Fuori Roma",
 			"#I don't know the number of Municipio": "Non conosco il numero del Municipio",
 			"#None": "Nessuno",
-			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself?": "Quali delle seguenti situazioni consideri insicure per andare in bicicletta o usare un monopattino elettrico nella tua zona, anche se non li utilizzi personalmente?",
+			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)": "Quali delle seguenti situazioni consideri insicure per andare in bicicletta o usare un monopattino elettrico nella tua zona, anche se non li utilizzi personalmente? (Seleziona al massimo 3 opzioni.)",
 			"#Heavy or fast motor traffic": "Traffico motorizzato intenso o veloce",
 			"#Lack of dedicated cycling infrastructure": "Mancanza di infrastrutture ciclabili dedicate",
 			"#Poor road surface or obstacles (e.g. potholes, debris)": "Fondo stradale in cattive condizioni o presenza di ostacoli (es. buche, detriti)",
@@ -745,7 +753,27 @@
 			"#When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a bicycle or e-scooter nearby?": "Quando ti rechi in luoghi che frequenti abitualmente (es. negozi, persone amiche), quanto è facile trovare parcheggio per una bicicletta o un monopattino elettrico nelle vicinanze?",
 			"#Not applicable (I do not use a bicycle or e-scooter)": "Non applicabile (non utilizzo una bicicletta o un monopattino elettrico)",
 			"#4 or more": "4 o più",
-			"#Where do you usually store your bicycle or e-bike at your place of residence?": "Dove custodisci di solito la tua bicicletta o e-bike presso la tua abitazione?"
+			"#Where do you usually store your bicycle or e-bike at your place of residence?": "Dove custodisci di solito la tua bicicletta o e-bike presso la tua abitazione?",
+			"#Which of the following types of bicycle or e-scooter parking are available at or near your workplace or study location?": "Quali tra le seguenti tipologie di parcheggio per biciclette o monopattini elettrici sono disponibili nel luogo in cui lavori o studi, o nelle immediate vicinanze?",
+			"#A private or reserved bicycle parking space at the workplace or study location (e.g. indoor bike room, courtyard)": "Uno spazio di parcheggio per biciclette riservato o dedicato nel luogo di lavoro o di studio (ad es. bike room interna, cortile)",
+			"#A paid or managed bicycle parking facility nearby": "Una struttura di parcheggio per biciclette a pagamento o gestita nelle vicinanze",
+			"#The possibility to park inside the building (e.g. office, corridor, classroom area)": "La possibilità di parcheggiare all’interno dell’edificio (ad es. ufficio, corridoio, area didattica)",
+			"#Public bicycle parking spaces nearby (e.g. bike racks)": "Spazi di parcheggio pubblico per biciclette nelle vicinanze (ad es. rastrelliere)",
+			"#Only public spaces not specifically designed for bicycle parking (e.g. poles, railings)": "Solo spazi pubblici non progettati specificamente per il parcheggio delle biciclette (ad es. pali, ringhiere)",
+			"#No bicycle or e-scooter parking is available at or near my workplace or study location": "Non è disponibile alcun parcheggio per biciclette o monopattini elettrici nel luogo in cui lavoro o studio, né nelle vicinanze",
+			"#Is there any formal or designated parking available at your workplace or study location?": "Hai a disposizione un parcheggio formale o designato nel luogo in cui lavori o studi?",
+			"#Yes, parking specifically for bicycles or e-scooters": "Sì, un parcheggio specifico per biciclette o monopattini elettrici",
+			"#Yes, parking only for cars": "Sì, solo parcheggio per automobili",
+			"#Yes, parking for both bicycles/e-scooters and cars": "Sì, sono disponibili parcheggi sia per biciclette/monopattini elettrici sia per automobili",
+			"#No, there is no parking available": "No, non è disponibile alcun parcheggio",
+			"#I do not work or study outside home": "Non lavoro né studio fuori casa",
+			"#When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?": "Quando vai in luoghi che frequenti abitualmente (ad es. negozi, amici), per quanto tempo ti senti di solito a tuo agio a lasciare la bici o il monopattino elettrico parcheggiati incustoditi?",
+			"#Only a few minutes": "Solo pochi minuti",
+			"#Up to 30 minutes": "Fino a 30 minuti",
+			"#Up to 1–2 hours": "Fino a 1–2 ore",
+			"#Several hours": "Diverse ore",
+			"#I do not feel comfortable leaving it unattended": "Non mi sento a mio agio a lasciarli incustoditi",
+			"#Not applicable (I do not use a bicycle or e-scooter)": "Non applicabile (non utilizzo una bicicletta o un monopattino elettrico)"
 		}
 	},
 	"id": "theBIKEnet_context",
