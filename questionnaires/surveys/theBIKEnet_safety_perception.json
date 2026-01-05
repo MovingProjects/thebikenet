@@ -23,7 +23,7 @@
 				"backgroundColor": "#0c9091",
 				"questions": [
 					{
-						"text": "How well do you know the traffic rules that apply to bicycles and e-scooters?",
+						"text": "How confident do you feel about your knowledge of traffic rules for bicycles and e-scooters?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
@@ -31,19 +31,44 @@
 						"checks_inline": false,
 						"options": [
 							{
-								"text": "Not at all (I do not know the specific rules for bicycles or e-scooters)"
+								"text": "Not at all confident"
 							},
 							{
-								"text": "A little (I know some basic and obvious rules, for example not running red lights)"
+								"text": "Slightly confident"
 							},
 							{
-								"text": "Moderately (I mainly know the traffic rules for cars, such as priorities and intersections)"
+								"text": "Moderately confident"
 							},
 							{
-								"text": "Well (I know the rules that specifically apply to bicycles and e-scooters, such as required equipment)"
+								"text": "Very confident"
 							},
 							{
-								"text": "Very well (I also know more advanced or specific rules, such as the difference between cycle paths and shared pedestrian–cycle paths, or when you must dismount at pedestrian crossings)"
+								"text": "Extremely confident"
+							}
+						]
+					},
+					{
+						"text": "How safe do you think your daily environment is for cycling or riding an e-scooter?",
+						"question_type": "single_option",
+						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
+						"add_other": false,
+						"checks_inline": false,
+						"options": [
+							{
+								"text": "Very unsafe"
+							},
+							{
+								"text": "Unsafe"
+							},
+							{
+								"text": "Neither safe nor unsafe"
+							},
+							{
+								"text": "Safe"
+							},
+							{
+								"text": "Very safe"
 							}
 						]
 					},
@@ -69,31 +94,9 @@
 							},
 							{
 								"text": "Very much at ease"
-							}
-						]
-					},
-					{
-						"text": "How safe do you currently feel when cycling or riding an e-scooter in your daily environment?",
-						"question_type": "single_option",
-						"add_prefer_not_to_say": false,
-						"add_i_dont_know": false,
-						"add_other": false,
-						"checks_inline": false,
-						"options": [
-							{
-								"text": "Very unsafe"
 							},
 							{
-								"text": "Unsafe"
-							},
-							{
-								"text": "Neither safe nor unsafe"
-							},
-							{
-								"text": "Safe"
-							},
-							{
-								"text": "Very safe"
+								"text": "I don't cycle or ride e-scooters"
 							}
 						]
 					},
@@ -123,7 +126,7 @@
 						]
 					},
 					{
-						"text": "During the past month, how often have you felt at risk of an accident while cycling or riding?",
+						"text": "During the past month, how often have you felt at risk of an accident while cycling or riding an e-scooter?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
@@ -144,6 +147,9 @@
 							},
 							{
 								"text": "Very often"
+							},
+							{
+								"text": "I did not cycle or ride an e-scooter in the past month"
 							}
 						]
 					}
@@ -155,7 +161,7 @@
 				"backgroundColor": "#0c9091",
 				"questions": [
 					{
-						"text": "Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?",
+						"text": "Which factors most reduce your feeling of safety when cycling or riding an e-scooter in your city? (Select up to 3 options)",
 						"question_type": "multiple_options",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
@@ -163,19 +169,13 @@
 						"checks_inline": false,
 						"options": [
 							{
-								"text": "High car traffic"
-							},
-							{
 								"text": "High vehicle speeds"
 							},
 							{
 								"text": "Aggressive or distracted drivers"
 							},
 							{
-								"text": "Poor or missing cycle lanes"
-							},
-							{
-								"text": "Mopeds or motorcycles on cycle lanes"
+								"text": "Mopeds or motorcycles using cycle lanes"
 							},
 							{
 								"text": "Cars parked illegally"
@@ -184,36 +184,21 @@
 								"text": "Unsafe intersections or crossings"
 							},
 							{
-								"text": "Potholes or damaged road surfaces"
+								"text": "Poor road maintenance"
 							},
 							{
-								"text": "Poor or confusing signage and road markings"
-							},
-							{
-								"text": "Poor lighting or low visibility at night"
-							},
-							{
-								"text": "Physical access barriers (e.g., stairs, narrow elevators)"
+								"text": "Poor lighting or low visibility"
 							},
 							{
 								"text": "Distracted pedestrians"
 							},
 							{
-								"text": "Other micromobility users (e-scooters, etc.)"
-							},
-							{
-								"text": "Bad weather conditions"
-							},
-							{
-								"text": "Fear of accidents or theft"
-							},
-							{
-								"text": "Lack of personal experience"
+								"text": "Conflicts with other micromobility users (e-scooters, etc.)"
 							}
 						]
 					},
 					{
-						"text": "Which elements make you feel safer when cycling or riding an e-scooter?",
+						"text": "Which elements make you feel safer when thinking about cycling or riding an e-scooter in your city? (Select up to 3 options)",
 						"question_type": "multiple_options",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
@@ -230,22 +215,16 @@
 								"text": "Good road maintenance"
 							},
 							{
-								"text": "Clear road signs and markings"
-							},
-							{
 								"text": "Adequate lighting and visibility"
 							},
 							{
-								"text": "Dedicated signals for cyclists or scooters"
+								"text": "Clear and visible signage for cyclists and e-scooters"
 							},
 							{
 								"text": "Presence of other cyclists or riders"
 							},
 							{
 								"text": "Police presence or traffic enforcement"
-							},
-							{
-								"text": "Daylight conditions"
 							}
 						]
 					},
@@ -286,19 +265,12 @@
 			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
 			"#Perceived Safety and Comfort": "Perceived Safety and Comfort",
 			"#How safe and comfortable you feel when riding in your city.": "How safe and comfortable you feel when riding in your city.",
-			"#How well do you know the traffic rules that apply to bicycles and e-scooters?": "How well do you know the traffic rules that apply to bicycles and e-scooters?",
-			"#Not at all (I do not know the specific rules for bicycles or e-scooters)": "Not at all (I do not know the specific rules for bicycles or e-scooters)",
-			"#A little (I know some basic and obvious rules, for example not running red lights)": "A little (I know some basic and obvious rules, for example not running red lights)",
-			"#Moderately (I mainly know the traffic rules for cars, such as priorities and intersections)": "Moderately (I mainly know the traffic rules for cars, such as priorities and intersections)",
-			"#Well (I know the rules that specifically apply to bicycles and e-scooters, such as required equipment)": "Well (I know the rules that specifically apply to bicycles and e-scooters, such as required equipment)",
-			"#Very well (I also know more advanced or specific rules, such as the difference between cycle paths and shared pedestrian–cycle paths, or when you must dismount at pedestrian crossings)": "Very well (I also know more advanced or specific rules, such as the difference between cycle paths and shared pedestrian–cycle paths, or when you must dismount at pedestrian crossings)",
 			"#How at ease do you generally feel, in terms of calmness and stress, when cycling or riding an e-scooter in your city?": "How at ease do you generally feel, in terms of calmness and stress, when cycling or riding an e-scooter in your city?",
 			"#Not at all at ease": "Not at all at ease",
 			"#Slightly at ease": "Slightly at ease",
 			"#Neither at ease nor uneasy": "Neither at ease nor uneasy",
 			"#At ease": "At ease",
 			"#Very much at ease": "Very much at ease",
-			"#How safe do you currently feel when cycling or riding an e-scooter in your daily environment?": "How safe do you currently feel when cycling or riding an e-scooter in your daily environment?",
 			"#Very unsafe": "Very unsafe",
 			"#Unsafe": "Unsafe",
 			"#Neither safe nor unsafe": "Neither safe nor unsafe",
@@ -310,7 +282,6 @@
 			"#Average": "Average",
 			"#Good": "Good",
 			"#Very good": "Very good",
-			"#During the past month, how often have you felt at risk of an accident while cycling or riding?": "During the past month, how often have you felt at risk of an accident while cycling or riding?",
 			"#Never": "Never",
 			"#Rarely": "Rarely",
 			"#Sometimes": "Sometimes",
@@ -318,39 +289,40 @@
 			"#Very often": "Very often",
 			"#Environmental and Traffic Factors": "Environmental and Traffic Factors",
 			"#What elements of the road and environment make you feel safer or less safe.": "What elements of the road and environment make you feel safer or less safe.",
-			"#Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?": "Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?",
-			"#High car traffic": "High car traffic",
 			"#High vehicle speeds": "High vehicle speeds",
 			"#Aggressive or distracted drivers": "Aggressive or distracted drivers",
-			"#Poor or missing cycle lanes": "Poor or missing cycle lanes",
-			"#Mopeds or motorcycles on cycle lanes": "Mopeds or motorcycles on cycle lanes",
 			"#Cars parked illegally": "Cars parked illegally",
 			"#Unsafe intersections or crossings": "Unsafe intersections or crossings",
-			"#Potholes or damaged road surfaces": "Potholes or damaged road surfaces",
-			"#Poor or confusing signage and road markings": "Poor or confusing signage and road markings",
-			"#Poor lighting or low visibility at night": "Poor lighting or low visibility at night",
-			"#Physical access barriers (e.g., stairs, narrow elevators)": "Physical access barriers (e.g., stairs, narrow elevators)",
 			"#Distracted pedestrians": "Distracted pedestrians",
-			"#Other micromobility users (e-scooters, etc.)": "Other micromobility users (e-scooters, etc.)",
-			"#Bad weather conditions": "Bad weather conditions",
-			"#Fear of accidents or theft": "Fear of accidents or theft",
-			"#Lack of personal experience": "Lack of personal experience",
-			"#Which elements make you feel safer when cycling or riding an e-scooter?": "Which elements make you feel safer when cycling or riding an e-scooter?",
 			"#Separated or protected bike lanes": "Separated or protected bike lanes",
 			"#Lower car traffic speeds": "Lower car traffic speeds",
 			"#Good road maintenance": "Good road maintenance",
-			"#Clear road signs and markings": "Clear road signs and markings",
 			"#Adequate lighting and visibility": "Adequate lighting and visibility",
-			"#Dedicated signals for cyclists or scooters": "Dedicated signals for cyclists or scooters",
 			"#Presence of other cyclists or riders": "Presence of other cyclists or riders",
 			"#Police presence or traffic enforcement": "Police presence or traffic enforcement",
-			"#Daylight conditions": "Daylight conditions",
 			"#How would you rate driver respect toward cyclists or micromobility users in your city?": "How would you rate driver respect toward cyclists or micromobility users in your city?",
 			"#Very low": "Very low",
 			"#Low": "Low",
 			"#Moderate": "Moderate",
 			"#High": "High",
-			"#Very high": "Very high"
+			"#Very high": "Very high",
+			"#How confident do you feel about your knowledge of traffic rules for bicycles and e-scooters?": "How confident do you feel about your knowledge of traffic rules for bicycles and e-scooters?",
+			"#Not at all confident": "Not at all confident",
+			"#Slightly confident": "Slightly confident",
+			"#Moderately confident": "Moderately confident",
+			"#Very confident": "Very confident",
+			"#Extremely confident": "Extremely confident",
+			"#I don't cycle or ride e-scooters": "I don't cycle or ride e-scooters",
+			"#During the past month, how often have you felt at risk of an accident while cycling or riding an e-scooter?": "During the past month, how often have you felt at risk of an accident while cycling or riding an e-scooter?",
+			"#I did not cycle or ride an e-scooter in the past month": "I did not cycle or ride an e-scooter in the past month",
+			"#Which factors most reduce your feeling of safety when cycling or riding an e-scooter in your city? (Select up to 3 options)": "Which factors most reduce your feeling of safety when cycling or riding an e-scooter in your city? (Select up to 3 options)",
+			"#Mopeds or motorcycles using cycle lanes": "Mopeds or motorcycles using cycle lanes",
+			"#Poor road maintenance": "Poor road maintenance",
+			"#Poor lighting or low visibility": "Poor lighting or low visibility",
+			"#Conflicts with other micromobility users (e-scooters, etc.)": "Conflicts with other micromobility users (e-scooters, etc.)",
+			"#How safe do you think your daily environment is for cycling or riding an e-scooter?": "How safe do you think your daily environment is for cycling or riding an e-scooter?",
+			"#Clear and visible signage for cyclists and e-scooters": "Clear and visible signage for cyclists and e-scooters",
+			"#Which elements make you feel safer when thinking about cycling or riding an e-scooter in your city? (Select up to 3 options)": "Which elements make you feel safer when thinking about cycling or riding an e-scooter in your city? (Select up to 3 options)"
 		},
 		"it": {
 			"code": "it",
@@ -391,7 +363,7 @@
 			"#Very often": "Molto spesso",
 			"#Environmental and Traffic Factors": "Fattori ambientali e di traffico",
 			"#What elements of the road and environment make you feel safer or less safe.": "Quali elementi della strada e dell’ambiente ti fanno sentire più o meno sicura/o.",
-			"#Which factors most reduce your feeling of safety when cycling or riding an e-scooter on the road?": "Quali fattori riducono maggiormente la tua sensazione di sicurezza quando vai in bicicletta o utilizzi un monopattino elettrico sulla strada?",
+			"#Which factors most reduce your feeling of safety when cycling or riding an e-scooter in the city?": "Quali fattori riducono maggiormente la tua sensazione di sicurezza quando vai in bicicletta o utilizzi un monopattino elettrico sulla strada?",
 			"#High car traffic": "Traffico automobilistico intenso",
 			"#High vehicle speeds": "Velocità elevate dei veicoli",
 			"#Aggressive or distracted drivers": "Persone alla guida aggressive o distratte",
@@ -406,7 +378,6 @@
 			"#Distracted pedestrians": "Persone a piedi distratte",
 			"#Other micromobility users (e-scooters, etc.)": "Altre persone che utilizzano mezzi di micromobilità (monopattini elettrici, ecc.)",
 			"#Bad weather conditions": "Condizioni meteorologiche sfavorevoli",
-			"#Fear of accidents or theft": "Paura di incidenti o furti",
 			"#Lack of personal experience": "Mancanza di esperienza personale",
 			"#Which elements make you feel safer when cycling or riding an e-scooter?": "Quali elementi ti fanno sentire più sicura/o quando vai in bicicletta o utilizzi un monopattino elettrico?",
 			"#Separated or protected bike lanes": "Piste ciclabili separate o protette",
@@ -423,7 +394,23 @@
 			"#Low": "Basso",
 			"#Moderate": "Moderato",
 			"#High": "Alto",
-			"#Very high": "Molto alto"
+			"#Very high": "Molto alto",
+			"#How confident do you feel about your knowledge of traffic rules for bicycles and e-scooters?": "Quanto ti senti sicura/o della tua conoscenza delle regole del traffico per biciclette e monopattini elettrici?",
+			"#Not at all confident": "Per niente sicura/o",
+			"#Slightly confident": "Poco sicura/o",
+			"#Moderately confident": "Abbastanza sicura/o",
+			"#Very confident": "Molto sicura/o",
+			"#Extremely confident": "Estremamente sicura/o",
+			"#How safe do you think your daily environment is for cycling or riding an e-scooter?": "Quanto ritieni che il tuo ambiente quotidiano sia sicuro per andare in bicicletta o utilizzare un monopattino elettrico?",
+			"#I don't cycle or ride e-scooters": "Non vado in bicicletta né utilizzo monopattini elettrici",
+			"#During the past month, how often have you felt at risk of an accident while cycling or riding an e-scooter?": "Nell’ultimo mese, quanto spesso ti sei sentita/o a rischio di incidente mentre andavi in bicicletta o utilizzavi un monopattino elettrico?",
+			"#Which factors most reduce your feeling of safety when cycling or riding an e-scooter in your city? (Select up to 3 options)": "Quali fattori riducono maggiormente la tua sensazione di sicurezza quando vai in bicicletta o utilizzi un monopattino elettrico nella tua città? (Seleziona fino a 3 opzioni)",
+			"#Conflicts with other micromobility users (e-scooters, etc.)": "Conflitti con altri utenti della micromobilità (monopattini elettrici, ecc.)",
+			"#Which elements make you feel safer when cycling or riding an e-scooter in your city? (Select up to 3 options)": "Quali elementi ti fanno sentire più sicura/o quando vai in bicicletta o utilizzi un monopattino elettrico nella tua città? (Seleziona fino a 3 opzioni)",
+			"#Clear and visible signage for cyclists and e-scooters": "Segnaletica chiara e ben visibile per ciclisti e monopattini elettrici",
+			"#Mopeds or motorcycles using cycle lanes": "Motorini o motocicli che utilizzano le piste ciclabili",
+			"#Poor road maintenance": "Scarsa manutenzione stradale",
+			"#Poor lighting or low visibility": "Illuminazione insufficiente o scarsa visibilità"
 		}
 	},
 	"id": "theBIKEnet_safety_perception",
