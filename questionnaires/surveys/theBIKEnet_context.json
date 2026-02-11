@@ -2,7 +2,7 @@
 	"questionnaire": {
 		"name": "2. theBIKEnet Context - Where and with what you move",
 		"questionnaire_id": "theBIKEnet_context",
-		"questionnaire_version": "1.0.1",
+		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
 		"options": {
 			"review_mode": true,
@@ -13,7 +13,7 @@
 		"sections": [
 			{
 				"title": "theBIKEnet Context Questionnaire",
-				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+				"description": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about theBIKEnet project</a>",
 				"backgroundColor": "#0c9091",
 				"questions": []
 			},
@@ -77,9 +77,6 @@
 							},
 							{
 								"text": "Outside Rome"
-							},
-							{
-								"text": "I don't know the number of Municipio"
 							}
 						]
 					},
@@ -92,7 +89,7 @@
 						"checks_inline": true,
 						"options": [
 							{
-								"text": "None"
+								"text": "Not applicable"
 							},
 							{
 								"text": "1"
@@ -141,9 +138,6 @@
 							},
 							{
 								"text": "Outside Rome"
-							},
-							{
-								"text": "I don't know the number of Municipio"
 							}
 						]
 					},
@@ -156,7 +150,7 @@
 						"checks_inline": true,
 						"options": [
 							{
-								"text": "None"
+								"text": "Not applicable"
 							},
 							{
 								"text": "1"
@@ -205,9 +199,6 @@
 							},
 							{
 								"text": "Outside Rome"
-							},
-							{
-								"text": "I don't know the number of Municipio"
 							}
 						]
 					},
@@ -284,6 +275,31 @@
 						]
 					},
 					{
+						"text": "How many e-scooters are available in your household (including yours)?",
+						"question_type": "single_option",
+						"add_prefer_not_to_say": false,
+						"add_i_dont_know": false,
+						"add_other": false,
+						"checks_inline": false,
+						"options": [
+							{
+								"text": "0"
+							},
+							{
+								"text": "1"
+							},
+							{
+								"text": "2"
+							},
+							{
+								"text": "3"
+							},
+							{
+								"text": "4 or more"
+							}
+						]
+					},
+					{
 						"text": "Which other vehicles are available in your household?",
 						"question_type": "multiple_options",
 						"add_prefer_not_to_say": false,
@@ -295,18 +311,15 @@
 								"text": "Car"
 							},
 							{
-								"text": "Motorbike or scooter"
+								"text": "Motorcycle/moped"
 							},
 							{
-								"text": "E-scooter"
-							},
-							{
-								"text": "No other vehicles available"
+								"text": "None"
 							}
 						]
 					},
 					{
-						"text": "When a motor vehicle (car or motorbike) is available in your household, how easy is it for you to use it when you need it?",
+						"text": "If a car or motorcycle/moped is available in your household, how easy is it for you to use it when you need it?",
 						"question_type": "single_option",
 						"add_prefer_not_to_say": false,
 						"add_i_dont_know": false,
@@ -331,27 +344,18 @@
 						]
 					},
 					{
-						"text": "Do you currently hold a valid driving license (for car or motorcycle)?",
+						"text": "Do you currently hold a valid driving license that is valid in Italy?",
 						"question_type": "single_option",
-						"add_prefer_not_to_say": false,
+						"add_prefer_not_to_say": true,
 						"add_i_dont_know": false,
 						"add_other": true,
 						"checks_inline": false,
 						"options": [
 							{
-								"text": "Yes, car license (Category B or equivalent)"
+								"text": "Yes"
 							},
 							{
-								"text": "Yes, motorcycle or scooter license (Category A or equivalent)"
-							},
-							{
-								"text": "Yes, both car and motorcycle licenses"
-							},
-							{
-								"text": "No, I've never held a driving license"
-							},
-							{
-								"text": "No, I do not currently hold a valid driving license"
+								"text": "No"
 							}
 						]
 					},
@@ -382,13 +386,13 @@
 								"text": "Car (sharing service)"
 							},
 							{
-								"text": "Motorbike or scooter (personal)"
+								"text": "Motorcycle/moped (personal)"
 							},
 							{
-								"text": "Motorbike or scooter (sharing service)"
+								"text": "Motorcycle/moped (sharing service)"
 							},
 							{
-								"text": "None of these"
+								"text": "None"
 							}
 						]
 					}
@@ -396,7 +400,7 @@
 			},
 			{
 				"title": "Parking",
-				"description": "Where and how you usually park your bicycle or e-scooter, and how easy or difficult it is.",
+				"description": "Where and how you usually park or store your vehicles (car, bicycle, or e-scooter), and how easy or difficult it is.",
 				"backgroundColor": "#0c9091",
 				"questions": [
 					{
@@ -498,59 +502,6 @@
 								"text": "I do not work or study outside home"
 							}
 						]
-					},
-					{
-						"text": "When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a car nearby?",
-						"question_type": "single_option",
-						"add_prefer_not_to_say": false,
-						"add_i_dont_know": false,
-						"add_other": false,
-						"checks_inline": false,
-						"options": [
-							{
-								"text": "Very easy"
-							},
-							{
-								"text": "Fairly easy"
-							},
-							{
-								"text": "Sometimes difficult"
-							},
-							{
-								"text": "Very difficult"
-							},
-							{
-								"text": "Not applicable (I do not use a car)"
-							}
-						]
-					},
-					{
-						"text": "When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?",
-						"question_type": "single_option",
-						"add_prefer_not_to_say": false,
-						"add_i_dont_know": false,
-						"add_other": false,
-						"checks_inline": false,
-						"options": [
-							{
-								"text": "Only a few minutes"
-							},
-							{
-								"text": "Up to 30 minutes"
-							},
-							{
-								"text": "Up to 1–2 hours"
-							},
-							{
-								"text": "Several hours"
-							},
-							{
-								"text": "I do not feel comfortable leaving it unattended"
-							},
-							{
-								"text": "Not applicable (I do not use a bicycle or e-scooter)"
-							}
-						]
 					}
 				]
 			}
@@ -561,7 +512,7 @@
 			"code": "en",
 			"#2. theBIKEnet Context - Where and with what you move": "2. theBIKEnet Context - Where and with what you move",
 			"#theBIKEnet Context Questionnaire": "theBIKEnet Context Questionnaire",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about theBIKEnet project</a>",
 			"#Territorial Context": "Territorial Context",
 			"#Questions about the area you live in or travel through most often, and any local spots you find unsafe or uncomfortable.": "Questions about the area you live in or travel through most often, and any local spots you find unsafe or uncomfortable.",
 			"#Which Municipio of Rome do you travel in most frequently? (You will be able to indicate other frequent areas next)": "Which Municipio of Rome do you travel in most frequently? (You will be able to indicate other frequent areas next)",
@@ -581,10 +532,10 @@
 			"#14": "14",
 			"#15": "15",
 			"#Outside Rome": "Outside Rome",
-			"#I don't know the number of Municipio": "I don't know the number of Municipio",
 			"#Which is the second Municipio you travel in most frequently?": "Which is the second Municipio you travel in most frequently?",
-			"#None": "None",
+			"#Not applicable": "Not applicable",
 			"#Which is the third Municipio you travel in most frequently?": "Which is the third Municipio you travel in most frequently?",
+			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)": "Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)",
 			"#Heavy or fast motor traffic": "Heavy or fast motor traffic",
 			"#Lack of dedicated cycling infrastructure": "Lack of dedicated cycling infrastructure",
 			"#Poor road surface or obstacles (e.g. potholes, debris)": "Poor road surface or obstacles (e.g. potholes, debris)",
@@ -594,28 +545,25 @@
 			"#Conflicts with parked cars (e.g. opening doors, sudden movements)": "Conflicts with parked cars (e.g. opening doors, sudden movements)",
 			"#Conflicts with pedestrians": "Conflicts with pedestrians",
 			"#Conflicts with other micromobility users": "Conflicts with other micromobility users",
+			"#None": "None",
 			"#Household and Personal Mobility Resources": "Household and Personal Mobility Resources",
 			"#What transport options and vehicles are available in your household.": "What transport options and vehicles are available in your household.",
 			"#How many bicycles/e-bikes are available in your household (including yours)?": "How many bicycles/e-bikes are available in your household (including yours)?",
 			"#0": "0",
 			"#4 or more": "4 or more",
+			"#How many e-scooters are available in your household (including yours)?": "How many e-scooters are available in your household (including yours)?",
 			"#Which other vehicles are available in your household?": "Which other vehicles are available in your household?",
 			"#Car": "Car",
-			"#Motorbike or scooter": "Motorbike or scooter",
-			"#E-scooter": "E-scooter",
-			"#No other vehicles available": "No other vehicles available",
-			"#When a motor vehicle (car or motorbike) is available in your household, how easy is it for you to use it when you need it?": "When a motor vehicle (car or motorbike) is available in your household, how easy is it for you to use it when you need it?",
+			"#Motorcycle/moped": "Motorcycle/moped",
+			"#If a car or motorcycle/moped is available in your household, how easy is it for you to use it when you need it?": "If a car or motorcycle/moped is available in your household, how easy is it for you to use it when you need it?",
 			"#Very easy (almost always available)": "Very easy (almost always available)",
 			"#Fairly easy": "Fairly easy",
 			"#Sometimes difficult (shared or limited)": "Sometimes difficult (shared or limited)",
 			"#Very difficult (rarely available)": "Very difficult (rarely available)",
 			"#Not applicable (no motor vehicles)": "Not applicable (no motor vehicles)",
-			"#Do you currently hold a valid driving license (for car or motorcycle)?": "Do you currently hold a valid driving license (for car or motorcycle)?",
-			"#Yes, car license (Category B or equivalent)": "Yes, car license (Category B or equivalent)",
-			"#Yes, motorcycle or scooter license (Category A or equivalent)": "Yes, motorcycle or scooter license (Category A or equivalent)",
-			"#Yes, both car and motorcycle licenses": "Yes, both car and motorcycle licenses",
-			"#No, I've never held a driving license": "No, I've never held a driving license",
-			"#No, I do not currently hold a valid driving license": "No, I do not currently hold a valid driving license",
+			"#Do you currently hold a valid driving license that is valid in Italy?": "Do you currently hold a valid driving license that is valid in Italy?",
+			"#Yes": "Yes",
+			"#No": "No",
 			"#Which of the following vehicles do you personally have regular access to for your trips?": "Which of the following vehicles do you personally have regular access to for your trips?",
 			"#Bicycle (personal)": "Bicycle (personal)",
 			"#E-bike (personal)": "E-bike (personal)",
@@ -623,11 +571,10 @@
 			"#E-scooter (sharing service)": "E-scooter (sharing service)",
 			"#Car (personal)": "Car (personal)",
 			"#Car (sharing service)": "Car (sharing service)",
-			"#Motorbike or scooter (personal)": "Motorbike or scooter (personal)",
-			"#Motorbike or scooter (sharing service)": "Motorbike or scooter (sharing service)",
-			"#None of these": "None of these",
+			"#Motorcycle/moped (personal)": "Motorcycle/moped (personal)",
+			"#Motorcycle/moped (sharing service)": "Motorcycle/moped (sharing service)",
 			"#Parking": "Parking",
-			"#Where and how you usually park your bicycle or e-scooter, and how easy or difficult it is.": "Where and how you usually park your bicycle or e-scooter, and how easy or difficult it is.",
+			"#Where and how you usually park or store your vehicles (car, bicycle, or e-scooter), and how easy or difficult it is.": "Where and how you usually park or store your vehicles (car, bicycle, or e-scooter), and how easy or difficult it is.",
 			"#Do you have a private or reserved parking space for a car at your place of residence?": "Do you have a private or reserved parking space for a car at your place of residence?",
 			"#Yes, included in my residence (e.g. private or shared garage, reserved parking space)": "Yes, included in my residence (e.g. private or shared garage, reserved parking space)",
 			"#Yes, but in a paid parking facility not included in my residence": "Yes, but in a paid parking facility not included in my residence",
@@ -646,19 +593,6 @@
 			"#Moderate effort (stairs or narrow passage)": "Moderate effort (stairs or narrow passage)",
 			"#High effort (need to lift or carry the bike frequently)": "High effort (need to lift or carry the bike frequently)",
 			"#I do not park a bicycle or e-bike at home": "I do not park a bicycle or e-bike at home",
-			"#When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a car nearby?": "When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a car nearby?",
-			"#Very easy": "Very easy",
-			"#Sometimes difficult": "Sometimes difficult",
-			"#Very difficult": "Very difficult",
-			"#Not applicable (I do not use a car)": "Not applicable (I do not use a car)",
-			"#Not applicable (I do not use a bicycle or e-scooter)": "Not applicable (I do not use a bicycle or e-scooter)",
-			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)": "Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)",
-			"#When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?": "When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?",
-			"#Only a few minutes": "Only a few minutes",
-			"#Up to 30 minutes": "Up to 30 minutes",
-			"#Up to 1–2 hours": "Up to 1–2 hours",
-			"#Several hours": "Several hours",
-			"#I do not feel comfortable leaving it unattended": "I do not feel comfortable leaving it unattended",
 			"#Is there any formal or designated parking available at your workplace or study location?": "Is there any formal or designated parking available at your workplace or study location?",
 			"#Yes, parking specifically for bicycles or e-scooters": "Yes, parking specifically for bicycles or e-scooters",
 			"#Yes, parking only for cars": "Yes, parking only for cars",
@@ -668,49 +602,60 @@
 		},
 		"it": {
 			"code": "it",
-			"#2. theBIKEnet Context - Where and with what you move": "2. Contesto di mobilità theBIKEnet – Dove e con cosa ti muovi",
-			"#theBIKEnet Context Questionnaire": "Questionario theBIKEnet – Contesto di mobilità",
-			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about the theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si muovono nelle città, combinando scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutte le persone.<br><br>Questo secondo questionario si concentra sul <b>tuo contesto abitativo e di spostamento</b>: dove ti muovi abitualmente, a quali veicoli hai accesso e quanto è facile parcheggiarli o custodirli. Comprendere queste condizioni quotidiane ci aiuta a individuare <b>barriere</b>, <b>bisogni</b> e <b>opportunità</b> per la mobilità ciclistica e la micromobilità in diverse aree della città.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate esclusivamente a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
+			"#2. theBIKEnet Context - Where and with what you move": "2. theBIKEnet – Contesto · Dove e con cosa ti muovi",
+			"#theBIKEnet Context Questionnaire": "Questionario theBIKEnet – Contesto",
+			"#🚲 <b>theBIKEnet</b> is a public research project that explores how people cycle and move through cities - combining science, technology, and everyday experience. Our goal is to make urban mobility safer, fairer, and more sustainable for everyone.<br><br>This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.<br><br>Participation is completely voluntary and anonymous. The information you provide will be used only for scientific and educational purposes.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about theBIKEnet project</a>": "🚲 <b>theBIKEnet</b> è un progetto di ricerca pubblica che studia come le persone si muovono nelle città, unendo scienza, tecnologia ed esperienza quotidiana. Il nostro obiettivo è rendere la mobilità urbana più sicura, equa e sostenibile per tutte le persone.<br><br>Questo secondo questionario si concentra sul <b>tuo contesto di vita e di spostamento</b>: dove ti muovi abitualmente, a quali veicoli hai accesso e quanto è facile parcheggiarli o custodirli. Comprendere queste condizioni quotidiane ci aiuta a individuare <b>barriere</b>, <b>bisogni</b> e <b>opportunità</b> per la mobilità ciclistica e la micromobilità in diverse aree della città.<br><br>La partecipazione è completamente volontaria e anonima. Le informazioni fornite saranno utilizzate esclusivamente a fini scientifici ed educativi.<br><br><a href='https://movprojects.com/thebikenet' target='_blank'>Scopri di più sul progetto theBIKEnet</a>",
 			"#Territorial Context": "Contesto territoriale",
-			"#Questions about the area you live in or travel through most often, and any local spots you find unsafe or uncomfortable.": "Domande sull’area in cui vivi o ti sposti più spesso e su eventuali luoghi che percepisci come insicuri o scomodi.",
-			"#In which Municipio of Rome do you currently live?": "In quale Municipio di Roma vivi attualmente?",
-			"#Which Municipio of Rome do you travel in most frequently? (You will be able to indicate other frequent areas next)": "In quale Municipio di Roma ti sposti più frequentemente? (Potrai indicare altre aree frequentate nelle domande successive)",
-			"#Which is the second Municipio you travel in most frequently?": "Qual è il secondo Municipio in cui ti sposti più frequentemente?",
-			"#Which is the third Municipio you travel in most frequently?": "Qual è il terzo Municipio in cui ti sposti più frequentemente?",
+			"#Questions about the area you live in or travel through most often, and any local spots you find unsafe or uncomfortable.": "Domande sulle aree che frequenti più spesso e su eventuali situazioni o luoghi che percepisci come insicuri o scomodi.",
+			"#Which Municipio of Rome do you travel in most frequently? (You will be able to indicate other frequent areas next)": "In quale Municipio di Roma ti sposti più spesso? (Potrai indicare altre aree frequentate nelle domande successive)",
+			"#1": "1",
+			"#2": "2",
+			"#3": "3",
+			"#4": "4",
+			"#5": "5",
+			"#6": "6",
+			"#7": "7",
+			"#8": "8",
+			"#9": "9",
+			"#10": "10",
+			"#11": "11",
+			"#12": "12",
+			"#13": "13",
+			"#14": "14",
+			"#15": "15",
 			"#Outside Rome": "Fuori Roma",
-			"#I don't know the number of Municipio": "Non conosco il numero del Municipio",
-			"#None": "Nessuno",
-			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)": "Quali delle seguenti situazioni consideri insicure per andare in bicicletta o usare un monopattino elettrico nella tua zona, anche se non li utilizzi personalmente? (Seleziona al massimo 3 opzioni)",
+			"#Which is the second Municipio you travel in most frequently?": "Qual è il secondo Municipio in cui ti sposti più spesso?",
+			"#Not applicable": "Non applicabile",
+			"#Which is the third Municipio you travel in most frequently?": "Qual è il terzo Municipio in cui ti sposti più spesso?",
+			"#Which of the following situations do you consider unsafe for cycling or using e-scooters in your area, even if you do not use them yourself? (Select up to 3 options)": "Quali delle seguenti situazioni consideri insicure quando vai in bicicletta o usi un monopattino elettrico nella tua zona, anche se non li utilizzi personalmente? (Seleziona fino a 3 opzioni)",
 			"#Heavy or fast motor traffic": "Traffico motorizzato intenso o veloce",
 			"#Lack of dedicated cycling infrastructure": "Mancanza di infrastrutture ciclabili dedicate",
-			"#Poor road surface or obstacles (e.g. potholes, debris)": "Fondo stradale in cattive condizioni o presenza di ostacoli (es. buche, detriti)",
+			"#Poor road surface or obstacles (e.g. potholes, debris)": "Fondo stradale in cattive condizioni o ostacoli (es. buche, detriti)",
 			"#Poor visibility (e.g. blind spots, parked vehicles blocking the view)": "Scarsa visibilità (es. angoli ciechi, veicoli in sosta che ostacolano la visuale)",
-			"#Poor lighting, especially at night": "Illuminazione insufficiente, soprattutto nelle ore notturne",
+			"#Poor lighting, especially at night": "Illuminazione insufficiente, soprattutto di notte",
 			"#Dangerous or complex intersections": "Intersezioni pericolose o complesse",
 			"#Conflicts with parked cars (e.g. opening doors, sudden movements)": "Conflitti con veicoli in sosta (es. apertura delle portiere, movimenti improvvisi)",
-			"#Conflicts with pedestrians": "Conflitti con persone che si muovono a piedi",
+			"#Conflicts with pedestrians": "Conflitti con persone a piedi",
 			"#Conflicts with other micromobility users": "Conflitti con altre persone che utilizzano mezzi di micromobilità",
-			"#None of these": "Nessuno di questi",
+			"#None": "Nessuno",
 			"#Household and Personal Mobility Resources": "Risorse di mobilità personali e del nucleo familiare",
-			"#What transport options and vehicles are available in your household.": "Quali mezzi di trasporto e veicoli sono disponibili nel tuo nucleo familiare.",
-			"#How many bicycles/e-bikes are available in your household (including yours)?": "Quante biciclette o e-bike sono disponibili nel tuo nucleo familiare (inclusa la tua)?",
+			"#What transport options and vehicles are available in your household.": "Quali opzioni di trasporto e veicoli sono disponibili nel tuo nucleo familiare.",
+			"#How many bicycles/e-bikes are available in your household (including yours)?": "Quante biciclette/e-bike sono disponibili nel tuo nucleo familiare (inclusa la tua)?",
+			"#0": "0",
+			"#4 or more": "4 o più",
+			"#How many e-scooters are available in your household (including yours)?": "Quanti monopattini elettrici sono disponibili nel tuo nucleo familiare (incluso il tuo)?",
 			"#Which other vehicles are available in your household?": "Quali altri veicoli sono disponibili nel tuo nucleo familiare?",
 			"#Car": "Auto",
-			"#Motorbike or scooter": "Motocicletta o scooter",
-			"#E-scooter": "Monopattino elettrico",
-			"#No other vehicles available": "Nessun altro veicolo disponibile",
-			"#When a motor vehicle (car or motorbike) is available in your household, how easy is it for you to use it when you need it?": "Quando nel tuo nucleo familiare è disponibile un veicolo motorizzato (auto o moto), quanto è facile per te utilizzarlo quando ne hai bisogno?",
+			"#Motorcycle/moped": "Motocicletta o ciclomotore",
+			"#If a car or motorcycle/moped is available in your household, how easy is it for you to use it when you need it?": "Quando nel tuo nucleo familiare è disponibile un’auto o una moto, quanto ti è facile utilizzarla quando ne hai bisogno?",
 			"#Very easy (almost always available)": "Molto facile (quasi sempre disponibile)",
 			"#Fairly easy": "Abbastanza facile",
-			"#Sometimes difficult (shared or limited)": "A volte difficile (uso condiviso o limitato)",
+			"#Sometimes difficult (shared or limited)": "A volte difficile (condiviso o con disponibilità limitata)",
 			"#Very difficult (rarely available)": "Molto difficile (raramente disponibile)",
 			"#Not applicable (no motor vehicles)": "Non applicabile (nessun veicolo motorizzato)",
-			"#Do you currently hold a valid driving license (for car or motorcycle)?": "Possiedi attualmente una patente di guida valida (per auto o motocicli)?",
-			"#Yes, car license (Category B or equivalent)": "Sì, patente per auto (categoria B o equivalente)",
-			"#Yes, motorcycle or scooter license (Category A or equivalent)": "Sì, patente per moto o scooter (categoria A o equivalente)",
-			"#Yes, both car and motorcycle licenses": "Sì, entrambe (auto e moto)",
-			"#No, I've never held a driving license": "No, non ho mai posseduto una patente",
-			"#No, I do not currently hold a valid driving license": "No, non possiedo attualmente una patente valida",
+			"#Do you currently hold a valid driving license that is valid in Italy?": "Hai una patente di guida valida in Italia?",
+			"#Yes": "Sì",
+			"#No": "No",
 			"#Which of the following vehicles do you personally have regular access to for your trips?": "A quali dei seguenti veicoli hai accesso regolare per i tuoi spostamenti?",
 			"#Bicycle (personal)": "Bicicletta (personale)",
 			"#E-bike (personal)": "E-bike (personale)",
@@ -718,65 +663,37 @@
 			"#E-scooter (sharing service)": "Monopattino elettrico (servizio di sharing)",
 			"#Car (personal)": "Auto (personale)",
 			"#Car (sharing service)": "Auto (servizio di sharing)",
-			"#Motorbike or scooter (personal)": "Motocicletta o scooter (personale)",
-			"#Motorbike or scooter (sharing service)": "Motocicletta o scooter (servizio di sharing)",
+			"#Motorcycle/moped (personal)": "Motocicletta o ciclomotore (personale)",
+			"#Motorcycle/moped (sharing service)": "Motocicletta o ciclomotore (servizio di sharing)",
 			"#Parking": "Parcheggio",
-			"#Do you have a private or reserved parking space for a car at your place of residence?": "Hai a disposizione un parcheggio privato o riservato per auto presso la tua abitazione?",
+			"#Where and how you usually park or store your vehicles (car, bicycle, or e-scooter), and how easy or difficult it is.": "Dove e come parcheggi o custodisci i tuoi veicoli (auto, bicicletta o monopattino elettrico) e quanto è facile o difficile farlo.",
+			"#Do you have a private or reserved parking space for a car at your place of residence?": "Hai un parcheggio privato o riservato per l’auto presso la tua abitazione?",
 			"#Yes, included in my residence (e.g. private or shared garage, reserved parking space)": "Sì, incluso presso la mia abitazione (es. garage privato o condominiale, posto riservato)",
 			"#Yes, but in a paid parking facility not included in my residence": "Sì, ma in una struttura a pagamento non inclusa nella mia abitazione",
-			"#No, I rely on street or public parking": "No, mi affido al parcheggio in strada o in spazi pubblici",
+			"#No, I rely on street or public parking": "No, mi affido al parcheggio su strada o in spazi pubblici",
 			"#I do not have access to a car": "Non ho accesso a un’auto",
-			"#Where do you usually store your bicycle or e-bike when at your place of residence?": "Dove custodisci di solito la tua bicicletta o e-bike presso la tua abitazione?",
-			"#In a private or reserved bicycle parking space included in my residence (e.g. private or shared garage, bike room, cellar)": "In uno spazio di parcheggio per biciclette privato o riservato incluso nella mia abitazione (es. garage privato o condominiale, locale bici, cantina)",
-			"#In a paid bicycle parking facility not included in my residence (e.g. bike box, private garage, secure bike parking)": "In una struttura di parcheggio per biciclette a pagamento non inclusa nella mia abitazione (es. bike box, garage privato, parcheggio sicuro)",
-			"#Inside my apartment (no dedicated bike parking space)": "All’interno dell’abitazione (senza uno spazio dedicato per la bicicletta)",
-			"#In public bicycle parking spaces (e.g. bike racks)": "In spazi pubblici dedicati al parcheggio delle biciclette (es. rastrelliere)",
-			"#In public spaces not specifically designed for bicycle parking (e.g., poles, railings)": "In spazi pubblici non progettati specificamente per il parcheggio delle biciclette (es. pali, ringhiere)",
+			"#Where do you usually store your bicycle or e-bike at your place of residence?": "Dove custodisci di solito la tua bicicletta o e-bike presso la tua abitazione?",
+			"#In a private or reserved bicycle parking space included in my residence (e.g. private or shared garage, bike room, cellar)": "In uno spazio privato o riservato incluso nella mia abitazione (es. garage privato o condominiale, locale bici, cantina)",
+			"#In a paid bicycle parking facility not included in my residence (e.g. bike box, private garage, secure bike parking)": "In una struttura a pagamento non inclusa nella mia abitazione (es. bike box, garage privato, parcheggio sicuro)",
+			"#Inside my apartment (no dedicated bike parking space)": "Dentro casa (senza uno spazio dedicato)",
+			"#In public bicycle parking spaces (e.g. bike racks)": "In spazi pubblici dedicati (es. rastrelliere)",
+			"#In public spaces not specifically designed for bicycle parking (e.g., poles, railings)": "In spazi pubblici non dedicati (es. pali, ringhiere)",
 			"#I do not own or keep a bicycle or e-bike": "Non possiedo né custodisco una bicicletta o e-bike",
-			"#When you park or retrieve your bicycle or e-bike at your residence, how much physical effort does it usually require, considering the weight and handling of the vehicle you use most often?": "Quando parcheggi o recuperi la tua bicicletta o e-bike presso la tua abitazione, quanto sforzo fisico richiede di solito, considerando il peso e la maneggevolezza del mezzo che utilizzi più spesso?",
+			"#When you park or retrieve your bicycle or e-bike at your residence, how much physical effort does it usually require, considering the weight and handling of the vehicle you use most often?": "Quando parcheggi o riprendi la tua bicicletta o e-bike a casa, quanto sforzo fisico richiede di solito, considerando peso e maneggevolezza del mezzo che usi più spesso?",
 			"#No effort at all (easy ground-level access)": "Nessuno sforzo (accesso facile a livello strada)",
 			"#Some effort (short ramp, small step, or manual gate)": "Poco sforzo (piccola rampa, gradino o cancello manuale)",
 			"#Moderate effort (stairs or narrow passage)": "Sforzo moderato (scale o passaggi stretti)",
-			"#High effort (need to lift or carry the bike frequently)": "Sforzo elevato (necessità di sollevare o trasportare spesso la bicicletta)",
-			"#I do not park a bicycle or e-bike at home": "Non parcheggio una bicicletta o e-bike presso la mia abitazione",
-			"#Do you have parking available at your workplace or study location?": "Hai a disposizione un parcheggio presso il tuo luogo di lavoro o di studio?",
-			"#Yes, secure parking for bicycles or e-scooters": "Sì, parcheggio sicuro per biciclette o monopattini elettrici",
-			"#Yes, parking for cars": "Sì, parcheggio per auto",
-			"#Yes, for both": "Sì, per entrambi",
-			"#No, no dedicated parking available": "No, non è disponibile un parcheggio dedicato",
-			"#I do not work/study outside home": "Non lavoro né studio fuori casa",
-			"#When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a car nearby?": "Quando ti rechi in luoghi che frequenti abitualmente (es. negozi, persone amiche), quanto è facile trovare parcheggio per un’auto nelle vicinanze?",
-			"#Very easy": "Molto facile",
-			"#Sometimes difficult": "A volte difficile",
-			"#Very difficult": "Molto difficile",
-			"#Not applicable (I do not use a car)": "Non applicabile (non utilizzo un’auto)",
-			"#When visiting places you go to frequently (e.g. shops, friends), how easy is it to find parking for a bicycle or e-scooter nearby?": "Quando ti rechi in luoghi che frequenti abitualmente (es. negozi, persone amiche), quanto è facile trovare parcheggio per una bicicletta o un monopattino elettrico nelle vicinanze?",
-			"#Not applicable (I do not use a bicycle or e-scooter)": "Non applicabile (non utilizzo una bicicletta o un monopattino elettrico)",
-			"#4 or more": "4 o più",
-			"#Where do you usually store your bicycle or e-bike at your place of residence?": "Dove custodisci di solito la tua bicicletta o e-bike presso la tua abitazione?",
-			"#Which of the following types of bicycle or e-scooter parking are available at or near your workplace or study location?": "Quali tra le seguenti tipologie di parcheggio per biciclette o monopattini elettrici sono disponibili nel luogo in cui lavori o studi, o nelle immediate vicinanze?",
-			"#A private or reserved bicycle parking space at the workplace or study location (e.g. indoor bike room, courtyard)": "Uno spazio di parcheggio per biciclette riservato o dedicato nel luogo di lavoro o di studio (ad es. bike room interna, cortile)",
-			"#A paid or managed bicycle parking facility nearby": "Una struttura di parcheggio per biciclette a pagamento o gestita nelle vicinanze",
-			"#The possibility to park inside the building (e.g. office, corridor, classroom area)": "La possibilità di parcheggiare all’interno dell’edificio (ad es. ufficio, corridoio, area didattica)",
-			"#Public bicycle parking spaces nearby (e.g. bike racks)": "Spazi di parcheggio pubblico per biciclette nelle vicinanze (ad es. rastrelliere)",
-			"#Only public spaces not specifically designed for bicycle parking (e.g. poles, railings)": "Solo spazi pubblici non progettati specificamente per il parcheggio delle biciclette (ad es. pali, ringhiere)",
-			"#No bicycle or e-scooter parking is available at or near my workplace or study location": "Non è disponibile alcun parcheggio per biciclette o monopattini elettrici nel luogo in cui lavoro o studio, né nelle vicinanze",
-			"#Is there any formal or designated parking available at your workplace or study location?": "Hai a disposizione un parcheggio formale o designato nel luogo in cui lavori o studi?",
-			"#Yes, parking specifically for bicycles or e-scooters": "Sì, un parcheggio specifico per biciclette o monopattini elettrici",
-			"#Yes, parking only for cars": "Sì, solo parcheggio per automobili",
-			"#Yes, parking for both bicycles/e-scooters and cars": "Sì, sono disponibili parcheggi sia per biciclette/monopattini elettrici sia per automobili",
+			"#High effort (need to lift or carry the bike frequently)": "Sforzo elevato (serve sollevare o trasportare spesso la bici)",
+			"#I do not park a bicycle or e-bike at home": "Non parcheggio una bicicletta o e-bike a casa",
+			"#Is there any formal or designated parking available at your workplace or study location?": "È disponibile un parcheggio formale o designato nel tuo luogo di lavoro o di studio?",
+			"#Yes, parking specifically for bicycles or e-scooters": "Sì, parcheggio specifico per biciclette o monopattini elettrici",
+			"#Yes, parking only for cars": "Sì, parcheggio solo per auto",
+			"#Yes, parking for both bicycles/e-scooters and cars": "Sì, parcheggio sia per biciclette/monopattini sia per auto",
 			"#No, there is no parking available": "No, non è disponibile alcun parcheggio",
-			"#I do not work or study outside home": "Non lavoro né studio fuori casa",
-			"#When you visit places you go to frequently (e.g. shops, friends), for how long do you usually feel comfortable leaving your bicycle or e-scooter parked unattended?": "Quando vai in luoghi che frequenti abitualmente (ad es. negozi, amici), per quanto tempo ti senti di solito a tuo agio a lasciare la bici o il monopattino elettrico parcheggiati incustoditi?",
-			"#Only a few minutes": "Solo pochi minuti",
-			"#Up to 30 minutes": "Fino a 30 minuti",
-			"#Up to 1–2 hours": "Fino a 1–2 ore",
-			"#Several hours": "Diverse ore",
-			"#I do not feel comfortable leaving it unattended": "Non mi sento a mio agio a lasciarli incustoditi",
-			"#Not applicable (I do not use a bicycle or e-scooter)": "Non applicabile (non utilizzo una bicicletta o un monopattino elettrico)"
+			"#I do not work or study outside home": "Non lavoro né studio fuori casa"
 		}
 	},
 	"id": "theBIKEnet_context",
 	"db_set": "questionnaires",
-	"default_language": "it"
+	"default_language": "en"
 }
