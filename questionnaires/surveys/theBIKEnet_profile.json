@@ -156,6 +156,9 @@
 							},
 							{
 								"text": "Occasionally"
+							},
+							{
+								"text": "I don't work"
 							}
 						]
 					},
@@ -175,6 +178,9 @@
 							},
 							{
 								"text": "Occasionally"
+							},
+							{
+								"text": "I don't work"
 							}
 						]
 					}
@@ -663,7 +669,8 @@
 			"#1 (only myself)": "1 (only myself)",
 			"#5 or more": "5 or more",
 			"#Do you currently live with any dependents (such as children, elderly individuals, or others who rely on you for care)?": "Do you currently live with any dependents (such as children, elderly individuals, or others who rely on you for care)?",
-			"#1. theBIKEnet Profile - Tell us about yourself": "1. theBIKEnet Profile - Tell us about yourself"
+			"#1. theBIKEnet Profile - Tell us about yourself": "1. theBIKEnet Profile - Tell us about yourself",
+			"#I don't work": "I don't work"
 		},
 		"it": {
 			"code": "it",
@@ -784,7 +791,8 @@
 			"#1 (only myself)": "1 (solo io)",
 			"#5 or more": "5 o più",
 			"#Do you currently live with any dependents (such as children, elderly individuals, or others who rely on you for care)?": "Vivi attualmente con persone a carico (come bambini, anziani o altre persone che dipendono da te per l’assistenza)?",
-			"#1. theBIKEnet Profile - Tell us about yourself": "1. theBIKEnet - Profilo · Raccontaci di te"
+			"#1. theBIKEnet Profile - Tell us about yourself": "1. theBIKEnet - Profilo · Raccontaci di te",
+			"#I don't work": "Non lavoro"
 		}
 	},
 	"id": "theBIKEnet_profile",
