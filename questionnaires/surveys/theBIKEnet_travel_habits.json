@@ -535,7 +535,7 @@
 			"#Rarely (less than twice per month)": "Raramente (meno di due volte al mese)",
 			"#Only in my free time": "Solo nel tempo libero",
 			"#Never": "Mai",
-			"#How often do you use public transport for your daily commute or other trips?": "Quanto spesso usi il trasporto pubblico per andare al lavoro/alla scuola o per altri spostamenti?",
+			"#How often do you use public transport for your daily commute or other trips?": "Quanto spesso usi il trasporto pubblico per andare al lavoro/scuola o per altri spostamenti?",
 			"#Only occasionally": "Solo occasionalmente",
 			"#Do you use micromobility (bike, e-bike, or e-scooter) in combination with public transport for your trips (for example, to reach or leave a bus, metro, or train station)?": "Usi la micromobilità (bici, e-bike o monopattino elettrico) in combinazione con il trasporto pubblico (per esempio, per raggiungere o lasciare una fermata di bus, metro o treno)?",
 			"#Yes, almost every time I use public transport": "Sì, quasi sempre quando uso il trasporto pubblico",
@@ -580,8 +580,8 @@
 			"#14:00-18:00 (afternoon peak)": "14:00-18:00 (punta pomeridiana)",
 			"#18:00-20:00 (evening commute)": "18:00-20:00 (rientro serale)",
 			"#After 20:00 (late evening/night)": "Dopo le 20:00 (sera/notte)",
-			"#Do you usually ride alone or with other people?": "Di solito ti sposti da solo/a o con altre persone?",
-			"#Mostly alone": "Per lo più da solo/a",
+			"#Do you usually ride alone or with other people?": "Di solito ti sposti da sola/o o con altre persone?",
+			"#Mostly alone": "Per lo più da sola/o",
 			"#Often with family members": "Spesso con familiari",
 			"#Often with colleagues or friends": "Spesso con colleghi o amici",
 			"#It varies": "Dipende",
@@ -594,7 +594,7 @@
 			"#Yes, I accompany children or minors": "Sì, accompagno bambini o minorenni",
 			"#Yes, I accompany people who need assistance (elderly, disabled, etc.)": "Sì, accompagno persone che hanno bisogno di assistenza (anziane, con disabilità, ecc.)",
 			"#Yes, I accompany colleagues or friends": "Sì, accompagno colleghi o amici",
-			"#No, I usually travel alone": "No, di solito mi sposto da solo/a"
+			"#No, I usually travel alone": "No, di solito mi sposto da sola/o"
 		}
 	},
 	"id": "theBIKEnet_travel_habits",
