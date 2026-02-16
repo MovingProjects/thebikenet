@@ -10,8 +10,7 @@
 		"theBIKEnet_safety_perception.json",
 		"theBIKEnet_safety_behaviour.json",
 		"theBIKEnet_travel_habits.json",
-		"theBIKEnet_accidents_and_risk_factors.json",
-		"theBIKEnet_beliefs_and_attitudes.json"
+		"theBIKEnet_accidents_and_risk_factors.json"
 	],
 	"destination": {
 		"firestore": {
