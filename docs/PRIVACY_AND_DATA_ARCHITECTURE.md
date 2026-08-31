@@ -152,3 +152,22 @@ Moving Projects acts as both the technical developer and data controller, ensuri
 ---
 
 *Version 1.0 – Updated November 2025 (by Moving Projects)*
+
+## PlanEasy response format
+
+The current PlanEasy response format uses one shared envelope for survey, spatial contribution, and trip responses:
+
+```json
+{
+  "schema": "planeasy.response",
+  "schema_version": "2.0",
+  "response_kind": "survey | spatial_contribution | trip",
+  "entity": {},
+  "related_entities": [],
+  "geometry": {},
+  "answers": {},
+  "meta": {"project": {}, "flow": {}, "user": {}, "device": {}}
+}
+```
+
+The existing privacy and architecture rules above apply to this envelope. `answers` remains nested and readable; `response_kind` is the semantic type, while `db_set` remains the technical destination. Optional email values are SHA-256 hashed before storage and raw email is never saved or logged. Compatibility with response v1 is handled by the framework loader/normalizer and is not represented by a `legacy` block in new responses.
