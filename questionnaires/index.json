@@ -1,0 +1,8 @@
+{
+  "project": "theBIKEnet",
+  "organization": "Moving Projects",
+  "description": "Structured and versioned theBIKEnet questionnaires.",
+  "license": "CC BY-NC 4.0",
+  "website": "https://movprojects.com/thebikenet",
+  "directories": ["surveys", "tripSurveys", "locationReports"]
+}

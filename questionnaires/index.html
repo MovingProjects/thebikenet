@@ -166,19 +166,31 @@ z-index:100;
   // Risultato finale: `${FORM_BASE_URL}/${projectId}/${questId}`
   const FORM_BASE_URL = "https://thebikenet-rome-questionnaires.wemolab.eu/"; // TODO: sostituisci col tuo dominio
 
-  const BASE_URL = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys`;
+  const BASE_URL = `https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires`;
 
-  async function fetchIndex() {
-    const res = await fetch(`${BASE_URL}/index.json`);
-    if (!res.ok) throw new Error("Cannot load questionnaires/index.json");
+  async function fetchIndex(path = "") {
+    const suffix = path ? `/${path}` : "";
+    const res = await fetch(`${BASE_URL}${suffix}/index.json`);
+    if (!res.ok) throw new Error(`Cannot load questionnaires/${path || "index"}.json`);
     return res.json();
   }
 
-  async function fetchQuestionnaire(filename) {
-    const url = `${BASE_URL}/${filename}`  
+  async function fetchQuestionnaire(path) {
+    const url = `${BASE_URL}/${path}`;
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Cannot load ${filename}`);
+    if (!res.ok) throw new Error(`Cannot load ${path}`);
     return res.json();
+  }
+
+  async function fetchQuestionnaireCatalog(path = "") {
+    const index = await fetchIndex(path);
+    const questionnaires = (index.questionnaires || []).map((filename) => ({
+      path: [path, filename].filter(Boolean).join("/")
+    }));
+    const nested = await Promise.all((index.directories || []).map((directory) =>
+      fetchQuestionnaireCatalog([path, directory].filter(Boolean).join("/"))
+    ));
+    return questionnaires.concat(nested.flat());
   }
 
   async function renderList() {
@@ -192,20 +204,21 @@ z-index:100;
     `;
 
     try {
-      const data = await fetchIndex();
-      const list = data.questionnaires || [];
-      const projectId =
-        data.destination &&
-        data.destination.firestore &&
-        data.destination.firestore.projectId
-          ? data.destination.firestore.projectId
-          : null;
+      const list = await fetchQuestionnaireCatalog();
 
       grid.innerHTML = "";
+      const questionnaireFiles = new Map(await Promise.all(list.map(async (entry) => {
+        try {
+          return [entry.path, await fetchQuestionnaire(entry.path)];
+        } catch (error) {
+          console.warn(`Error fetching questionnaire ${entry.path}`, error);
+          return [entry.path, null];
+        }
+      })));
 
-      for (const filename of list) {
-        const baseName = filename.replace(".json", "");
-          const viewLink = `https://github.com/MovingProjects/thebikenet/blob/main/questionnaires/surveys/${filename}`;
+      for (const entry of list) {
+        const baseName = entry.path.split("/").pop().replace(".json", "");
+          const viewLink = `https://github.com/MovingProjects/thebikenet/blob/main/questionnaires/${entry.path}`;
         const questionnaireUrl =
           FORM_BASE_URL
             ? `${FORM_BASE_URL}quest?id=${baseName}`
@@ -219,7 +232,8 @@ console.log(questionnaireUrl);
         let descIt = "";
 
         try {
-          const qJson = await fetchQuestionnaire(filename);
+          const qJson = questionnaireFiles.get(entry.path);
+          if (!qJson) throw new Error("Questionnaire is unavailable");
           const qDef = qJson.questionnaire || {};
           const sections = qDef.sections || [];
           const languages = qJson.languages || {};
@@ -254,7 +268,7 @@ console.log(questionnaireUrl);
             descIt = descEn;
           }
         } catch (err) {
-          console.warn(`Error parsing questionnaire ${filename}`, err);
+          console.warn(`Error parsing questionnaire ${entry.path}`, err);
           titleEn = baseName;
           titleIt = baseName;
           descEn = "Structured questionnaire definition.";
