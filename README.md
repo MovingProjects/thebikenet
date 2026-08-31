@@ -75,6 +75,24 @@ Information on pseudonymization, ethics, and transparency is available here:
 - [Simplified Privacy Notice](https://movingprojects.github.io/thebikenet/docs/privacy-simple.html)
 - [Privacy and Data Architecture Guidelines](https://github.com/MovingProjects/thebikenet/blob/main/docs/PRIVACY_AND_DATA_ARCHITECTURE.md)  
 
+## Data contract
+
+theBIKEnet uses the generic PlanEasy response contract for every questionnaire. The framework defines the reusable contract; this repository defines the theBIKEnet instruments and their research meaning.
+
+```json
+{
+  "schema": "planeasy.response",
+  "schema_version": "2.0",
+  "response_kind": "survey | spatial_contribution | trip",
+  "entity": {}, "related_entities": [], "geometry": {}, "answers": {},
+  "meta": {"project": {}, "flow": {}, "user": {}, "device": {}}
+}
+```
+
+`answers` remains nested and readable. `entity` identifies the main research object; `related_entities` records meaningful relationships. `response_kind` is semantic and is distinct from the technical `db_set` destination.
+
+Responses are stored at `surveyResponses/{questionnaireId}/responses/{responseId}`, `spatialReports/{questionnaireId}/responses/{responseId}`, or `trips/{questionnaireId}/responses/{responseId}`. Trip questionnaires use `flow: "pre_trip"` or `flow: "post_trip"`. Optional email input is converted to SHA-256 before persistence; raw email, credentials and tokens are never response data. v1 compatibility belongs to the framework loader/normalizer and is not represented by a `legacy` block in new data.
+
 ---
 
 ## 🌐 Official Links
