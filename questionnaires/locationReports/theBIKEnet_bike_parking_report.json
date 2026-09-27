@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_bike_parking_report",
 		"questionnaire_version": "1.0.0",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/locationReports/assets/theBIKEnet_bike_parking_report.svg",
+		"image_alt": "#Map pin, bicycle parking stand and bicycle",
 		"options": {
 			"review_mode": true,
 			"ask_consent": true,
@@ -89,6 +91,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Map pin, bicycle parking stand and bicycle": "Map pin, bicycle parking stand and bicycle",
 			"code": "en",
 			"#Tell us about bicycle parking in this area": "Tell us about bicycle parking in this area",
 			"#Help us map the real parking conditions for cyclists in Rome: whether there are safe, public, informal or no options at all.<br><br>🚲 <a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about theBIKEnet project</a>": "Help us map the real parking conditions for cyclists in Rome: whether there are safe, public, informal or no options at all.<br><br>🚲 <a href='https://movprojects.com/thebikenet' target='_blank'>Learn more about theBIKEnet project</a>",
@@ -111,6 +114,7 @@
 			"#Free the space from obstacles or car parking": "Free the space from obstacles or car parking"
 		},
 		"it": {
+			"#Map pin, bicycle parking stand and bicycle": "Segnaposto, rastrelliera per biciclette e bicicletta",
 			"code": "it",
 			"#Tell us about bicycle parking in this area": "Raccontaci dei parcheggi per biciclette in questa zona",
 			"#Which best describes the parking situation here?": "Quale di queste descrizioni rappresenta meglio la situazione di parcheggio in quest’area?",

@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_context",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_context.svg",
+		"image_alt": "#House with a map pin, a bicycle and a kick scooter",
 		"options": {
 			"review_mode": true,
 			"ask_consent": true,
@@ -509,6 +511,7 @@
 	},
 	"languages": {
 		"en": {
+			"#House with a map pin, a bicycle and a kick scooter": "House with a map pin, a bicycle and a kick scooter",
 			"code": "en",
 			"#2. theBIKEnet Context - Where and with what you move": "2. theBIKEnet Context - Where and with what you move",
 			"#theBIKEnet Context Questionnaire": "theBIKEnet Context Questionnaire",
@@ -601,6 +604,7 @@
 			"#I do not work or study outside home": "I do not work or study outside home"
 		},
 		"it": {
+			"#House with a map pin, a bicycle and a kick scooter": "Casa con un segnaposto, una bicicletta e un monopattino",
 			"code": "it",
 			"#2. theBIKEnet Context - Where and with what you move": "2. theBIKEnet – Contesto · Dove e con cosa ti muovi",
 			"#theBIKEnet Context Questionnaire": "Questionario theBIKEnet – Contesto",

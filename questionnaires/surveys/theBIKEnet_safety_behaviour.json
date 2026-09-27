@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_safety_behaviour",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_safety_behaviour.svg",
+		"image_alt": "#Bicycle helmet, bicycle and a bicycle light",
 		"options": {
 			"review_mode": true,
 			"ask_consent": true,
@@ -540,6 +542,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Bicycle helmet, bicycle and a bicycle light": "Bicycle helmet, bicycle and a bicycle light",
 			"code": "en",
 			"#4. theBIKEnet Safety Behaviour - How you protect yourself": "4. theBIKEnet Safety Behaviour - How you protect yourself",
 			"#theBIKEnet Safety Behaviour Questionnaire": "theBIKEnet Safety Behaviour Questionnaire",
@@ -619,6 +622,7 @@
 			"#Most people I know use helmets or lights when cycling.": "Most people I know use helmets or lights when cycling."
 		},
 		"it": {
+			"#Bicycle helmet, bicycle and a bicycle light": "Casco da bicicletta, bicicletta e luce per bicicletta",
 			"code": "it",
 			"#4. theBIKEnet Safety Behaviour - How you protect yourself": "4. theBIKEnet – Sicurezza · Come ti proteggi",
 			"#theBIKEnet Safety Behaviour Questionnaire": "Questionario theBIKEnet – Sicurezza",

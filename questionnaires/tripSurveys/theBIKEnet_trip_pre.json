@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_trip_pre",
 		"questionnaire_version": "1.0.0",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/tripSurveys/assets/theBIKEnet_trip_pre.svg",
+		"image_alt": "#Smartphone showing a route, and the weather",
 		"options": {
 			"review_mode": true,
 			"ask_consent": false,
@@ -155,6 +157,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Smartphone showing a route, and the weather": "Smartphone showing a route, and the weather",
 			"code": "en",
 			"#theBIKEnet Pre-Trip": "theBIKEnet Pre-Trip",
 			"#Trip Context": "Trip Context",
@@ -193,6 +196,7 @@
 			"#Both": "Both"
 		},
 		"it": {
+			"#Smartphone showing a route, and the weather": "Smartphone che mostra un percorso e le condizioni meteo",
 			"code": "it",
 			"#theBIKEnet Pre-Trip": "theBIKEnet Pre-Viaggio",
 			"#Trip Context": "Contesto del Viaggio",

@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_accidents_and_risk_factors",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_accidents_and_risk_factors.svg",
+		"image_alt": "#Warning sign between a car and a bicycle",
 		"options": {
 			"review_mode": true,
 			"ask_consent": true,
@@ -260,6 +262,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Warning sign between a car and a bicycle": "Warning sign between a car and a bicycle",
 			"code": "en",
 			"#Yes": "Yes",
 			"#No": "No",
@@ -317,6 +320,7 @@
 			"#Much more exposed": "Much more exposed"
 		},
 		"it": {
+			"#Warning sign between a car and a bicycle": "Segnale di pericolo tra un'auto e una bicicletta",
 			"code": "it",
 			"#Yes": "Sì",
 			"#No": "No",

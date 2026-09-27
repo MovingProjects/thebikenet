@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_safety_perception",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_safety_perception.svg",
+		"image_alt": "#Bicycle and kick scooter with a safety shield",
 		"options": {
 			"review_mode": true,
 			"ask_consent": true,
@@ -262,6 +264,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Bicycle and kick scooter with a safety shield": "Bicycle and kick scooter with a safety shield",
 			"code": "en",
 			"#3. theBIKEnet Safety Perception - How safe you feel on the road": "3. theBIKEnet Safety Perception - How safe you feel on the road",
 			"#theBIKEnet Safety Perception Questionnaire": "theBIKEnet Safety Perception Questionnaire",
@@ -329,6 +332,7 @@
 			"#Very high": "Very high"
 		},
 		"it": {
+			"#Bicycle and kick scooter with a safety shield": "Bicicletta e monopattino con uno scudo di sicurezza",
 			"code": "it",
 			"#3. theBIKEnet Safety Perception - How safe you feel on the road": "3. theBIKEnet – Percezione della sicurezza: quanto ti senti sicura/o sulla strada",
 			"#theBIKEnet Safety Perception Questionnaire": "Questionario theBIKEnet – Percezione della sicurezza",

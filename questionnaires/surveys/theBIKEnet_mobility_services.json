@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_mobility_services",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_mobility_services.svg",
+		"image_alt": "#Smartphone, bicycle and bus",
 		"options": {
 			"review_mode": true,
 			"ask_consent": true,
@@ -388,6 +390,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Smartphone, bicycle and bus": "Smartphone, bicycle and bus",
 			"code": "en",
 			"#8. theBIKEnet Mobility Services - Shared Use, Integration and Willingness to Pay": "8. theBIKEnet Mobility Services - Shared Use, Integration and Willingness to Pay",
 			"#theBIKEnet Mobility Services Questionnaire": "theBIKEnet Mobility Services Questionnaire",
@@ -453,6 +456,7 @@
 			"#More parking spaces": "More parking spaces"
 		},
 		"it": {
+			"#Smartphone, bicycle and bus": "Smartphone, bicicletta e autobus",
 			"code": "it",
 			"#8. theBIKEnet Mobility Services - Shared Use, Integration and Willingness to Pay": "8. Servizi di mobilità theBIKEnet – Condivisione, integrazione e disponibilità a pagare",
 			"#theBIKEnet Mobility Services Questionnaire": "Questionario theBIKEnet sui servizi di mobilità",

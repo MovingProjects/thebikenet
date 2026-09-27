@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_trip_post",
 		"questionnaire_version": "1.0.0",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/tripSurveys/assets/theBIKEnet_trip_post.svg",
+		"image_alt": "#Route ending at a flag with a check mark",
 		"options": {
 			"review_mode": true,
 			"ask_consent": false,
@@ -232,6 +234,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Route ending at a flag with a check mark": "Route ending at a flag with a check mark",
 			"code": "en",
 			"#theBIKEnet Post-Trip": "theBIKEnet Post-Trip",
 			"#Safety and Comfort": "Safety and Comfort",
@@ -288,6 +291,7 @@
 			"#Any additional notes about this trip?": "Any additional notes about this trip?"
 		},
 		"it": {
+			"#Route ending at a flag with a check mark": "Percorso che termina a una bandierina con un segno di spunta",
 			"code": "it",
 			"#theBIKEnet Post-Trip": "theBIKEnet Post-Viaggio",
 			"#Safety and Comfort": "Sicurezza e Comfort",

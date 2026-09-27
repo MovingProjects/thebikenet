@@ -4,6 +4,8 @@
 		"questionnaire_id": "theBIKEnet_travel_habits",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_travel_habits.svg",
+		"image_alt": "#Calendar, bicycle and bus",
 		"options": {
 			"review_mode": true,
 			"ask_consent": true,
@@ -409,6 +411,7 @@
 	},
 	"languages": {
 		"en": {
+			"#Calendar, bicycle and bus": "Calendar, bicycle and bus",
 			"code": "en",
 			"#5. theBIKEnet Travel Habits - How you move every day": "5. theBIKEnet Travel Habits - How you move every day",
 			"#theBIKEnet Travel Habits Questionnaire": "theBIKEnet Travel Habits Questionnaire",
@@ -503,6 +506,7 @@
 			"#No, I usually travel alone": "No, I usually travel alone"
 		},
 		"it": {
+			"#Calendar, bicycle and bus": "Calendario, bicicletta e autobus",
 			"code": "it",
 			"#5. theBIKEnet Travel Habits - How you move every day": "5. Abitudini di viaggio theBIKEnet – Come ti muovi ogni giorno",
 			"#theBIKEnet Travel Habits Questionnaire": "Questionario theBIKEnet sulle abitudini di viaggio",
