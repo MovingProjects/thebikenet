@@ -4,6 +4,7 @@
 		"questionnaire_id": "theBIKEnet_accidents_and_risk_factors",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"description": "This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or riding an e-scooter. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.",
 		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_accidents_and_risk_factors.svg",
 		"image_alt": "#Warning sign between a car and a bicycle",
 		"options": {
@@ -262,6 +263,7 @@
 	},
 	"languages": {
 		"en": {
+			"#This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or riding an e-scooter. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.": "This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or riding an e-scooter. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.",
 			"#Warning sign between a car and a bicycle": "Warning sign between a car and a bicycle",
 			"code": "en",
 			"#Yes": "Yes",
@@ -320,6 +322,7 @@
 			"#Much more exposed": "Much more exposed"
 		},
 		"it": {
+			"#This sixth questionnaire focuses on <b>your experiences with accidents, near misses, and risky situations</b> while cycling or riding an e-scooter. It also explores <b>how you perceive and manage risk</b> in everyday travel. Understanding these experiences helps us identify <b>common risk factors</b> and develop strategies to <b>reduce accidents</b> and <b>improve safety</b> for all road users.": "Questo sesto questionario riguarda <b>le tue esperienze con incidenti, mancati incidenti e situazioni rischiose</b> quando vai in bicicletta o usi un monopattino elettrico. Esplora anche <b>come percepisci e gestisci il rischio</b> negli spostamenti quotidiani. Comprendere queste esperienze ci aiuta a individuare <b>fattori di rischio comuni</b> e a sviluppare strategie per <b>ridurre gli incidenti</b> e <b>migliorare la sicurezza</b> per tutte le persone sulla strada.",
 			"#Warning sign between a car and a bicycle": "Segnale di pericolo tra un'auto e una bicicletta",
 			"code": "it",
 			"#Yes": "Sì",

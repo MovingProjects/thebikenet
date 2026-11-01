@@ -4,6 +4,7 @@
 		"questionnaire_id": "theBIKEnet_safety_behaviour",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"description": "This fourth questionnaire explores <b>how you protect yourself and behave in traffic while cycling</b>, including your <b>confidence, safety practices, and reactions</b> to different road situations. Understanding these everyday strategies helps us identify <b>habits and needs</b> that can guide safer riding behaviours and better infrastructure design.",
 		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_safety_behaviour.svg",
 		"image_alt": "#Bicycle helmet, bicycle and a bicycle light",
 		"options": {
@@ -542,6 +543,7 @@
 	},
 	"languages": {
 		"en": {
+			"#This fourth questionnaire explores <b>how you protect yourself and behave in traffic while cycling</b>, including your <b>confidence, safety practices, and reactions</b> to different road situations. Understanding these everyday strategies helps us identify <b>habits and needs</b> that can guide safer riding behaviours and better infrastructure design.": "This fourth questionnaire explores <b>how you protect yourself and behave in traffic while cycling</b>, including your <b>confidence, safety practices, and reactions</b> to different road situations. Understanding these everyday strategies helps us identify <b>habits and needs</b> that can guide safer riding behaviours and better infrastructure design.",
 			"#Bicycle helmet, bicycle and a bicycle light": "Bicycle helmet, bicycle and a bicycle light",
 			"code": "en",
 			"#4. theBIKEnet Safety Behaviour - How you protect yourself": "4. theBIKEnet Safety Behaviour - How you protect yourself",
@@ -622,6 +624,7 @@
 			"#Most people I know use helmets or lights when cycling.": "Most people I know use helmets or lights when cycling."
 		},
 		"it": {
+			"#This fourth questionnaire explores <b>how you protect yourself and behave in traffic while cycling</b>, including your <b>confidence, safety practices, and reactions</b> to different road situations. Understanding these everyday strategies helps us identify <b>habits and needs</b> that can guide safer riding behaviours and better infrastructure design.": "Questo quarto questionario esplora <b>come ti proteggi e come ti comporti nel traffico mentre vai in bicicletta</b>, includendo <b>fiducia nelle tue capacità, pratiche di sicurezza e reazioni</b> in diverse situazioni stradali. Comprendere queste strategie quotidiane ci aiuta a individuare <b>abitudini e bisogni</b> utili a promuovere comportamenti più sicuri e una migliore progettazione delle infrastrutture.",
 			"#Bicycle helmet, bicycle and a bicycle light": "Casco da bicicletta, bicicletta e luce per bicicletta",
 			"code": "it",
 			"#4. theBIKEnet Safety Behaviour - How you protect yourself": "4. theBIKEnet – Sicurezza · Come ti proteggi",

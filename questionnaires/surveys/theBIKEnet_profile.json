@@ -4,6 +4,7 @@
 		"questionnaire_id": "theBIKEnet_profile",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"description": "This first questionnaire helps us understand <b>who our participants are</b> and how diverse experiences can be. It focuses on <b>your background</b>, <b>everyday mobility</b>, and <b>how comfortable you feel</b> when cycling or riding an e-scooter. Your responses will help us interpret travel patterns and perceptions collected later through the app and other surveys.",
 		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_profile.svg",
 		"image_alt": "#Person with a bicycle and a wheelchair user symbol",
 		"options": {
@@ -553,6 +554,7 @@
 	},
 	"languages": {
 		"en": {
+			"#This first questionnaire helps us understand <b>who our participants are</b> and how diverse experiences can be. It focuses on <b>your background</b>, <b>everyday mobility</b>, and <b>how comfortable you feel</b> when cycling or riding an e-scooter. Your responses will help us interpret travel patterns and perceptions collected later through the app and other surveys.": "This first questionnaire helps us understand <b>who our participants are</b> and how diverse experiences can be. It focuses on <b>your background</b>, <b>everyday mobility</b>, and <b>how comfortable you feel</b> when cycling or riding an e-scooter. Your responses will help us interpret travel patterns and perceptions collected later through the app and other surveys.",
 			"#Person with a bicycle and a wheelchair user symbol": "Person with a bicycle and a wheelchair user symbol",
 			"code": "en",
 			"#theBIKEnet Profile Questionnaire": "theBIKEnet Profile Questionnaire",
@@ -676,6 +678,7 @@
 			"#I don't work": "I don't work"
 		},
 		"it": {
+			"#This first questionnaire helps us understand <b>who our participants are</b> and how diverse experiences can be. It focuses on <b>your background</b>, <b>everyday mobility</b>, and <b>how comfortable you feel</b> when cycling or riding an e-scooter. Your responses will help us interpret travel patterns and perceptions collected later through the app and other surveys.": "Questo primo questionario ci aiuta a capire <b>chi partecipa al progetto</b> e quanto siano diverse le esperienze di mobilità. Si concentra sul <b>tuo profilo</b>, sulla <b>mobilità quotidiana</b> e su <b>quanto ti senti a tuo agio</b> quando vai in bicicletta o usi un monopattino elettrico. Le tue risposte ci aiuteranno a interpretare i modelli di spostamento e le percezioni raccolte in seguito tramite l’app e altri questionari.",
 			"#Person with a bicycle and a wheelchair user symbol": "Persona con una bicicletta e il simbolo di persona in sedia a rotelle",
 			"code": "it",
 			"#theBIKEnet Profile Questionnaire": "Questionario theBIKEnet - Profilo",

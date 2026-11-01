@@ -4,6 +4,7 @@
 		"questionnaire_id": "theBIKEnet_context",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"description": "This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.",
 		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_context.svg",
 		"image_alt": "#House with a map pin, a bicycle and a kick scooter",
 		"options": {
@@ -511,6 +512,7 @@
 	},
 	"languages": {
 		"en": {
+			"#This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.": "This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.",
 			"#House with a map pin, a bicycle and a kick scooter": "House with a map pin, a bicycle and a kick scooter",
 			"code": "en",
 			"#2. theBIKEnet Context - Where and with what you move": "2. theBIKEnet Context - Where and with what you move",
@@ -604,6 +606,7 @@
 			"#I do not work or study outside home": "I do not work or study outside home"
 		},
 		"it": {
+			"#This second questionnaire focuses on <b>your living and travel context</b>: where you usually move, what vehicles you can access, and how easily you can park or store them. Understanding these daily conditions helps us identify <b>barriers</b>, <b>needs</b>, and <b>opportunities</b> for cycling and micromobility in different parts of the city.": "Questo secondo questionario si concentra sul <b>tuo contesto di vita e di spostamento</b>: dove ti muovi abitualmente, a quali veicoli hai accesso e quanto è facile parcheggiarli o custodirli. Comprendere queste condizioni quotidiane ci aiuta a individuare <b>barriere</b>, <b>bisogni</b> e <b>opportunità</b> per la mobilità ciclistica e la micromobilità in diverse aree della città.",
 			"#House with a map pin, a bicycle and a kick scooter": "Casa con un segnaposto, una bicicletta e un monopattino",
 			"code": "it",
 			"#2. theBIKEnet Context - Where and with what you move": "2. theBIKEnet – Contesto · Dove e con cosa ti muovi",
