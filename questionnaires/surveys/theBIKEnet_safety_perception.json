@@ -4,6 +4,7 @@
 		"questionnaire_id": "theBIKEnet_safety_perception",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"description": "This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.",
 		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_safety_perception.svg",
 		"image_alt": "#Bicycle and kick scooter with a safety shield",
 		"options": {
@@ -264,6 +265,7 @@
 	},
 	"languages": {
 		"en": {
+			"#This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.": "This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.",
 			"#Bicycle and kick scooter with a safety shield": "Bicycle and kick scooter with a safety shield",
 			"code": "en",
 			"#3. theBIKEnet Safety Perception - How safe you feel on the road": "3. theBIKEnet Safety Perception - How safe you feel on the road",
@@ -332,6 +334,7 @@
 			"#Very high": "Very high"
 		},
 		"it": {
+			"#This third questionnaire focuses on <b>how safe and comfortable you feel</b> when cycling or using micromobility in your city. It explores <b>traffic conditions, infrastructure quality, and environmental factors</b> that affect your everyday riding experience. Understanding these aspects helps us identify <b>priorities and improvements</b> to make urban mobility safer and more enjoyable for everyone.": "Questo terzo questionario si concentra su <b>quanto ti senti sicura/o e a tuo agio</b> quando vai in bicicletta o utilizzi mezzi di micromobilità nella tua città. Esplora <b>le condizioni del traffico, la qualità delle infrastrutture e i fattori ambientali</b> che influenzano l’esperienza quotidiana di spostamento. Comprendere questi aspetti ci aiuta a individuare <b>priorità e possibili miglioramenti</b> per rendere la mobilità urbana più sicura e piacevole per tutte le persone.",
 			"#Bicycle and kick scooter with a safety shield": "Bicicletta e monopattino con uno scudo di sicurezza",
 			"code": "it",
 			"#3. theBIKEnet Safety Perception - How safe you feel on the road": "3. theBIKEnet – Percezione della sicurezza: quanto ti senti sicura/o sulla strada",

@@ -4,6 +4,7 @@
 		"questionnaire_id": "theBIKEnet_travel_habits",
 		"questionnaire_version": "1.0.2",
 		"project": "theBIKEnet",
+		"description": "This fifth questionnaire looks at <b>how you move every day</b>: the <b>means of transport</b> you use, the <b>purpose and frequency</b> of your trips, and how cycling and other micromobility modes fit into your daily routine. Your answers will help us identify <b>mobility patterns</b> and <b>multimodal behaviours</b> across the city.",
 		"image": "https://raw.githubusercontent.com/MovingProjects/thebikenet/main/questionnaires/surveys/assets/theBIKEnet_travel_habits.svg",
 		"image_alt": "#Calendar, bicycle and bus",
 		"options": {
@@ -411,6 +412,7 @@
 	},
 	"languages": {
 		"en": {
+			"#This fifth questionnaire looks at <b>how you move every day</b>: the <b>means of transport</b> you use, the <b>purpose and frequency</b> of your trips, and how cycling and other micromobility modes fit into your daily routine. Your answers will help us identify <b>mobility patterns</b> and <b>multimodal behaviours</b> across the city.": "This fifth questionnaire looks at <b>how you move every day</b>: the <b>means of transport</b> you use, the <b>purpose and frequency</b> of your trips, and how cycling and other micromobility modes fit into your daily routine. Your answers will help us identify <b>mobility patterns</b> and <b>multimodal behaviours</b> across the city.",
 			"#Calendar, bicycle and bus": "Calendar, bicycle and bus",
 			"code": "en",
 			"#5. theBIKEnet Travel Habits - How you move every day": "5. theBIKEnet Travel Habits - How you move every day",
@@ -506,6 +508,7 @@
 			"#No, I usually travel alone": "No, I usually travel alone"
 		},
 		"it": {
+			"#This fifth questionnaire looks at <b>how you move every day</b>: the <b>means of transport</b> you use, the <b>purpose and frequency</b> of your trips, and how cycling and other micromobility modes fit into your daily routine. Your answers will help us identify <b>mobility patterns</b> and <b>multimodal behaviours</b> across the city.": "Questo quinto questionario riguarda <b>come ti muovi ogni giorno</b>: i <b>mezzi di trasporto</b> che utilizzi, lo <b>scopo e la frequenza</b> dei tuoi spostamenti e come andare in bicicletta e altri mezzi di micromobilità si inseriscono nella tua routine quotidiana. Le tue risposte ci aiuteranno a individuare <b>schemi di mobilità</b> e <b>comportamenti multimodali</b> in città.",
 			"#Calendar, bicycle and bus": "Calendario, bicicletta e autobus",
 			"code": "it",
 			"#5. theBIKEnet Travel Habits - How you move every day": "5. Abitudini di viaggio theBIKEnet – Come ti muovi ogni giorno",
